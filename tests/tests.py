@@ -14,6 +14,10 @@ class testing_wikifetcher_sachsen(unittest.TestCase):
 		options.headless = False
 		self.driver = webdriver.Firefox(options=options)
 
+	def test_opened_page(self):
+		self.driver.get(urls.sachsenUrl)
+		self.assertIn('6. Wahlperiode', (self.driver.title))
+
 	def tearDown(self):
 		self.driver.quit()
 
