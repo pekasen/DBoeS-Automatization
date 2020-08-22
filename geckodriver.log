@@ -1,0 +1,56 @@
+1598127010757	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.XVyCb1b5oJiw"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127012892	Marionette	INFO	Listening on port 55798
+1598127012908	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127050798	Marionette	INFO	Stopped listening on port 55798
+1598127055607	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.77gLYuyLLAKC"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127057828	Marionette	INFO	Listening on port 55900
+1598127057856	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127070486	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.lLrziTqO7Icm"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127072600	Marionette	INFO	Listening on port 56001
+1598127072648	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127119229	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.W8Q3lDGHblPJ"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127121357	Marionette	INFO	Listening on port 56105
+1598127121389	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127212773	Marionette	INFO	Stopped listening on port 56105
+1598127214742	Marionette	INFO	Stopped listening on port 56001
+1598127216628	Marionette	INFO	Stopped listening on port 55900
+1598127243487	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.6VF2U9Nr3fbz"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127245541	Marionette	INFO	Listening on port 56180
+1598127245628	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127264669	Marionette	INFO	Stopped listening on port 56180
+1598127363906	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.BpKp3nIHQhn0"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127365886	Marionette	INFO	Listening on port 56244
+1598127365950	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127366563	Marionette	INFO	Stopped listening on port 56244
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0xB000E,name=PBackgroundIDBDatabase::Msg_CloseAfterInvalidationComplete) Channel error: cannot send/recv
+
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 568: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 568: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1598127508122	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.y9JlNaAdEq80"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127510094	Marionette	INFO	Listening on port 56307
+1598127510168	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127510884	Marionette	INFO	Stopped listening on port 56307
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 568: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 568: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1598127865838	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/q8/_9s68d7953d0z9lhnn5r54q80000gp/T/rust_mozprofile.4j1tO6qCg7pD"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598127867900	Marionette	INFO	Listening on port 56382
+1598127867987	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598127868765	Marionette	INFO	Stopped listening on port 56382
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
