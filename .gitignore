@@ -5,3 +5,4 @@ Pipfile.lock
 geckodriver.log
 geckodriver.log
 geckodriver.log
+*.log
