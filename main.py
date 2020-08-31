@@ -15,7 +15,7 @@ class wikifetcher_sachsen:
         soup_sachsen = BeautifulSoup(self.r.content, "lxml")
         soup_sachsen1 = soup_sachsen.find_all("table")[2]
         soup_sachsen2 = soup_sachsen1.find_all("tr")
-        for row in soup_sachsen2
+        for row in soup_sachsen2:
             cols = row.find_all('td')
             cols = [x-text.strip() for x in cols]
             print(cols)
