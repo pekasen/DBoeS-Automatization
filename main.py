@@ -22,7 +22,7 @@ class wikifetcher_sachsen:
     	for row in soup_sachsen2:
     		cols = row.find_all('td')
     		cols = [x.text.strip() for x in cols]
-    		print(cols)
+            print(cols)
 
     def quit(self):
         self.driver.quit()
