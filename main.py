@@ -20,6 +20,5 @@ class wikifetcher_sachsen:
             cols = [x-text.strip() for x in cols]
             print(cols)
 
-
 bot = wikifetcher_sachsen()
 bot.get_politicians_landtag_sachsen()
