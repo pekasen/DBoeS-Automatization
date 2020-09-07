@@ -6,36 +6,24 @@ import os
 import landtags_urls as urls
 import configuration as cfg
 from datetime import datetime
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 
 class Wikifetcher_landtag:
 
     def __init__(self):
-        self.r = requests.get(urls.sachsenUrl).content
+        pass
 
     def get_politicians_landtag_sachsen(self):
-        soup_sachsen = BeautifulSoup(self.r, "lxml")
-        soup_sachsen1 = soup_sachsen.find_all("table")[2]("tr")
-        cols = ""
-        # find rows
-        for row in soup_sachsen1:
-            cols = row.find_all('td')
-            cols = [x.text.strip() for x in cols]
-            print(cols)
-
-        # Create Base CSV file with the needed headers to add the informarion gathered.
-        sachsen_csv_raw = {'Name': [],
-						'Birthdate': [],
-						'Party': [],
-						'Wahlkreis': [],
-						'Notes': [],
-						'Wikipedia': [],
-						}
-
+        gethtmlsachsen = pd.read_html(sachsenUrl)[2]
+        # print(gethtmlsachsen)
         datetoday = datetime.today()
         strpdatetoday = datetoday.strftime('%d-%m-%Y')
-        df = pd.DataFrame(sachsen_csv_raw, columns= ['Name', 'Birthdate', 'Party', 'Wahlkreis', 'Notes', 'Wikipedia'])
-        df.to_csv(r"sachsen_complete" + strpdatetoday + ".csv", index = False, header = True)
+        gethtmlsachsen.to_csv(r'sachsen_complete' + strpdatetoday + '.csv', index = True, header = True)       
+
+    # def get politicians_landtag_hamburg
+    #     gethtmlhamburg = pd.read_html(r)
 
 
 
