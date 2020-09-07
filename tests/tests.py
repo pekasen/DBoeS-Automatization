@@ -16,7 +16,7 @@ class testing_wikifetcher_landtag(unittest.TestCase):
 	def test_get_politicians_landtag_sachsen(self):
 		tmp = main.Wikifetcher_landtag()
 		count_politicians = tmp.get_politicians_landtag_sachsen()
-		self.assertEquals(count_politicians, 126)
+		self.assertEquals(count_politicians, 119)
 
 
 bot = testing_wikifetcher_landtag
