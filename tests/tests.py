@@ -1,32 +1,25 @@
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
+import requests 
 import unittest
+import sys
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
-import urllist as urls
+import test_landtags_urls as urls
+import sys
+import os
+sys.path.insert(0, os.getcwd())
+import main
 
 
-class testing_wikifetcher_sachsen(unittest.TestCase):
 
-	def setUp(self):
-		self.r = requests.get(urls.sachsenURL)
+class testing_wikifetcher_landtag(unittest.TestCase):
 
-	def test_find_name_in_table_to_be_scraped(self):
-		soup = BeutifulSoup(self.r.content, "lxml")
-		fetch_body = soup.find_all('tbody')[2]
-		self.assertTrue('"title="Rico Anton"' in str(fetch_tbody.find_all('td')[1]))
+	def test_get_politicians_landtag_sachsen(self):
+		tmp = main.Wikifetcher_landtag()
+		count_politicians = tmp.get_politicians_landtag_sachsen()
+		self.assertEquals(count_politicians, 126)
 
-	@unittest.expectedFailure
-	def test_no_value_error(self):
-		with self.assertRaises(ValueError):
-			self.driver.get(urls.sachsenUrl)
 
-	@unittest.expectedFailure
-	def test_no_type_error(self):
-		with self.assertRaises(TypeError):
-			self.driver.get(urls.sachsenUrl)
-
-bot = testing_wikifetcher_sachsen
+bot = testing_wikifetcher_landtag
 if __name__ == '__main__':
 	unittest.main()
