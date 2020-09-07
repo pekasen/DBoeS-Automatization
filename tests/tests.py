@@ -4,7 +4,6 @@ import sys
 from bs4 import BeautifulSoup
 import pandas as pd
 import os
-import test_landtags_urls as urls
 import sys
 import os
 sys.path.insert(0, os.getcwd())
