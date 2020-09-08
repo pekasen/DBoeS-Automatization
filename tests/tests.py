@@ -11,14 +11,14 @@ import main
 
 
 
-class testing_wikifetcher_landtag(unittest.TestCase):
+class testing_wikifetcher(unittest.TestCase):
 
-	def test_get_politicians_landtag_sachsen(self):
-		tmp = main.Wikifetcher_landtag()
-		count_politicians = tmp.get_politicians_landtag_sachsen()
-		self.assertEquals(count_politicians, 119)
+	def test_get_politicians_landtage(self):
+		wikifetch = main.Wikifetcher()
+		complete_number_of_landtags_politicians = wikifetch.get_politicians_landtage()
+		self.assertEquals(complete_number_of_landtags_politicians, 1875) # result 
 
 
-bot = testing_wikifetcher_landtag
+bot = testing_wikifetcher()
 if __name__ == '__main__':
 	unittest.main()
