@@ -11,9 +11,10 @@ Therefore, the objective of this concept is to automate the process of keeping t
 
 ### About
 
-The bot will gather all the names of the politicians and scrape them into CSV files.
+The bot will gather all the names of the  german parliamentarian politicians and scrape them into CSV files.
 There are 16 Bundesläner in Germany. Additional to this the Bundestag and Bundesrat is formed.
-This makes 18 Sites to be scraped with a concluding number of around 2700 names.
+This makes 18 Sites to be scraped with a concluding number of around 2700 names. We will use wikipedia as a source,
+since it provides complete tables with the needed information. 
 
 ## Basic Installation
 
