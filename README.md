@@ -31,7 +31,7 @@ You can find additional information on how to do it here:
 
 [Install Git for any Operation System](https://github.com/git-guides/install-git)
 
-Alternatively you can install it over the green ![Code](https://abload.de/img/bildschirmfoto2020-09zzkdx.png) button on our repository
+Alternatively you can install it over the green 'Code' button on the upper right of our repository
 
 ### Enviroment 
 
