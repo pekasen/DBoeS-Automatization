@@ -20,7 +20,7 @@ since it provides complete tables with the needed information.
 
 ### Cloning this Repo
 
-To clone this Reporsitory type:
+To clone this repository type:
 
 ```
 git clone https://github.com/Leibniz-HBI/DBoeS-Automatization.git
@@ -31,7 +31,7 @@ You can find additional information on how to do it here:
 
 [Install Git for any Operation System](https://github.com/git-guides/install-git)
 
-Alternatively you can install it over the green 'Code' button on the upper right of our repository
+Alternatively you can download a zip folder or clone the repository via the green 'Code' button on the upper right of our repository.
 
 ### Enviroment 
 
