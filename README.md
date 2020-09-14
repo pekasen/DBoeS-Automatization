@@ -63,7 +63,7 @@ For development purposes we conduct tests before writing functions.
 To run a test you can run following command in the shell:
 
 ```
-python test/tests.py
+python tests/tests.py
 ```
 
 This application is programmed as a part of the [Social Media Observatory of the Lebniz Institut of Media research | Hans Bredow Institut](https://leibniz-hbi.github.io/SMO/) 
