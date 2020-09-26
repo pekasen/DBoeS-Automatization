@@ -1,6 +1,0 @@
-install:
-- pip install pipenv
-- pipenv install
-script:
-- python -m unittest
-- python main.py
