@@ -59,11 +59,27 @@ python main.py
 ```
 
 ### Development and Testing
+
 For development purposes we conduct tests before writing functions. 
-To run a test you can run following command in the shell:
+
+#### Run all tests
+
+To run all test you can run following command in the shell:
 
 ```
-python tests/tests.py
+python -m unittest -v
 ```
+
+Run a single test file:
+
+```
+python -m unittest -v test/mytest.py
+```
+
+#### Writing tests
+
+Create a python file containing unittest with the name `test_*.py` within the `test` directory.
+
+---
 
 This application is programmed as a part of the [Social Media Observatory of the Lebniz Institut of Media research | Hans Bredow Institut](https://leibniz-hbi.github.io/SMO/) 
