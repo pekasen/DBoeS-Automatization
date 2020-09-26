@@ -1,6 +1,5 @@
 import requests
 import unittest
-from bs4 import BeautifulSoup
 import pandas as pd
 import os
 from datetime import datetime

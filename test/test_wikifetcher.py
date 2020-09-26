@@ -1,7 +1,6 @@
 import requests 
 import unittest
 import sys
-from bs4 import BeautifulSoup
 import pandas as pd
 import os
 import sys
