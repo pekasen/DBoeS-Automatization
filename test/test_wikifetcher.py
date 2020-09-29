@@ -36,15 +36,15 @@ class TestParliamentList(unittest.TestCase):
             self.assertGreaterEqual(n, 50, "Extracted only %d entries from table %d at %s" % (
                 n, table_index, parliament_data["url"]))
 
-            table_schema = politicians_table.columns.values
+            table_schema = list(politicians_table.columns)
 
             self.assertEqual(
                 len(schema), len(table_schema),
                 f"Schema {table_schema} (table {table_index}) doesn't match {schema}."
             )
 
-            self.assertEqual(
-                schema, politicians_table.columns.values,
+            self.assertListEqual(
+                schema, table_schema,
                 f"Schema {table_schema} (table {table_index}) doesn't match {schema}."
             )
 
