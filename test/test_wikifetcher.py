@@ -1,10 +1,5 @@
 import requests
 import unittest
-import sys
-import pandas as pd
-import os
-import sys
-import os
 
 from scraper.urls import parliaments
 from scraper.WikiFetcher import Wikifetcher
