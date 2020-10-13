@@ -12,6 +12,7 @@ from .urls import parliaments
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
 
+
 class WikiFetcher:
     """
     Class to scrape parliamentarian information from Wikipedia pages.
@@ -23,7 +24,7 @@ class WikiFetcher:
     def get_politicians(self, wiki_url):
         # read html tables from url
         html_tables = pd.read_html(wiki_url)
-        # heuristic: assume largest table as table containing all parlamentarians
+        # heuristic: assume largest table to contain all parlamentarians
         html_tables_lengths = [len(table.index) for table in html_tables]
         politicians_table_index = html_tables_lengths.index(
             max(html_tables_lengths))
@@ -35,7 +36,10 @@ class WikiFetcher:
     def clean_table(self, table, schema_list):
 
         for column_name in schema_map:
-            table.rename(columns={column_name: schema_map[column_name]}, inplace=True)
+            table.rename(
+                columns={column_name: schema_map[column_name]},
+                inplace=True
+            )
 
         try:
             table = table[schema_list]
@@ -58,11 +62,16 @@ class WikiFetcher:
             logging.info("Fetching parliament of %s", parliament_data["name"])
             politicians_table, table_index = self.get_politicians(
                 parliament_data["url"])
-            logging.info("Retrieved %d entries from table %d",
+            logging.info(
+                "Retrieved %d entries from table %d",
                 politicians_table.shape[0],
-                table_index)
+                table_index
+            )
             politicians_table.to_csv(
-                output_path + strpdatetoday + "_" + parliament + ".csv", index=False, header=True)
+                output_path + strpdatetoday + "_" + parliament + ".csv",
+                index=False,
+                header=True
+            )
 
 
 if __name__ == "__main__":
