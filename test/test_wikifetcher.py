@@ -30,7 +30,6 @@ class TestParliamentList(unittest.TestCase):
 
     def test_b_extracted_parlamentarians(self):
 
-        schema = ['Name', 'Fraktion']
         for _, parliament_data in parliaments.items():
             politicians_table, table_index = self.politicians_tables[parliament_data['name']]
             # expect at least 50 politicians per parliament
@@ -38,6 +37,13 @@ class TestParliamentList(unittest.TestCase):
 
             self.assertGreaterEqual(n_tab, 50, "Extracted only %d entries from table %d at %s" % (
                 n_tab, table_index, parliament_data["url"]))
+
+    def test_c_table_columns(self):
+
+        schema = ['Name', 'Fraktion']
+
+        for _, parliament_data in parliaments.items():
+            politicians_table, table_index = self.politicians_tables[parliament_data['name']]
 
             table_schema = list(politicians_table.columns)
 
@@ -50,7 +56,6 @@ class TestParliamentList(unittest.TestCase):
                 schema, table_schema,
                 f"Schema {table_schema} (table {table_index}) doesn't match {schema}."
             )
-
 
 if __name__ == '__main__':
     unittest.main()
