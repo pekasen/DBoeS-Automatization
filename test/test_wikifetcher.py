@@ -29,11 +29,10 @@ class TestParliamentList(unittest.TestCase):
         self.assertEqual(len(parliaments), 17)  # 16 Landtage + 1 Bundestag
 
     def test_b_extracted_parlamentarians(self):
-        fetcher = WikiFetcher()
 
         schema = ['Name', 'Fraktion']
         for _, parliament_data in parliaments.items():
-            politicians_table, table_index = fetcher.get_politicians(parliament_data["url"])
+            politicians_table, table_index = self.politicians_tables[parliament_data['name']]
             # expect at least 50 politicians per parliament
             n_tab = len(politicians_table.index)
 
