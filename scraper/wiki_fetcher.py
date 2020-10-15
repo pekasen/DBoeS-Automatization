@@ -4,6 +4,8 @@ Functionality to scrape parliamentarian information from Wikipedia pages.
 import os
 from datetime import datetime
 
+import sys
+
 import logging
 import pandas as pd
 
@@ -39,12 +41,12 @@ class WikiFetcher:
             table.rename(
                 columns={column_name: schema_map[column_name]},
                 inplace=True
-            )
+                )
 
         try:
             table = table[schema_list]
         except KeyError:
-            raise KeyError(f"{schema_list} not in {table.columns.values}. Edit schema_map.py.")
+            raise KeyError(f"{schema_list} not in {table.columns.values}. Edit schema_map.py. [just some text to make this line too long.]")
 
         return table
 
