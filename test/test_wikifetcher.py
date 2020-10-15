@@ -5,21 +5,23 @@ from scraper.urls import parliaments
 from scraper.wiki_fetcher import WikiFetcher
 
 
+def url_ok(url):
+    req = requests.head(url)
+    return req.status_code == 200
+
+
 class TestParliamentList(unittest.TestCase):
 
-    def url_ok(self, url):
-        req = requests.head(url)
-        return req.status_code == 200
+    @classmethod
+    def setUpClass(cls):
+        for _, parliament_data in parliaments.items():
+            if not url_ok(parliament_data["url"]):
+                raise FileNotFoundError("Website not available: %s" % parliament_data["url"])
 
     def test_a_number_of_parliaments(self):
         self.assertEqual(len(parliaments), 17)  # 16 Landtage + 1 Bundestag
 
-    def test_b_wikipage_availability(self):
-        for _, parliament_data in parliaments.items():
-            self.assertTrue(self.url_ok(parliament_data["url"]),
-                            "Website not available: %s" % parliament_data["url"])
-
-    def test_c_extracted_parlamentarians(self):
+    def test_b_extracted_parlamentarians(self):
         fetcher = WikiFetcher()
 
         schema = ['Name', 'Fraktion']
