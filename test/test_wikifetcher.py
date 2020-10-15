@@ -13,10 +13,17 @@ def url_ok(url):
 class TestParliamentList(unittest.TestCase):
 
     @classmethod
-    def setUpClass(cls):
+    def setUpClass(self):
+
+        fetcher = WikiFetcher()
+
+        self.politicians_tables = {}
+
         for _, parliament_data in parliaments.items():
             if not url_ok(parliament_data["url"]):
                 raise FileNotFoundError("Website not available: %s" % parliament_data["url"])
+            self.politicians_tables[parliament_data['name']
+                                    ] = fetcher.get_politicians(parliament_data["url"])
 
     def test_a_number_of_parliaments(self):
         self.assertEqual(len(parliaments), 17)  # 16 Landtage + 1 Bundestag
