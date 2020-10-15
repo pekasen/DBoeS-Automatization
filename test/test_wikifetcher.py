@@ -57,5 +57,6 @@ class TestParliamentList(unittest.TestCase):
                 f"Schema {table_schema} (table {table_index}) doesn't match {schema}."
             )
 
+
 if __name__ == '__main__':
     unittest.main()
