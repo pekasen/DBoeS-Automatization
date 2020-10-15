@@ -4,6 +4,7 @@ import requests
 from scraper.urls import parliaments
 from scraper.wiki_fetcher import WikiFetcher
 
+
 class TestParliamentList(unittest.TestCase):
 
     def url_ok(self, url):
