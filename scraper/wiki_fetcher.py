@@ -1,13 +1,13 @@
 """
 Functionality to scrape parliamentarian information from Wikipedia pages.
 """
+import logging
 import os
 from datetime import datetime
 
-import logging
 import pandas as pd
 
-from .schema import schema_map, schema
+from .schema import schema, schema_map
 from .urls import parliaments
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
@@ -29,11 +29,11 @@ class WikiFetcher:
         politicians_table_index = html_tables_lengths.index(
             max(html_tables_lengths))
         politicians_table = html_tables[politicians_table_index]
-        politicians_table = self.clean_table(politicians_table, schema)
+        politicians_table = self.clean_table(politicians_table, schema, url=wiki_url)
         # return table and table index for logging purposes
         return politicians_table, politicians_table_index
 
-    def clean_table(self, table, schema_list):
+    def clean_table(self, table, schema_list, url=''):
 
         for column_name in schema_map:
             table.rename(
@@ -44,7 +44,7 @@ class WikiFetcher:
         try:
             table = table[schema_list]
         except KeyError:
-            raise KeyError(f"{schema_list} not in {table.columns.values}. Edit schema_map.py.")
+            raise KeyError(f"{schema_list} for {url} not in {table.columns.values}. Edit schema.py.")
 
         return table
 
