@@ -1,6 +1,8 @@
 import unittest
+
 import requests
 
+from scraper.schema import schema
 from scraper.urls import parliaments
 from scraper.wiki_fetcher import WikiFetcher
 
@@ -39,8 +41,6 @@ class TestParliamentList(unittest.TestCase):
                 n_tab, table_index, parliament_data["url"]))
 
     def test_c_table_columns(self):
-
-        schema = ['Name', 'Fraktion']
 
         for _, parliament_data in parliaments.items():
             politicians_table, table_index = self.politicians_tables[parliament_data['name']]
