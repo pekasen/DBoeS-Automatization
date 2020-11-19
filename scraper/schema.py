@@ -11,12 +11,14 @@ columns_with_synonyms = {
                   'Anmerkungen',
                   'Bemerkungen',
                   ],
+    'Bild' : ['Foto'],
+    'Wikipedia-URL' : []
 }
 
 
 # Automatically generate schema and synonym map for scraper (dev only)
 
-schema = [column for column in columns_with_synonyms.keys()]
+schema = list(columns_with_synonyms.keys())
 
 schema_map = {}
 
