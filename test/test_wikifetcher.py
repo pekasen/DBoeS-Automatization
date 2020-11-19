@@ -1,5 +1,5 @@
 import unittest
-
+import warnings
 import requests
 
 from scraper.schema import schema
@@ -15,33 +15,38 @@ def url_ok(url):
 class TestParliamentList(unittest.TestCase):
 
     @classmethod
-    def setUpClass(self):
+    def setUpClass(cls):
 
         fetcher = WikiFetcher()
 
-        self.politicians_tables = {}
+        cls.politicians_tables = {}
 
         for _, parliament_data in parliaments.items():
             if not url_ok(parliament_data["url"]):
                 raise FileNotFoundError("Website not available: %s" % parliament_data["url"])
-            self.politicians_tables[parliament_data['name']
-                                    ] = fetcher.get_politicians(parliament_data["url"])
+            cls.politicians_tables[parliament_data['name']] = fetcher.get_politicians(parliament_data["url"])
 
     def test_a_number_of_parliaments(self):
-        self.assertEqual(len(parliaments), 17)  # 16 Landtage + 1 Bundestag
+        """
+        Test if 16 Landtage + 1 Bundestag are extracted
+        """
+        self.assertEqual(len(parliaments), 17)
 
     def test_b_extracted_parlamentarians(self):
-
+        """
+        Test if at least 50 politicians per parliament are extracted
+        """
         for _, parliament_data in parliaments.items():
             politicians_table, table_index = self.politicians_tables[parliament_data['name']]
-            # expect at least 50 politicians per parliament
             n_tab = len(politicians_table.index)
 
             self.assertGreaterEqual(n_tab, 50, "Extracted only %d entries from table %d at %s" % (
                 n_tab, table_index, parliament_data["url"]))
 
     def test_c_table_columns(self):
-
+        """
+        Test if extracted tables comply with defined schema
+        """
         for _, parliament_data in parliaments.items():
             politicians_table, table_index = self.politicians_tables[parliament_data['name']]
 
@@ -56,6 +61,19 @@ class TestParliamentList(unittest.TestCase):
                 schema, table_schema,
                 f"Schema {table_schema} (table {table_index}) doesn't match {schema}."
             )
+
+    def test_d_wiki_urls(self):
+        """
+        Test if every person entry has a Wikipedia URL and an image URL
+        """
+        for _, parliament_data in parliaments.items():
+            politicians_table, _ = self.politicians_tables[parliament_data['name']]
+
+            for _, item in politicians_table.iterrows():
+                if not item["Wikipedia-URL"]:
+                    warnings.warn(f'No Wikipedia-URL for {item["Name"]} in {parliament_data["name"]}')
+                if not item["Bild"]:
+                    warnings.warn(f'No Image-URL for {item["Name"]} in {parliament_data["name"]}')
 
 
 if __name__ == '__main__':
