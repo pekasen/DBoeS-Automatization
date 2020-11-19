@@ -11,8 +11,8 @@ columns_with_synonyms = {
                   'Anmerkungen',
                   'Bemerkungen',
                   ],
-    'Bild' : ['Foto'],
-    'Wikipedia-URL' : []
+    'Bild': ['Foto'],
+    'Wikipedia-URL': []
 }
 
 

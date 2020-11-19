@@ -17,6 +17,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
 WIKI_BASE_URL = "https://de.wikipedia.org"
 columns_for_link_extraction = ['Name', 'Mitglied des Landtages', 'Bild', 'Foto']
 
+
 class WikiFetcher:
     """
     Class to scrape parliamentarian information from Wikipedia pages.
@@ -30,7 +31,7 @@ class WikiFetcher:
         data = []
         for row in parsed_table.find_all('tr'):
             # clean for hidden data
-            for tag in row.select( '[style~="display:none"]'):
+            for tag in row.select('[style~="display:none"]'):
                 tag.decompose()
             # skip headeer
             if not row.find('td'):
