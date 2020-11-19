@@ -1,4 +1,3 @@
-from .wiki_fetcher import *
-from .urls import *
+from .wiki_fetcher import WikiFetcher
 
-from .twitter_fetcher import *
+__all__ = ('WikiFetcher',)
