@@ -2,3 +2,4 @@ html5lib
 pandas
 lxml
 requests
+tweepy

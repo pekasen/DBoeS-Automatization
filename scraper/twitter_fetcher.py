@@ -47,4 +47,3 @@ class OAuthorizer():
             writer = csv.writer(f)
             writer.writerow([auth.access_token, auth.access_token_secret])
         f.close()
-
