@@ -4,9 +4,40 @@ import csv
 import os
 import webbrowser
 
+import pandas as pd
 import tweepy as tp
 
 from .credentials import twitter_api_key, twitter_api_secret_key
+
+
+def connect_to_twitter():
+    tokens = pd.read_csv('scraper/twitter_tokens.csv')
+    access_token, access_token_secret = tokens['token'][0], tokens['secret'][0]
+
+    auth = tp.OAuthHandler(twitter_api_key, twitter_api_secret_key)
+    auth.set_access_token(access_token, access_token_secret)
+
+    api = tp.API(auth)
+
+    return api
+
+
+def account_search(name, fields):
+
+    api = connect_to_twitter()
+
+    users = api.search_users(name)
+
+    df = pd.DataFrame(columns=fields)
+
+    for user in users:
+        row = {}
+        for field in fields:
+            row[field] = getattr(user, field)
+
+        df = df.append(row, ignore_index=True)
+
+    return df
 
 
 class OAuthorizer():
