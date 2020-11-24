@@ -2,4 +2,6 @@ html5lib
 pandas
 lxml
 requests
+beautifulsoup
 tweepy
+
