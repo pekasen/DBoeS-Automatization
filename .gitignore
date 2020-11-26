@@ -147,7 +147,8 @@ geckodriver.log
 geckodriver.log
 geckodriver.log
 *.log
-*.csv
+
 Pipfile*
 credentials.py
 twitter_tokens.csv
+output/
