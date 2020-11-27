@@ -6,32 +6,13 @@ import dash_table
 import pandas as pd
 from dash.dependencies import Input, Output
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(external_stylesheets=[dbc.themes.SKETCHY])
 
 df = pd.read_csv(
-    "https://raw.githubusercontent.com/Leibniz-HBI/DBoeS-Automatization/30_get_twitter_user_handles/db/parliamentarians.csv"
+    "https://raw.githubusercontent.com/Leibniz-HBI/DBoeS-Automatization/trying_dash/db/parliamentarians.csv"
     )
 
-# the style arguments for the sidebar. We use position:fixed and a fixed width
-SIDEBAR_STYLE = {
-    "position": "fixed",
-    "top": 0,
-    "left": 0,
-    "bottom": 0,
-    "width": "16rem",
-    "padding": "2rem 1rem",
-    # "background-color": "#f8f9fa",
-}
-
-# the styles for the main content position it to the right of the sidebar and
-# add some padding.
-CONTENT_STYLE = {
-    "margin-left": "18rem",
-    "margin-right": "2rem",
-    "padding": "2rem 1rem",
-}
-
-sidebar = html.Div(
+sidebar = dbc.Col(
     [
         html.H2("DBÖS", className="display-4"),
         html.Hr(),
@@ -40,20 +21,22 @@ sidebar = html.Div(
         ),
         dbc.Nav(
             [
-                dbc.NavLink("Page 1", href="/page-1", id="page-1-link"),
+                dbc.NavLink("Parlamentarier", href="/page-1", id="page-1-link"),
                 dbc.NavLink("Page 2", href="/page-2", id="page-2-link"),
                 dbc.NavLink("Page 3", href="/page-3", id="page-3-link"),
             ],
-            vertical=True,
             pills=True,
         ),
     ],
-    style=SIDEBAR_STYLE,
+    width='auto'
 )
 
-content = html.Div(id="page-content", style=CONTENT_STYLE)
+content = dbc.Col(id="page-content", width='auto')
 
-app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
+app.layout = dbc.Container(
+    dbc.Row([dcc.Location(id="url"), sidebar, content]),
+    fluid=True
+    )
 
 
 # this callback uses the current pathname to set the active state of the
@@ -64,7 +47,7 @@ app.layout = html.Div([dcc.Location(id="url"), sidebar, content])
 )
 def toggle_active_links(pathname):
     if pathname == "/":
-        # Treat page 1 as the homepage / index
+        # Treat Parlamentarier as the homepage / index
         return True, False, False
     return [pathname == f"/page-{i}" for i in range(1, 4)]
 
@@ -83,6 +66,8 @@ def render_page_content(pathname):
             filter_action='native',
             sort_action='native',
             page_size=10000,
+            style_table={'overflowX': 'auto'},
+            export_format='csv',
         )
 
     elif pathname == "/page-2":
