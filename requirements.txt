@@ -5,4 +5,5 @@ requests
 beautifulsoup
 tweepy
 dash
+dash-bootstrap-components
 
