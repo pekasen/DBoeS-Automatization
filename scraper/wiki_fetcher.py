@@ -81,8 +81,8 @@ class WikiFetcher:
             # split Name into Name and Wikipedia-URL
             table[['Name', 'Wikipedia-URL']] = table['Name'].str.split("|", expand=True)
             table = table[schema_list]
-        except KeyError:
-            raise KeyError(f"{schema_list} for {url} not in {table.columns.values}. Edit schema.py.")
+        except KeyError as e:
+            raise KeyError(f"{schema_list} for {url} not in {table.columns.values}. Edit schema.py.") from e
         return table
 
     def fetch_all_parliaments(self):
