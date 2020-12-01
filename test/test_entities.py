@@ -17,13 +17,13 @@ class TestEntities(unittest.TestCase):
         our_test_entity = Entity('What A. Name')
         self.assertIsInstance(our_test_entity.id, str)
 
-    def test_can_save_account_details(self):
+    def test_can_load_account_details(self):
         our_test_entity = Entity('What A. Name')
-        our_test_entity.save_account(platform='Unicornia',
+        our_test_entity.load_account(platform='Unicornia',
                                      user_name='uni_corn',
                                      platform_id='12345',
                                      whatever_else_is_important=True)
-        our_test_entity.save_account(platform='Unicornia',
+        our_test_entity.load_account(platform='Unicornia',
                                      user_name='uni_corn2',
                                      platform_id='54321',
                                      whatever_else_is_important=True)
@@ -40,8 +40,8 @@ class TestEntities(unittest.TestCase):
         our_test_entity = Entity('What A. Name')
 
         for i in range(3):
-            our_test_entity.save_account('platform1', f'user_{i}', f'{i}')
-            our_test_entity.save_account('platform2', f'user_{i}', f'{i}')
+            our_test_entity.load_account('platform1', f'user_{i}', f'{i}')
+            our_test_entity.load_account('platform2', f'user_{i}', f'{i}')
 
         our_test_entity.accept_account(platform='platform2', platform_id='1')
 

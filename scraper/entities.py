@@ -16,7 +16,7 @@ class Entity:
 
         self.accounts = {}
 
-    def save_account(self, platform, user_name, platform_id, reviewed=False, **kwargs):
+    def load_account(self, platform, user_name, platform_id, reviewed=False, **kwargs):
         try:
             self.accounts[platform].append(Account(platform, user_name, platform_id, reviewed, **kwargs))
         except KeyError:
