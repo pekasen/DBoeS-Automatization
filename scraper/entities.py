@@ -16,12 +16,12 @@ class Entity:
 
         self.accounts = {}
 
-    def load_account(self, platform, user_name, platform_id, reviewed=False, **kwargs):
+    def load_account(self, platform, user_name, platform_id, url, reviewed=False, **kwargs):
         try:
-            self.accounts[platform].append(Account(platform, user_name, platform_id, reviewed, **kwargs))
+            self.accounts[platform].append(Account(platform, user_name, platform_id, url, reviewed, **kwargs))
         except KeyError:
             self.accounts[platform] = []
-            self.accounts[platform].append(Account(platform, user_name, platform_id, reviewed, **kwargs))
+            self.accounts[platform].append(Account(platform, user_name, platform_id, url, reviewed, **kwargs))
 
     def get_accounts(self, platform):
         return [account.data for account in self.accounts[platform]]
@@ -39,11 +39,12 @@ class Entity:
 
 class Account:
 
-    def __init__(self, platform, user_name, platform_id, reviewed, **kwargs):
+    def __init__(self, platform, user_name, platform_id, url, reviewed, **kwargs):
         self.data = {
             'platform': platform,
             'user_name': user_name,
             'platform_id': platform_id,
+            'url': url,
             'reviewed': reviewed
         }
         self.data = {**self.data, **kwargs}
