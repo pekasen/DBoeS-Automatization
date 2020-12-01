@@ -6,7 +6,7 @@ import dash_table
 import pandas as pd
 from dash.dependencies import Input, Output
 
-app = dash.Dash(external_stylesheets=[dbc.themes.SKETCHY])
+app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 df = pd.read_csv(
     "https://raw.githubusercontent.com/Leibniz-HBI/DBoeS-Automatization/trying_dash/db/parliamentarians.csv"
@@ -14,7 +14,7 @@ df = pd.read_csv(
 
 sidebar = dbc.Col(
     [
-        html.H2("DBÖS", className="display-4"),
+        html.H2("DBOES", className="display-4"),
         html.Hr(),
         html.P(
             "Datenbank öffentlicher Sprecher", className="lead"
@@ -65,7 +65,7 @@ def render_page_content(pathname):
             data=df.to_dict('records'),
             filter_action='native',
             sort_action='native',
-            page_size=10000,
+            page_size=500,
             style_table={'overflowX': 'auto'},
             export_format='csv',
         )
