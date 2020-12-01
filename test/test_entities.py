@@ -35,3 +35,20 @@ class TestEntities(unittest.TestCase):
                                            'reviewed': False,
                                            'whatever_else_is_important': True}
                          )
+
+    def test_can_review_account(self):
+        our_test_entity = Entity('What A. Name')
+
+        for i in range(3):
+            our_test_entity.save_account('platform1', f'user_{i}', f'{i}')
+            our_test_entity.save_account('platform2', f'user_{i}', f'{i}')
+
+        our_test_entity.accept_account(platform='platform2', platform_id='1')
+
+        accounts_1 = our_test_entity.get_accounts('platform1')
+        accounts_2 = our_test_entity.get_accounts('platform2')
+
+        self.assertEqual(len(accounts_1), 3)
+        self.assertEqual(len(accounts_2), 1)
+        self.assertEqual(accounts_2[0]['platform_id'], '1')
+        self.assertTrue(accounts_2[0]['reviewed'])

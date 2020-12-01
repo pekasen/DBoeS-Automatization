@@ -26,6 +26,16 @@ class Entity:
     def get_accounts(self, platform):
         return [account.data for account in self.accounts[platform]]
 
+    def accept_account(self, platform, platform_id):
+
+        for account in self.accounts[platform]:
+
+            if account.data['platform_id'] == platform_id:
+                account.data['reviewed'] = True
+                verified_account = account
+
+        self.accounts[platform] = [verified_account]
+
 
 class Account:
 
