@@ -1,6 +1,8 @@
 '''
 General social media account fetcher classes and functions
 '''
+import json
+import os
 from uuid import uuid4
 
 
@@ -49,10 +51,18 @@ class Entity:
             platform (str): platform name
 
         Returns:
-            list of dicts: a list of dicts in the form of the data attribute of the Account class
+            dict:
+                containing:
+                    'id': the unique entity id
+                    'name': the given entity name
+                    'platform': the platform name
+                    'accounts': list of dicts in the form of the data attribute of the Account class
         """
 
-        return [account.data for account in self.accounts[platform]]
+        return {'id': self.id,
+                'name': self.name,
+                'platform': platform,
+                'accounts': [account.data for account in self.accounts[platform]]}
 
     def accept_account(self, platform, platform_id):
         """Accepts the reviewed account as the correct one and discards all other accounts loaded
@@ -70,6 +80,21 @@ class Entity:
                 verified_account = account
 
         self.accounts[platform] = [verified_account]
+
+    def save_accounts(self):
+        '''Saves accounts of the entity in a file
+
+        Saves to JSONs in 'output/accounts/{platform}_{entity_id}' in the format of Entity.get_accounts return.
+        '''
+
+        output_path = os.getcwd() + '/output/accounts/'
+        if not os.path.exists(output_path):
+            os.makedirs(os.path.dirname(output_path))
+
+        for platform in self.accounts:
+            accounts_data = self.get_accounts(platform)
+            with open(f'output/accounts/{platform}_{self.id}.json', 'w') as file:
+                json.dump(accounts_data, file)
 
 
 class Account:

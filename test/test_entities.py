@@ -1,6 +1,7 @@
+import json
 import unittest
 
-from scraper.entities import Entity, Account
+from scraper.entities import Account, Entity
 
 
 class TestEntities(unittest.TestCase):
@@ -34,8 +35,8 @@ class TestEntities(unittest.TestCase):
                            )
         our_test_entity.load_account(account2)
         account_data = our_test_entity.get_accounts('Unicornia')
-        self.assertIsInstance(account_data, list)
-        self.assertEqual(account_data[0], {'platform': 'Unicornia',
+        self.assertIsInstance(account_data, dict)
+        self.assertEqual(account_data['accounts'][0], {'platform': 'Unicornia',
                                            'user_name': 'uni_corn',
                                            'platform_id': '12345',
                                            'url': 'url',
@@ -55,7 +56,29 @@ class TestEntities(unittest.TestCase):
         accounts_1 = our_test_entity.get_accounts('platform1')
         accounts_2 = our_test_entity.get_accounts('platform2')
 
-        self.assertEqual(len(accounts_1), 3)
-        self.assertEqual(len(accounts_2), 1)
-        self.assertEqual(accounts_2[0]['platform_id'], '1')
-        self.assertTrue(accounts_2[0]['reviewed'])
+        self.assertEqual(len(accounts_1['accounts']), 3)
+        self.assertEqual(len(accounts_2['accounts']), 1)
+        self.assertEqual(accounts_2['accounts'][0]['platform_id'], '1')
+        self.assertTrue(accounts_2['accounts'][0]['reviewed'])
+
+    def test_can_save_accounts(self):
+        our_test_entity = Entity('What A. Name', id='id')
+
+        for i in range(3):
+            our_test_entity.load_account(Account('platform1', f'user_{i}', f'{i}', 'url'))
+            our_test_entity.load_account(Account('platform2', f'user_{i}', f'{i}', 'url'))
+
+        our_test_entity.accept_account(platform='platform2', platform_id='1')
+
+        our_test_entity.save_accounts()
+
+        with open('output/accounts/platform1_id.json') as f:
+            data = json.load(f)
+
+            self.assertEqual(len(data['accounts']), 3)
+
+        with open('output/accounts/platform2_id.json') as f:
+            data = json.load(f)
+
+            self.assertEqual(len(data['accounts']), 1)
+            self.assertTrue(data['accounts'][0]['reviewed'])
