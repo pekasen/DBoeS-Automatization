@@ -1,6 +1,6 @@
 import unittest
 
-from scraper.entities import Entity
+from scraper.entities import Entity, Account
 
 
 class TestEntities(unittest.TestCase):
@@ -19,18 +19,20 @@ class TestEntities(unittest.TestCase):
 
     def test_can_load_account_details(self):
         our_test_entity = Entity('What A. Name')
-        our_test_entity.load_account(platform='Unicornia',
-                                     user_name='uni_corn',
-                                     platform_id='12345',
-                                     url='url',
-                                     whatever_else_is_important=True,
-                                     )
-        our_test_entity.load_account(platform='Unicornia',
-                                     user_name='uni_corn2',
-                                     platform_id='54321',
-                                     url='url',
-                                     whatever_else_is_important=True,
-                                     )
+        account1 = Account(platform='Unicornia',
+                           user_name='uni_corn',
+                           platform_id='12345',
+                           url='url',
+                           whatever_else_is_important=True,
+                           )
+        our_test_entity.load_account(account1)
+        account2 = Account(platform='Unicornia',
+                           user_name='uni_corn2',
+                           platform_id='54321',
+                           url='url',
+                           whatever_else_is_important=True,
+                           )
+        our_test_entity.load_account(account2)
         account_data = our_test_entity.get_accounts('Unicornia')
         self.assertIsInstance(account_data, list)
         self.assertEqual(account_data[0], {'platform': 'Unicornia',
@@ -45,8 +47,8 @@ class TestEntities(unittest.TestCase):
         our_test_entity = Entity('What A. Name')
 
         for i in range(3):
-            our_test_entity.load_account('platform1', f'user_{i}', f'{i}', 'url')
-            our_test_entity.load_account('platform2', f'user_{i}', f'{i}', 'url')
+            our_test_entity.load_account(Account('platform1', f'user_{i}', f'{i}', 'url'))
+            our_test_entity.load_account(Account('platform2', f'user_{i}', f'{i}', 'url'))
 
         our_test_entity.accept_account(platform='platform2', platform_id='1')
 

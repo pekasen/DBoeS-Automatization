@@ -24,34 +24,23 @@ class Entity:
 
         self.accounts = {}
 
-    def load_account(self, platform, user_name, platform_id, url, reviewed=False, **kwargs):
-        """Associats an account with the entity.
+    def load_account(self, account):
+        """Associates an account with the entity.
 
         An account gets added to self.accounts, which is a dict with platform names as keys and
         lists of Account objects as values.
 
         Args:
-            platform (str): name of the platform
-            user_name (str): user/account name on the platform
-            platform_id (str): user/account id on the platform,
-                should be immutable and unique per platform
-            url (str): profile url
-            reviewed (bool): whether the account has been accepted as being the correct account
-                for this entity. Defaults to `False`
-            **kwargs: Further platform specific keyword arguments can be added, but might be ignored
-
-        Raises:
-            type: [description]
-
-        Returns:
-            type: [description]
+            account (Account object): the account to be associated
         """
 
+        platform = account.data['platform']
+
         try:
-            self.accounts[platform].append(Account(platform, user_name, platform_id, url, reviewed, **kwargs))
+            self.accounts[platform].append(account)
         except KeyError:
             self.accounts[platform] = []
-            self.accounts[platform].append(Account(platform, user_name, platform_id, url, reviewed, **kwargs))
+            self.accounts[platform].append(account)
 
     def get_accounts(self, platform):
         """Returns associated possible accounts of the entity on a platform.
@@ -86,7 +75,7 @@ class Entity:
 class Account:
     """Represents a single account on a platform.
 
-    Args:
+    Attributes:
         platform (str): platform name
         user_name (str): account/user name
         platform_id (str): user/account id on the platform,
@@ -97,7 +86,7 @@ class Account:
         **kwargs: Further platform specific keyword arguments can be added, but might be ignored
     """
 
-    def __init__(self, platform, user_name, platform_id, url, reviewed, **kwargs):
+    def __init__(self, platform, user_name, platform_id, url, reviewed=False, **kwargs):
         self.data = {
             'platform': platform,
             'user_name': user_name,
