@@ -36,12 +36,13 @@ class TestEntities(unittest.TestCase):
         our_test_entity.load_account(account2)
         account_data = our_test_entity.get_accounts('Unicornia')
         self.assertIsInstance(account_data, dict)
-        self.assertEqual(account_data['accounts'][0], {'platform': 'Unicornia',
-                                           'user_name': 'uni_corn',
-                                           'platform_id': '12345',
-                                           'url': 'url',
-                                           'reviewed': False,
-                                           'whatever_else_is_important': True}
+        self.assertEqual(account_data['accounts'][0],
+                         {'platform': 'Unicornia',
+                          'user_name': 'uni_corn',
+                          'platform_id': '12345',
+                          'url': 'url',
+                          'reviewed': False,
+                          'whatever_else_is_important': True}
                          )
 
     def test_can_review_account(self):
