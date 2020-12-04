@@ -7,13 +7,13 @@ from uuid import uuid4
 
 
 class Entity:
-    """An entity is anything that can have an Account on a Platform
+    """An entity is anything that can have an Account on a platform
 
     For example, a person (Donald Trump), an organisation (The White House), or a public role (e.g. POTUS).
 
     Attributes:
         name (str): The given name of the entity
-        id (str, optional): A unique identifier. Defaults to generated uuid
+        id (str, optional): A unique identifier. Defaults to generated uuid.
     """
 
     def __init__(self, name, id=None):
