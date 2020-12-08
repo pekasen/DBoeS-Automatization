@@ -6,6 +6,7 @@ import webbrowser
 
 import pandas as pd
 import tweepy as tp
+from entities import Account, Entity, EntityGroup
 
 from .credentials import twitter_api_key, twitter_api_secret_key
 

@@ -1,7 +1,9 @@
 import json
+import os
 import unittest
 
-from scraper.entities import Account, Entity
+import pandas as pd
+from scraper.entities import Account, Entity, EntityGroup
 
 
 class TestEntities(unittest.TestCase):
@@ -83,3 +85,31 @@ class TestEntities(unittest.TestCase):
 
             self.assertEqual(len(data['accounts']), 1)
             self.assertTrue(data['accounts'][0]['reviewed'])
+
+
+class TestEntityGroup(unittest.TestCase):
+
+    def tearDown(self):
+        if os.path.isdir('test/output'):
+            pass
+            # shutil.rmtree('test/output')
+
+    def test_group_init(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland.csv')
+        self.assertEqual(len(entity_group.entities), 51)
+        self.assertIsInstance(entity_group.entities[0], Entity)
+
+    def test_save_group(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland.csv')
+        entity_group.save('test/output/test.csv')
+        entity_group = EntityGroup('test/output/test.csv')
+
+        self.assertIn('id', entity_group.df.columns)
+
+    def test_group_init_with_id(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
+
+        df = pd.read_csv('test/data/04-12-2020_saarland_with_ids.csv')
+        id = df['id'][0]
+
+        self.assertEqual(entity_group.entities[0].id, id)

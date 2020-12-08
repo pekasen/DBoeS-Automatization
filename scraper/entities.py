@@ -5,6 +5,8 @@ import json
 import os
 from uuid import uuid4
 
+import pandas as pd
+
 
 class Entity:
     """An entity is anything that can have an Account on a platform
@@ -82,7 +84,7 @@ class Entity:
         self.accounts[platform] = [verified_account]
 
     def save_accounts(self):
-        '''Saves accounts of the entity in a file
+        '''Saves possible accounts of the entity in a file
 
         Saves to JSONs in 'output/accounts/{platform}_{entity_id}' in the format of Entity.get_accounts return.
         '''
@@ -98,7 +100,7 @@ class Entity:
 
 
 class Account:
-    """Represents a single account on a platform.
+    """Represents a single account on a platform. Represented in entity and platform related JSONs.
 
     Attributes:
         platform (str): platform name
@@ -120,3 +122,23 @@ class Account:
             'reviewed': reviewed
         }
         self.data = {**self.data, **kwargs}
+
+
+class EntityGroup:
+    '''Group of Entities, e.g. a parliament, represented as a CSV on disk.
+    '''
+    def __init__(self, path):
+
+        self.df = pd.read_csv(path)
+        if 'id' not in self.df.columns:
+            self.entities = [Entity(name) for name in self.df['Name'].values]
+            self.df['id'] = [entity.id for entity in self.entities]
+        else:
+            self.entities = [Entity(name, id) for (name, id) in self.df[['Name', 'id']].values]
+
+    def save(self, path):
+        dir = os.path.dirname(path)
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+
+        self.df.to_csv(path, index=False)
