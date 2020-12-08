@@ -6,9 +6,9 @@ import webbrowser
 
 import pandas as pd
 import tweepy as tp
-from entities import Account, Entity, EntityGroup
 
 from .credentials import twitter_api_key, twitter_api_secret_key
+from .entities import Account
 
 
 def connect_to_twitter():
@@ -39,6 +39,20 @@ def account_search(name, fields):
         df = df.append(row, ignore_index=True)
 
     return df
+
+
+class TwitterAccount(Account):
+
+    def __init__(self, user_name, platform_id, verified, description, profile_image_url):
+        super().__init__(
+            platform='Twitter',
+            user_name=user_name,
+            platform_id=platform_id,
+            url=f'https://twitter.com/{user_name}',
+            reviewed=False,
+            verified=verified,
+            description=description, profile_image_url=profile_image_url
+        )
 
 
 class OAuthorizer():

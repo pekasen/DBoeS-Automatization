@@ -3,8 +3,8 @@ import unittest
 
 import pandas as pd
 import tweepy
-from scraper.twitter_fetcher import (OAuthorizer, account_search,
-                                     connect_to_twitter)
+from scraper.twitter_fetcher import (OAuthorizer, TwitterAccount,
+                                     account_search, connect_to_twitter)
 
 
 class TestUserSearch(unittest.TestCase):
@@ -37,6 +37,18 @@ class TestUserSearch(unittest.TestCase):
         self.assertGreater(len(result), 0)
 
         self.assertIn('Markus_Soeder', result['screen_name'].values)
+
+    def test_twitter_account_init(self):
+
+        twitter_account = TwitterAccount(
+            user_name='screen_name',
+            platform_id=12345,
+            verified=True,
+            description='This is a Twitter bio',
+            profile_image_url='https://foo.pic'
+        )
+
+        self.assertEqual(twitter_account.data['url'], 'https://twitter.com/screen_name')
 
 
 if __name__ == '__main__':
