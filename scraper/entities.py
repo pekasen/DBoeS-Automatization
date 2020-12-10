@@ -78,7 +78,6 @@ class Entity:
 
             if account.data['platform_id'] == platform_id:
                 account.data['reviewed'] = True
-                verified_account = account
 
     def save_accounts(self):
         '''Saves possible accounts of the entity in a file
@@ -99,7 +98,7 @@ class Entity:
 class Account:
     """Represents a single account on a platform. Represented in entity and platform related JSONs.
 
-    Attributes:
+    Args:
         platform (str): platform name
         user_name (str): account/user name
         platform_id (str): user/account id on the platform,
