@@ -8,7 +8,7 @@ import pandas as pd
 import tweepy as tp
 
 from .credentials import twitter_api_key, twitter_api_secret_key
-from .entities import Account
+from .entities import Account, Entity
 
 
 def connect_to_twitter():
@@ -43,16 +43,50 @@ def account_search(name, fields):
 
 class TwitterAccount(Account):
 
-    def __init__(self, user_name, platform_id, verified, description, profile_image_url):
+    def __init__(self, user_name, platform_id, profile_name, verified, description, profile_image_url):
         super().__init__(
             platform='Twitter',
             user_name=user_name,
             platform_id=platform_id,
             url=f'https://twitter.com/{user_name}',
             reviewed=False,
+            profile_name=profile_name,
             verified=verified,
-            description=description, profile_image_url=profile_image_url
+            description=description,
+            profile_image_url=profile_image_url
         )
+
+
+class EntityOnTwitter(Entity):
+
+    def __init__(self, name, id=None):
+        super().__init__(name, id=None)
+
+        self.accounts['Twitter'] = []
+
+    @property
+    def twitter_accounts(self):
+        return self.accounts['Twitter']
+
+    def search_accounts(self):
+        """Searches for accounts with query "{self.name}" on Twitter and loads them into the Entity.
+        """
+        account_df = account_search(self.name, fields=['screen_name',
+                                                       'id',
+                                                       'name',
+                                                       'verified',
+                                                       'description',
+                                                       'profile_image_url_https']
+                                    )
+        for i, row in account_df.iterrows():
+            account = TwitterAccount(row['screen_name'],
+                                     row['id'],
+                                     row['name'],
+                                     row['verified'],
+                                     row['description'],
+                                     row['profile_image_url_https'])
+
+            self.load_account(account)
 
 
 class OAuthorizer():
