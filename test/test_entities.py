@@ -1,5 +1,6 @@
 import json
 import os
+import shutil
 import unittest
 
 import pandas as pd
@@ -7,6 +8,15 @@ from scraper.entities import Account, Entity, EntityGroup
 
 
 class TestEntities(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        shutil.move('output/accounts', 'output/accounts_bk')
+
+    @classmethod
+    def tearDownClass(cls):
+        shutil.rmtree('output/accounts')
+        shutil.move('output/accounts_bk', 'output/accounts')
 
     def test_name(self):
         our_test_entity = Entity('What A. Name')
@@ -91,8 +101,7 @@ class TestEntityGroup(unittest.TestCase):
 
     def tearDown(self):
         if os.path.isdir('test/output'):
-            pass
-            # shutil.rmtree('test/output')
+            shutil.rmtree('test/output')
 
     def test_group_init(self):
         entity_group = EntityGroup('test/data/04-12-2020_saarland.csv')
