@@ -7,6 +7,7 @@ import pandas as pd
 import scraper
 from scraper import twitter_fetcher
 from scraper.entities import EntityGroup
+from scraper.twitter_fetcher import EntityOnTwitter
 
 if __name__ == "__main__":
 
@@ -42,4 +43,18 @@ if __name__ == "__main__":
 
     select = input()
 
-    print('Retrieving possible accounts for', parliament.df['Name'][int(select)])
+    name = parliament.df['Name'][int(select)]
+    id = parliament.df['id'][int(select)]
+
+    print(f'Retrieving possible accounts for {name} with id {id}.')
+
+    twitter_entity = EntityOnTwitter(name, id)
+
+    twitter_entity.search_accounts()
+
+    print('I found the following accounts:')
+
+    for account in twitter_entity.twitter_accounts:
+        print('Account:')
+        for key in account.data:
+            print(f'\t{key}:\n\t\t{account.data[key]}')
