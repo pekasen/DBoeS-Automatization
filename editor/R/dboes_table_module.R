@@ -68,13 +68,7 @@ dboes_table_module <- function(input, output, session) {
     session$userData$dboes_trigger()
     
     tryCatch({
-      out <- dboes_db %>%
-        mutate(
-          uid = 1:nrow(dboes_db),
-          modified_at = as.POSIXct(Sys.time()) # needs change
-        ) %>%
-        arrange(desc(Parlament))
-        
+      out <- dboes_db # is read from csv in global.R
     }, error = function(err) {
       msg <- "CSV File Connection  Error"
       # print `msg` so that we can find it in the logs
@@ -112,7 +106,7 @@ dboes_table_module <- function(input, output, session) {
 
     # Set the Action Buttons row to the first column of the dboes table
     out <- cbind(
-      tibble(" " = actions),
+      tibble("Aktion" = actions),
       out
     )
 
@@ -130,19 +124,20 @@ dboes_table_module <- function(input, output, session) {
     }
   })
 
-  output$dboes_table <- renderDT({
+  output$dboes_table <- DT::renderDT({
     req(dboes_table_prep())
     out <- dboes_table_prep()
 
-    datatable(
+    DT::datatable(
       out,
       rownames = FALSE,
-      colnames = c("Name", "Partei", "Geschlecht", "Twitter name", "Twitter id", "Parlament", "Geändert am"),
+      # colnames = c("Parlament", "Name", "Partei", "Geschlecht", "Twitter name", "Twitter id", "Wikipedia", "Geändert am"),
       selection = "none",
       class = "compact stripe row-border nowrap",
       # Escape the HTML in all except 1st column (which has the buttons)
       escape = -1,
       extensions = c("Buttons"),
+      filter = list(position = "top"),
       options = list(
         scrollX = TRUE,
         dom = 'Bftip',

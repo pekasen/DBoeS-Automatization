@@ -48,7 +48,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
             selectInput(
               ns('Geschlecht'),
               'Geschlecht',
-              choices = c('männlich', 'weiblich', 'divers'),
+              choices = levels(dboes_db$Geschlecht),
               selected = ifelse(is.null(hold), "", hold$Geschlecht)
             )
           ),
@@ -65,9 +65,9 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
               value = ifelse(is.null(hold), "", hold$Twitter_id)
             ),
             textInput(
-              ns("Wikipedia_URL"),
-              'Wikipedia_URL',
-              value = ifelse(is.null(hold), "", hold$Wikipedia_URL)
+              ns("Wikipedia"),
+              'Wikipedia',
+              value = ifelse(is.null(hold), "", hold$Wikipedia)
             )
           )
         ),
@@ -118,7 +118,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         "Geschlecht" = input$Geschlecht,
         "Twitter_screen_name" = input$Twitter_screen_name,
         "Twitter_id" = input$Twitter_id,
-        "Wikipedia_URL" = input$Wikipedia_URL
+        "Wikipedia" = input$Wikipedia
       )
     )
 
@@ -163,7 +163,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         "Geschlecht",
         "Twitter_id",
         "Twitter_screen_name",
-        "Wikipedia_URL"
+        "Wikipedia"
       )
 
       if (is.na(dat$uid)) {
