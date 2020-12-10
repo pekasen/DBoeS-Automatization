@@ -6,7 +6,6 @@ import os
 import pandas as pd
 import scraper
 from scraper import twitter_fetcher
-
 from scraper.entities import EntityGroup
 
 if __name__ == "__main__":

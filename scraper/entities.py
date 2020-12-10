@@ -67,8 +67,7 @@ class Entity:
                 'accounts': [account.data for account in self.accounts[platform]]}
 
     def accept_account(self, platform, platform_id):
-        """Accepts the reviewed account as the correct one and discards all other accounts loaded
-            for this platform, i.e. deletes all other accounts in the list.
+        """Accepts the reviewed account as the correct one.
 
         Args:
             platform (str): platform name
@@ -80,8 +79,6 @@ class Entity:
             if account.data['platform_id'] == platform_id:
                 account.data['reviewed'] = True
                 verified_account = account
-
-        self.accounts[platform] = [verified_account]
 
     def save_accounts(self):
         '''Saves possible accounts of the entity in a file

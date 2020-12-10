@@ -60,9 +60,9 @@ class TestEntities(unittest.TestCase):
         accounts_2 = our_test_entity.get_accounts('platform2')
 
         self.assertEqual(len(accounts_1['accounts']), 3)
-        self.assertEqual(len(accounts_2['accounts']), 1)
-        self.assertEqual(accounts_2['accounts'][0]['platform_id'], '1')
-        self.assertTrue(accounts_2['accounts'][0]['reviewed'])
+        self.assertEqual(len(accounts_2['accounts']), 3)
+        self.assertEqual(accounts_2['accounts'][1]['platform_id'], '1')
+        self.assertTrue(accounts_2['accounts'][1]['reviewed'])
 
     def test_can_save_accounts(self):
         our_test_entity = Entity('What A. Name', id='id')
@@ -83,8 +83,8 @@ class TestEntities(unittest.TestCase):
         with open('output/accounts/platform2_id.json') as f:
             data = json.load(f)
 
-            self.assertEqual(len(data['accounts']), 1)
-            self.assertTrue(data['accounts'][0]['reviewed'])
+            self.assertEqual(len(data['accounts']), 3)
+            self.assertTrue(data['accounts'][1]['reviewed'])
 
 
 class TestEntityGroup(unittest.TestCase):
