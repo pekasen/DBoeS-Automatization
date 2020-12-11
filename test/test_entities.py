@@ -11,12 +11,14 @@ class TestEntities(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        shutil.move('output/accounts', 'output/accounts_bk')
+        if os.path.isdir('output/accounts'):
+            shutil.move('output/accounts', 'output/accounts_bk')
 
     @classmethod
     def tearDownClass(cls):
         shutil.rmtree('output/accounts')
-        shutil.move('output/accounts_bk', 'output/accounts')
+        if os.path.isdir('output/accounts_bk'):
+            shutil.move('output/accounts_bk', 'output/accounts')
 
     def test_name(self):
         our_test_entity = Entity('What A. Name')
