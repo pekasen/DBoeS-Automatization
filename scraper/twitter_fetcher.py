@@ -88,6 +88,9 @@ class EntityOnTwitter(Entity):
 
             self.load_account(account)
 
+    def accept_account(self, twitter_id):
+        super().accept_account('Twitter', platform_id=twitter_id)
+
 
 class OAuthorizer():
     def __init__(self):
