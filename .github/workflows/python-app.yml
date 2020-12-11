@@ -47,6 +47,6 @@ jobs:
     - name: Test
       run: |
         python -m unittest
-    - name: Extract data
+    - name: Functional test
       run: |
-        python main.py
+        python main.py test
