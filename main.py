@@ -24,11 +24,13 @@ def test_input(test, number_of_choices=0):
 
 if __name__ == "__main__":
 
-    test = False
-    if sys.argv[1] == 'test':
-        test = True
-        if os.path.isdir('output'):
-            shutil.move('output', 'output_bk')
+    try:
+        if sys.argv[1] == 'test':
+            test = True
+            if os.path.isdir('output'):
+                shutil.move('output', 'output_bk')
+    except IndexError:
+        test = False
 
     # show all contents of a dataframe
     pd.set_option('display.max_rows', None)
