@@ -5,7 +5,7 @@ dashboardPage(
     sidebarMenu(
       menuItem("Listen", tabName = "lists", icon = icon("search")),
       menuItem("Änderungen", tabName = "changes", icon = icon("list-alt")),
-      menuItem("Statistiken", tabName = "stats", icon = icon("signal"))
+      menuItem("Pluragraph", tabName = "pluragraph", icon = icon("signal"))
     )
   ),
   dashboardBody(
@@ -31,10 +31,10 @@ dashboardPage(
         )
       ),
       tabItem(
-        tabName = "stats",
+        tabName = "pluragraph",
         fluidRow(
           box(
-            h1("Statistiken", align = 'center')
+            h1("Pluragraph", align = 'center')
           )
         )
       )

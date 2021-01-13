@@ -31,7 +31,7 @@ dboes_db <- read.csv(dboes_db_filepath, sep = ",", encoding = "UTF-8") %>%
     Parlament, .before = Name
   ) %>%
   mutate(
-    uid = 1:nrow(dboes_db),
+    uid = 1:n(),
     modified_at = as.POSIXct(Sys.time()) # needs change
   ) %>%
   arrange(desc(Parlament))
