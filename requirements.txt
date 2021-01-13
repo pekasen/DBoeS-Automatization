@@ -3,3 +3,5 @@ pandas
 lxml
 requests
 beautifulsoup4
+tweepy
+

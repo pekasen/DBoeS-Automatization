@@ -1,7 +1,6 @@
 import unittest
 import warnings
 import requests
-
 from scraper.schema import schema
 from scraper.urls import parliaments
 from scraper.wiki_fetcher import WikiFetcher

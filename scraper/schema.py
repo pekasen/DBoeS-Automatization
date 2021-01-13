@@ -2,7 +2,9 @@
 
 columns_with_synonyms = {
     'Name': ['Mitglied des Landtages'],
-    'Fraktion': ['Partei', 'Fraktion (ggf. Partei)'],
+    'Fraktion': ['Partei',
+                 'Fraktion (ggf. Partei)',
+                 ],
     'Wahlkreis': ['Landtagswahlkreis der Direktkandidaten',
                   'Landtagswahlkreis',
                   'Wahlkreis/Liste',
