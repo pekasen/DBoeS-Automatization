@@ -39,9 +39,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+    - name: Decrypt API keys
+      run: |
+        ./.github/scripts/decrypt_secrets.sh
+      env:
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
     - name: Test
       run: |
         python -m unittest
-    - name: Extract data
+    - name: Functional test
       run: |
-        python main.py
+        python main.py test
