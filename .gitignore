@@ -148,6 +148,9 @@ geckodriver.log
 geckodriver.log
 *.log
 
+# *.csv
+.Rproj.user
+
 Pipfile*
 credentials.py
 twitter_tokens.csv
