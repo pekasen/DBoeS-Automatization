@@ -77,7 +77,7 @@ if __name__ == "__main__":
 
     select = test_input(test, i)
 
-    parliament = EntityGroup(f'output/{files[int(select)]}')
+    parliament = EntityGroup(f'output/parliaments/{strpdatetoday}/{files[int(select)]}')
     print(parliament.df[['Name', 'id']])
 
     print('\nPlease select a row to retrieve Twitter Accounts:')
