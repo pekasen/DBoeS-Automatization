@@ -6,6 +6,7 @@ import os
 from uuid import uuid4
 
 import pandas as pd
+from .schema import schema
 
 
 class Entity:
@@ -126,6 +127,7 @@ class EntityGroup:
     def __init__(self, path):
 
         self.df = pd.read_csv(path)
+        self.origin = path
         if 'id' not in self.df.columns:
             self.entities = [Entity(name) for name in self.df['Name'].values]
             self.df['id'] = [entity.id for entity in self.entities]
@@ -138,3 +140,23 @@ class EntityGroup:
             os.makedirs(dir)
 
         self.df.to_csv(path, index=False)
+
+    def compare(self, entitygroup, output=None):
+
+        old = self.df
+        new = entitygroup.df
+
+        old.sort_values('Name', ignore_index=True, inplace=True)
+        new.sort_values('Name', ignore_index=True, inplace=True)
+
+        diff = old[schema].compare(new[schema], keep_equal=True)  # use [schema] to not compare ids
+
+        if output is not None:
+            diff.to_csv(output)
+
+        return diff
+
+    @classmethod
+    def read_diff(cls, path):
+        diff = pd.read_csv(path, index_col=0, header=[0,1])
+        return diff

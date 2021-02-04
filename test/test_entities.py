@@ -124,3 +124,26 @@ class TestEntityGroup(unittest.TestCase):
         id = df['id'][0]
 
         self.assertEqual(entity_group.entities[0].id, id)
+
+    def test_group_comparison(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
+        changed_group = EntityGroup('test/data/04-12-2020_saarland_with_change.csv')
+
+        diff = entity_group.compare(changed_group)
+
+        self.assertIsInstance(diff, pd.DataFrame)
+        self.assertEqual(len(diff), 2)
+
+    def test_group_comparison_csv(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
+        changed_group = EntityGroup('test/data/04-12-2020_saarland_with_change.csv')
+
+        out_path = f'{changed_group.origin}.diff'
+        diff = entity_group.compare(changed_group, output=out_path)
+
+        diff_read = EntityGroup.read_diff(out_path)
+
+        self.assertIsInstance(diff_read, pd.DataFrame)
+        self.assertTrue(diff.equals(diff_read))
+
+        os.remove(out_path)
