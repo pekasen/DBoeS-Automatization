@@ -60,13 +60,14 @@ if __name__ == "__main__":
 
     print("Checking for changes in parliamentarian lists.")
 
-    new_path = f'output/parliaments/{strpdatetoday}/{file}'
-
     for file in os.listdir('db/parliaments/'):
+
+        new_path = f'output/parliaments/{strpdatetoday}/{file}'
+
         old_parliament = EntityGroup(f'db/parliaments/{file}')
         new_parliament = EntityGroup(new_path)
 
-        difference = old_parliament.compare(new_parliament, output=new_path)
+        difference = old_parliament.compare(new_parliament, output=f'{new_path}.diff')
 
         if len(difference) != 0:
             print(f"Difference found in {file}")

@@ -151,7 +151,7 @@ class EntityGroup:
 
         diff = old[schema].compare(new[schema], keep_equal=True)  # use [schema] to not compare ids
 
-        if output is not None:
+        if output is not None and len(diff) > 0:
             diff.to_csv(output)
 
         return diff
