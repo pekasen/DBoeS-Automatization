@@ -91,7 +91,7 @@ class WikiFetcher:
         strpdatetoday = datetoday.strftime('%d-%m-%Y')
 
         # Create a dir for the outputs of all the Landtags csv's
-        output_path = os.getcwd() + '/output/'
+        output_path = os.getcwd() + f'/output/parliaments/{strpdatetoday}/'
         if not os.path.exists(output_path):
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
@@ -105,7 +105,7 @@ class WikiFetcher:
                 table_index
             )
             politicians_table.to_csv(
-                output_path + strpdatetoday + "_" + parliament + ".csv",
+                output_path + parliament + ".csv",
                 index=False,
                 header=True
             )
