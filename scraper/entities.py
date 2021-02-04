@@ -158,5 +158,5 @@ class EntityGroup:
 
     @classmethod
     def read_diff(cls, path):
-        diff = pd.read_csv(path, index_col=0, header=[0,1])
+        diff = pd.read_csv(path, index_col=0, header=[0, 1])
         return diff
