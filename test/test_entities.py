@@ -147,3 +147,19 @@ class TestEntityGroup(unittest.TestCase):
         self.assertTrue(diff.equals(diff_read))
 
         os.remove(out_path)
+
+    def test_group_comparison_with_deleted_row(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
+        changed_group = EntityGroup('test/data/04-12-2020_saarland_with_deleted_row.csv')
+
+        diff = entity_group.compare(changed_group)
+
+        self.assertIsInstance(diff, pd.DataFrame)
+
+    def test_group_comparison_with_added_row(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
+        changed_group = EntityGroup('test/data/04-12-2020_saarland_with_added_row.csv')
+
+        diff = entity_group.compare(changed_group)
+
+        self.assertIsInstance(diff, pd.DataFrame)
