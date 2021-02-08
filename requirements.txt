@@ -1,7 +1,8 @@
-html5lib
-pandas
-lxml
-requests
 beautifulsoup4
+csv-diff
+html5lib
+lxml
+numpy
+pandas
+requests
 tweepy
-
