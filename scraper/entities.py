@@ -172,7 +172,6 @@ class EntityGroup:
 
         # sort dataframe by name
         diff = diff.sort_values(by='Name', ignore_index=True)
-        # use [schema] to not compare ids
 
         if output is not None and len(diff) > 0:
             diff.to_csv(output)
