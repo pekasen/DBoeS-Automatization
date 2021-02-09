@@ -132,7 +132,7 @@ class TestEntityGroup(unittest.TestCase):
         diff = entity_group.compare(changed_group)
 
         self.assertIsInstance(diff, pd.DataFrame)
-        self.assertEqual(len(diff), 2)
+        self.assertEqual(len(diff), 4)
 
     def test_group_comparison_csv(self):
         entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
@@ -155,6 +155,8 @@ class TestEntityGroup(unittest.TestCase):
         diff = entity_group.compare(changed_group)
 
         self.assertIsInstance(diff, pd.DataFrame)
+        self.assertEqual(len(diff), 1)
+        self.assertEqual(diff['old/new'][0], 'old')
 
     def test_group_comparison_with_added_row(self):
         entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
@@ -163,3 +165,15 @@ class TestEntityGroup(unittest.TestCase):
         diff = entity_group.compare(changed_group)
 
         self.assertIsInstance(diff, pd.DataFrame)
+        self.assertEqual(len(diff), 1)
+        self.assertEqual(diff['old/new'][0], 'new')
+
+    def test_group_comparison_with_several_changes(self):
+        entity_group = EntityGroup('test/data/04-12-2020_saarland_with_ids.csv')
+        changed_group = EntityGroup('test/data/04-12-2020_saarland_with_several_changes.csv')
+
+        diff = entity_group.compare(changed_group)
+
+        self.assertIsInstance(diff, pd.DataFrame)
+        self.assertEqual(len(diff), 10)
+        self.assertEqual(len(diff['old/new'][diff['old/new'] == 'new']), 5)
