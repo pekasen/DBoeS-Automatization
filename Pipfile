@@ -11,10 +11,8 @@ python-language-server = "*"
 
 [packages]
 beautifulsoup4 = "*"
-csv-diff = "*"
 html5lib = "*"
 lxml = "*"
-numpy = "*"
 pandas = "*"
 requests = "*"
 tweepy = "*"
