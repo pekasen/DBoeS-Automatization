@@ -7,6 +7,8 @@ from uuid import uuid4
 
 import pandas as pd
 
+from .schema import schema
+
 
 class Entity:
     """An entity is anything that can have an Account on a platform
@@ -126,6 +128,7 @@ class EntityGroup:
     def __init__(self, path):
 
         self.df = pd.read_csv(path)
+        self.origin = path
         if 'id' not in self.df.columns:
             self.entities = [Entity(name) for name in self.df['Name'].values]
             self.df['id'] = [entity.id for entity in self.entities]
@@ -138,3 +141,44 @@ class EntityGroup:
             os.makedirs(dir)
 
         self.df.to_csv(path, index=False)
+
+    def compare(self, entitygroup, output=None):
+        '''Compare self with other EntityGroup
+
+        Args:
+            entitygroup: Other EntityGroup object
+            output (str): path for CSV output. Defaults to `None`.
+
+        Returns:
+            diff (pandas.DataFrame): DataFrame containing differing rows only with columns
+              - 'id_x' and 'id_y' with uuids of old and new rows respectively
+              - 'old/new' indicating whether row is in old or new DataFrame
+            If `output` is set, saves diff to csv at output path.
+        '''
+
+        old = self.df
+        new = entitygroup.df
+
+        # outer merge on all fields in schema
+        # if differences, indicate, if row is in old (left) or new (right) DataFrame
+        diff = old.merge(new, on=schema, how='outer', indicator=True)
+
+        # delete rows that are in both DFs
+        diff = diff[diff['_merge'] != "both"]
+
+        # create new column 'old/new' instead of indicator column called '_merge'
+        diff['old/new'] = diff['_merge'].map({'left_only': 'old', 'right_only': 'new'})
+        del diff['_merge']
+
+        # sort dataframe by name
+        diff = diff.sort_values(by='Name', ignore_index=True)
+
+        if output is not None and len(diff) > 0:
+            diff.to_csv(output)
+
+        return diff
+
+    @classmethod
+    def read_diff(cls, path):
+        diff = pd.read_csv(path, index_col=0)
+        return diff

@@ -1,7 +1,6 @@
-html5lib
-pandas
-lxml
-requests
 beautifulsoup4
+html5lib
+lxml
+pandas
+requests
 tweepy
-

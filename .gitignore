@@ -151,7 +151,7 @@ geckodriver.log
 # *.csv
 .Rproj.user
 
-Pipfile*
+Pipfile.lock
 credentials.py
 twitter_tokens.csv
 output/

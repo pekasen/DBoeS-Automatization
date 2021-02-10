@@ -4,6 +4,7 @@ Main module to run scraping of parlamentarian information from Wikipedia.
 import os
 import shutil
 import sys
+from datetime import datetime
 from random import randint
 
 import pandas as pd
@@ -11,6 +12,10 @@ import scraper
 from scraper import twitter_fetcher
 from scraper.entities import EntityGroup
 from scraper.twitter_fetcher import EntityOnTwitter
+
+
+datetoday = datetime.today()
+strpdatetoday = datetoday.strftime('%d-%m-%Y')
 
 
 def test_input(test, number_of_choices=0):
@@ -48,16 +53,31 @@ if __name__ == "__main__":
 
     files = {}
     i = 0
-    for file in os.listdir('output'):
+    for file in os.listdir(f'output/parliaments/{strpdatetoday}'):
         files[i] = file
         print(f'[{i}]', file)
         i += 1
+
+    print("Checking for changes in parliamentarian lists.")
+
+    for file in os.listdir('db/parliaments/'):
+
+        new_path = f'output/parliaments/{strpdatetoday}/{file}'
+
+        old_parliament = EntityGroup(f'db/parliaments/{file}')
+        new_parliament = EntityGroup(new_path)
+
+        difference = old_parliament.compare(new_parliament, output=f'{new_path}.diff')
+
+        if len(difference) != 0:
+            print(f"Difference found in {file}")
+            print(difference)
 
     print('\nPlease select a file by number to retrieve Twitter accounts:')
 
     select = test_input(test, i)
 
-    parliament = EntityGroup(f'output/{files[int(select)]}')
+    parliament = EntityGroup(f'output/parliaments/{strpdatetoday}/{files[int(select)]}')
     print(parliament.df[['Name', 'id']])
 
     print('\nPlease select a row to retrieve Twitter Accounts:')
