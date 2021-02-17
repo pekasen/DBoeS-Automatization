@@ -5,9 +5,6 @@ function(input, output, session) {
   session$userData$email <- 'anonymous@leibniz-hbi.de'
 
   # Call the server function portion of the `dboes_table_module.R` module file
-  callModule(
-    dboes_table_module,
-    "dboes_table"
-  )
-  
+  callModule(dboes_table_module, "dboes_table")
+
 }

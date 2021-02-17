@@ -10,9 +10,10 @@ import tweepy as tp
 from .credentials import twitter_api_key, twitter_api_secret_key
 from .entities import Account, Entity
 
+tokens_cache_file = os.path.join(os.path.dirname(__file__), "twitter_tokens.csv")
 
 def connect_to_twitter():
-    tokens = pd.read_csv('scraper/twitter_tokens.csv')
+    tokens = pd.read_csv(tokens_cache_file)
     access_token, access_token_secret = tokens['token'][0], tokens['secret'][0]
 
     auth = tp.OAuthHandler(twitter_api_key, twitter_api_secret_key)
@@ -80,7 +81,7 @@ class EntityOnTwitter(Entity):
                                     )
         for i, row in account_df.iterrows():
             account = TwitterAccount(row['screen_name'],
-                                     row['id'],
+                                     str(row['id']),
                                      row['name'],
                                      row['verified'],
                                      row['description'],
@@ -120,13 +121,13 @@ class OAuthorizer():
             else:
                 raise e
 
-        if not os.path.isfile('scraper/twitter_tokens.csv'):
-            with open('scraper/twitter_tokens.csv', 'a', newline='') as f:
+        if not os.path.isfile(tokens_cache_file):
+            with open(tokens_cache_file, 'a', newline='') as f:
                 writer = csv.writer(f)
                 writer.writerow(["token", "secret"])
             f.close()
 
-        with open('scraper/twitter_tokens.csv', 'a', newline='') as f:
+        with open(tokens_cache_file, 'a', newline='') as f:
             writer = csv.writer(f)
             writer.writerow([auth.access_token, auth.access_token_secret])
         f.close()

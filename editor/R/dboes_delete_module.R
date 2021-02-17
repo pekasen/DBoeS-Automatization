@@ -15,11 +15,12 @@
 #'
 dboes_delete_module <- function(input, output, session, modal_title, dboes_to_delete, modal_trigger) {
   ns <- session$ns
+
   # Observes trigger for this module (here, the Delete Button)
   observeEvent(modal_trigger(), {
     # Authorize who is able to access particular buttons (here, modules)
     req(session$userData$email == 'anonymous@leibniz-hbi.de')
-
+    
     showModal(
       modalDialog(
         div(
@@ -58,7 +59,7 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
 
       uid <- dboes_to_delete()$uid
 
-      dboes_db <<- dboes_db[-uid, ]
+      dboes_db <<- dboes_db[-which(dboes_db$uid == uid), ]
 
       session$userData$dboes_trigger(session$userData$dboes_trigger() + 1)
       showToast("success", "Entry successfully deleted")

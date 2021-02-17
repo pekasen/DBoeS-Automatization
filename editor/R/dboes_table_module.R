@@ -171,7 +171,7 @@ dboes_table_module <- function(input, output, session) {
 
   dboes_table_proxy <- DT::dataTableProxy('dboes_table')
 
-  callModule(
+  edit_name_var <- callModule(
     dboes_edit_module,
     "add_dboes",
     modal_title = "Add DBoeS Entry",
