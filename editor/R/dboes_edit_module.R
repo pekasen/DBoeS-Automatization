@@ -34,7 +34,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
               ns('Parlament'),
               'Parlament',
               choices = levels(dboes_db$Parlament),
-              selected = ifelse(is.null(hold), "", hold$Parlament)
+              selected = ifelse(is.null(hold), "", as.character(hold$Parlament))
             ),
             textInput(
               ns("Name"),
@@ -48,13 +48,13 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
               ns('Partei'),
               'Partei',
               choices = levels(dboes_db$Partei),
-              selected = ifelse(is.null(hold), "", hold$Partei)
+              selected = ifelse(is.null(hold), "", as.character(hold$Partei))
             ),
             selectInput(
               ns('Geschlecht'),
               'Geschlecht',
               choices = levels(dboes_db$Geschlecht),
-              selected = ifelse(is.null(hold), "", hold$Geschlecht)
+              selected = ifelse(is.null(hold), "", as.character(hold$Geschlecht))
             )
           )
         ),
