@@ -30,9 +30,9 @@ class TestParliamentList(unittest.TestCase):
 
     def test_a_number_of_parliaments(self):
         """
-        Test if 16 Landtage + 1 Bundestag are extracted
+        Test if 16 Landtage + 1 Bundestag + 1 EU-Parlament are extracted
         """
-        self.assertEqual(len(parliaments), 17)
+        self.assertEqual(len(parliaments), 18)
 
     def test_b_extracted_parlamentarians(self):
         """

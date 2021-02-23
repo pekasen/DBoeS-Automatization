@@ -17,7 +17,6 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(message)s')
 WIKI_BASE_URL = "https://de.wikipedia.org"
 columns_for_link_extraction = ['Name', 'Mitglied des Landtages', 'Bild', 'Foto']
 
-
 class WikiFetcher:
     """
     Class to scrape parliamentarian information from Wikipedia pages.
@@ -72,6 +71,9 @@ class WikiFetcher:
         return politicians_table, politicians_table_index
 
     def clean_table(self, table, schema_list, url=''):
+        # remove Fraktion column in the EU parliament table
+        if "Fraktion" in table.columns and "Partei" in table.columns:
+            table.drop(columns="Fraktion", inplace = True)
         for column_name in schema_map:
             table.rename(
                 columns={column_name: schema_map[column_name]},
