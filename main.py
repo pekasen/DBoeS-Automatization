@@ -41,7 +41,7 @@ if __name__ == "__main__":
     pd.set_option('display.max_rows', None)
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
-    pd.set_option('display.max_colwidth', -1)
+    pd.set_option('display.max_colwidth', None)
 
     if not os.path.isfile('scraper/twitter_tokens.csv'):
         twitter_fetcher.OAuthorizer()
@@ -60,11 +60,11 @@ if __name__ == "__main__":
 
     print("Checking for changes in parliamentarian lists.")
 
-    for file in os.listdir('db/parliaments/'):
+    for file in os.listdir('db/new/Parlamentarier/'):
 
         new_path = f'output/parliaments/{strpdatetoday}/{file}'
 
-        old_parliament = EntityGroup(f'db/parliaments/{file}')
+        old_parliament = EntityGroup(f'db/new/Parlamentarier/{file}')
         new_parliament = EntityGroup(new_path)
 
         difference = old_parliament.compare(new_parliament, output=f'{new_path}.diff')

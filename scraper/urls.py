@@ -88,5 +88,10 @@ parliaments = {
         "name": "Bundestag",
         "url": BASE + "Liste_der_Mitglieder_des_Deutschen_Bundestages_(19._Wahlperiode)",
         "index": 3
+    },
+    "eu": {
+        "name": "EU-Parlament",
+        "url": BASE + "Liste_der_deutschen_Abgeordneten_zum_EU-Parlament_(2019%E2%80%932024)",
+        "index": 1
     }
 }
