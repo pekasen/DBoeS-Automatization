@@ -209,7 +209,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       if (is.na(dat$uid)) {
         
         # creating a new entry
-        uid <- nrow(dboes_db) + 1 # uuid::UUIDgenerate()
+        uid <- uuid::UUIDgenerate()
         dboes_db[uid, colnames_to_update] <<- dat$data[colnames_to_update]
         
       } else {
