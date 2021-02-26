@@ -55,7 +55,11 @@ merged_dboes <- dboes_scraped %>%
     "SM_Telegram_id" = "",
     "SM_Telegram_verifiziert" = "",
     "Homepage_URL" = "",
-    "tags" = "" 
+    "tags" = "",
+    "created_at" = Sys.time(),
+    "created_by" = "admin",
+    "modified_at" = Sys.time(),
+    "modified_by" = "admin"
   ) %>%
   select(
     Parlament, Name, Fraktion, Wahlkreis, Geschlecht, Kommentar, Bild, tags, 
@@ -63,7 +67,7 @@ merged_dboes <- dboes_scraped %>%
     SM_Facebook_user, SM_Twitter_verifiziert, SM_Facebook_verifiziert, 
     SM_Youtube_user, SM_Youtube_id, SM_Youtube_verifiziert, SM_Instagram_user, 
     SM_Instagram_id, SM_Instagram_verifiziert, SM_Telegram_user, SM_Telegram_id, 
-    SM_Telegram_verifiziert
+    SM_Telegram_verifiziert, created_at, created_by, modified_at, modified_by
   )
 
 merged_dboes[is.na(merged_dboes)] <- ""
