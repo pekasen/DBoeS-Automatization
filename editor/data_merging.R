@@ -1,5 +1,8 @@
 require(dplyr)
 
+# SQL for Pluragraph data:
+# select p.name as Name, p.id_at_service as SM_Facebook_id, p.identifier as SM_Facebook_user from profiles p where p.type = 'Service::Facebook::Profile' and p.organisation_id in (select organisation_id from organisation_categories oc where oc.category_id in (select c.id from categories c where c."name" like '%Md%'));
+
 dboes_deprecated <- read.csv("../db/parliamentarians.csv", encoding = "UTF-8") %>%
   select(-Parlament, -Fraktion)
 facebook_pluragraph <- read.csv("data/facebook.csv", encoding = "UTF-8")
@@ -59,14 +62,16 @@ merged_dboes <- dboes_scraped %>%
     "created_at" = Sys.time(),
     "created_by" = "admin",
     "modified_at" = Sys.time(),
-    "modified_by" = "admin"
+    "modified_by" = "admin",
+    "uuid" = uuid::UUIDgenerate(n = n())
   ) %>%
   select(
-    Parlament, Name, Fraktion, Wahlkreis, Geschlecht, Kommentar, Bild, tags, 
-    Wikipedia_URL, Homepage_URL, SM_Twitter_user, SM_Twitter_id, SM_Facebook_id, 
-    SM_Facebook_user, SM_Twitter_verifiziert, SM_Facebook_verifiziert, 
-    SM_Youtube_user, SM_Youtube_id, SM_Youtube_verifiziert, SM_Instagram_user, 
-    SM_Instagram_id, SM_Instagram_verifiziert, SM_Telegram_user, SM_Telegram_id, 
+    uuid, Parlament, Name, Fraktion, Wahlkreis, Geschlecht, Kommentar, Bild, 
+    tags, Wikipedia_URL, Homepage_URL, SM_Twitter_user, SM_Twitter_id, 
+    SM_Facebook_id, SM_Facebook_user, SM_Twitter_verifiziert, 
+    SM_Facebook_verifiziert, SM_Youtube_user, SM_Youtube_id, 
+    SM_Youtube_verifiziert, SM_Instagram_user, SM_Instagram_id, 
+    SM_Instagram_verifiziert, SM_Telegram_user, SM_Telegram_id, 
     SM_Telegram_verifiziert, created_at, created_by, modified_at, modified_by
   )
 
@@ -74,4 +79,4 @@ merged_dboes[is.na(merged_dboes)] <- ""
 
 merged_dboes <- apply(merged_dboes, 2, as.character)
 
-write.csv(merged_dboes, file = "../db/reviewed/Parlamentarier.csv", fileEncoding = "UTF-8")
+write.csv(merged_dboes, file = "../db/reviewed/Parlamentarier.csv", fileEncoding = "UTF-8", row.names = F)
