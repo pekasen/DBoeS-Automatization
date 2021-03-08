@@ -88,7 +88,7 @@ write.csv(merged_dboes, file = "../db/reviewed/Parlamentarier.csv", fileEncoding
 # Hildesheim provided corrected lists
 # -----------------------------------
 
-merged_dboes <- read.csv("../db/reviewed/Parlamentarier.csv", encoding = "UTF-8")
+merged_dboes <- read.csv("../db/reviewed/Parlamentarier.csv", encoding = "UTF-8", colClasses = c("created_at" = "character", "modified_at" = "character"))
 
 twitter_corrections <- read.csv("data/feedback_HBI.csv", encoding = "UTF-8") %>%
   select(Name, SM_Twitter_id = "Twitter_id", SM_Twitter_user = "Twitter_screen_name")
