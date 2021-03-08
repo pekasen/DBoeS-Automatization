@@ -136,14 +136,14 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       search_result(get_twitter_suggestions(input$Name))
     })
     
-    output$searchOutput <- DT::renderDT({
-      search_result()
-    },
-    rownames = FALSE,
-    escape = FALSE,
-    options = list(paging = FALSE, searching = FALSE, lengthMenu = NULL)
-    )
-    
+    output$searchOutput <- DT::renderDT(
+      {
+        search_result()
+      },
+      rownames = FALSE,
+      escape = FALSE,
+      options = list(paging = FALSE, searching = FALSE, lengthMenu = NULL)
+    ) 
   })
   
   
