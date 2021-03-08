@@ -75,8 +75,32 @@ merged_dboes <- dboes_scraped %>%
     SM_Telegram_verifiziert, created_at, created_by, modified_at, modified_by
   )
 
+
+
+
 merged_dboes[is.na(merged_dboes)] <- ""
 
 merged_dboes <- apply(merged_dboes, 2, as.character)
 
 write.csv(merged_dboes, file = "../db/reviewed/Parlamentarier.csv", fileEncoding = "UTF-8", row.names = F)
+
+
+# Hildesheim provided corrected lists
+# -----------------------------------
+
+merged_dboes <- read.csv("../db/reviewed/Parlamentarier.csv", encoding = "UTF-8")
+
+twitter_corrections <- read.csv("data/feedback_HBI.csv", encoding = "UTF-8") %>%
+  select(Name, SM_Twitter_id = "Twitter_id", SM_Twitter_user = "Twitter_screen_name")
+  
+corrected_dboes <- merged_dboes %>%
+  left_join(twitter_corrections, by = "Name")
+corrected_dboes[!is.na(corrected_dboes$SM_Twitter_id.y), c("SM_Twitter_id.x", "SM_Twitter_user.x")] <- corrected_dboes[!is.na(corrected_dboes$SM_Twitter_id.y), c("SM_Twitter_id.y", "SM_Twitter_user.y")]
+corrected_dboes <- corrected_dboes %>%
+  select(-SM_Twitter_id.y, -SM_Twitter_user.y) %>%
+  rename(SM_Twitter_id = SM_Twitter_id.x, SM_Twitter_user = SM_Twitter_user.x)
+
+corrected_dboes[is.na(corrected_dboes)] <- ""
+corrected_dboes <- apply(corrected_dboes, 2, as.character)
+write.csv(corrected_dboes, file = "../db/reviewed/Parlamentarier.csv", fileEncoding = "UTF-8", row.names = F)
+
