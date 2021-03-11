@@ -98,7 +98,8 @@ corrected_dboes <- merged_dboes %>%
 corrected_dboes[!is.na(corrected_dboes$SM_Twitter_id.y), c("SM_Twitter_id.x", "SM_Twitter_user.x")] <- corrected_dboes[!is.na(corrected_dboes$SM_Twitter_id.y), c("SM_Twitter_id.y", "SM_Twitter_user.y")]
 corrected_dboes <- corrected_dboes %>%
   select(-SM_Twitter_id.y, -SM_Twitter_user.y) %>%
-  rename(SM_Twitter_id = SM_Twitter_id.x, SM_Twitter_user = SM_Twitter_user.x)
+  rename(SM_Twitter_id = SM_Twitter_id.x, SM_Twitter_user = SM_Twitter_user.x) %>%
+  rename(Kategorie = Parlament, Partei = Fraktion)
 
 corrected_dboes[is.na(corrected_dboes)] <- ""
 corrected_dboes <- apply(corrected_dboes, 2, as.character)
