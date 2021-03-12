@@ -57,12 +57,13 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
 
     tryCatch({
 
-      uid <- dboes_to_delete()$uid
+      uuid <- dboes_to_delete()$uuid
 
-      dboes_db <<- dboes_db[-which(dboes_db$uid == uid), ]
+      session$userData$dboes_db <- session$userData[-which(session$userData$uuid == uuid), ]
 
       session$userData$dboes_trigger(session$userData$dboes_trigger() + 1)
       showToast("success", "Entry successfully deleted")
+      
     }, error = function(error) {
 
       msg <- "Error deleting entry"
@@ -73,6 +74,7 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
       # show error `msg` to user.  User can then tell us about error and we can
       # quickly identify where it cam from based on the value in `msg`
       showToast("error", msg)
+      
     })
   })
 }

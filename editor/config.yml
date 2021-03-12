@@ -1,4 +1,3 @@
 default:
   app_name: "dboes_crud"
-  csv_storage:
-    name: '../db/parliamentarians.csv'
+

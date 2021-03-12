@@ -18,6 +18,19 @@ dboes_table_module_ui <- function(id) {
       column(
         width = 2,
         actionButton(
+          ns("save_dboes"),
+          "Save",
+          class = "btn-success",
+          style = "color: #fff;",
+          icon = icon('save'),
+          width = '100%'
+        ),
+        tags$br(),
+        tags$br()
+      ),
+      column(
+        width = 1,
+        actionButton(
           ns("add_dboes"),
           "Add",
           class = "btn-success",
@@ -65,31 +78,50 @@ dboes_table_module <- function(input, output, session) {
 
   # Read in dboes table from the database
   dboes_entries <- reactive({
+    
     session$userData$dboes_trigger()
     
-    tryCatch({
-      out <- dboes_db # is read from csv in global.R
-    }, error = function(err) {
-      msg <- "CSV File Connection  Error"
-      # print `msg` so that we can find it in the logs
-      print(msg)
-      # print the actual error to log it
-      print(err)
-      # show error `msg` to user.  User can then tell us about error and we can
-      # quickly identify where it cam from based on the value in `msg`
-      showToast("error", msg)
-    })
+    if (is.null(session$userData$dboes_db)) {
+      tryCatch(
+        {
+          
+          # todo: switch to reactive input$selected_csv
+          session$userData$dboes_db <- read.csv(
+            selected_dboes_category$Location, 
+            encoding = "UTF-8", 
+            colClasses = c(
+              "created_at" = "character", 
+              "modified_at" = "character"
+            )
+          ) 
+          # format df data
+          rownames(session$userData$dboes_db) <- session$userData$dboes_db$uuid
+          format_as_factor <- c("Kategorie", "Geschlecht", "Partei")
+          for (column in format_as_factor) {
+            session$userData$dboes_db[[column]] <- factor(session$userData$dboes_db[[column]])
+          }
+          
+        }, error = function(err) {
+          msg <- "CSV File Connection  Error"
+          # print `msg` so that we can find it in the logs
+          print(msg)
+          # print the actual error to log it
+          print(err)
+          # show error `msg` to user.  User can then tell us about error and we can
+          # quickly identify where it cam from based on the value in `msg`
+          showToast("error", msg)
+        })
+    }
 
-    out
+    session$userData$dboes_db
   })
-
 
   dboes_table_prep <- reactiveVal(NULL)
 
   observeEvent(dboes_entries(), {
     out <- dboes_entries()
 
-    ids <- out$uid
+    ids <- out$uuid
 
     actions <- purrr::map_chr(ids, function(id_) {
       paste0(
@@ -100,9 +132,9 @@ dboes_table_module <- function(input, output, session) {
       )
     })
 
-    # Remove the `uid` column. We don't want to show this column to the user
+    # Remove the `uuid` column. We don't want to show this column to the user
     out <- out %>%
-      select(-uid)
+      select(-uuid)
 
     # Set the Action Buttons row to the first column of the dboes table
     out <- cbind(
@@ -126,7 +158,16 @@ dboes_table_module <- function(input, output, session) {
 
   output$dboes_table <- DT::renderDT({
     req(dboes_table_prep())
-    out <- dboes_table_prep()
+    out <- dboes_table_prep() 
+    # %>%
+    #  relocate(Bild)
+    
+    
+    # $filename = replace($name, ' ', '_');
+    # $digest = md5($filename);
+    # $folder = $digest[0] . '/' . $digest[0] . $digest[1] . '/' .  urlencode($filename);
+    # $url = 'http://upload.wikimedia.org/wikipedia/commons/' . $folder;
+    # out$Bild <- paste('<img src="', out$Bild, '" width=70/>', sep='')
 
     DT::datatable(
       out,
@@ -134,8 +175,8 @@ dboes_table_module <- function(input, output, session) {
       # colnames = c("Parlament", "Name", "Partei", "Geschlecht", "Twitter name", "Twitter id", "Wikipedia", "Geändert am"),
       selection = "none",
       class = "compact stripe row-border nowrap",
-      # Escape the HTML in all except 1st column (which has the buttons)
-      escape = -1,
+      # Escape the HTML in all except first columns
+      escape = -c(1, 2),
       extensions = c("Buttons"),
       filter = list(position = "top"),
       options = list(
@@ -170,8 +211,16 @@ dboes_table_module <- function(input, output, session) {
   })
 
   dboes_table_proxy <- DT::dataTableProxy('dboes_table')
+  
+  callModule(
+    dboes_save_module,
+    "save_dboes",
+    modal_title = "Save DBoeS",
+    dboes_to_save = selected_dboes_category,
+    modal_trigger = reactive({input$save_dboes})
+  )
 
-  edit_name_var <- callModule(
+  callModule(
     dboes_edit_module,
     "add_dboes",
     modal_title = "Add DBoeS Entry",
@@ -181,7 +230,7 @@ dboes_table_module <- function(input, output, session) {
 
   dboes_to_edit <- eventReactive(input$dboes_id_to_edit, {
     dboes_entries() %>%
-      filter(uid == input$dboes_id_to_edit)
+      filter(uuid == input$dboes_id_to_edit)
   })
 
   callModule(
@@ -194,7 +243,7 @@ dboes_table_module <- function(input, output, session) {
 
   dboes_to_delete <- eventReactive(input$dboes_id_to_delete, {
     out <- dboes_entries() %>%
-      filter(uid == input$dboes_id_to_delete) %>%
+      filter(uuid == input$dboes_id_to_delete) %>%
       as.list()
   })
 

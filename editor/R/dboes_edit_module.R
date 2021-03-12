@@ -31,10 +31,10 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
           column(
             width = 6,
             selectInput(
-              ns('Parlament'),
-              'Parlament',
-              choices = levels(dboes_db$Parlament),
-              selected = ifelse(is.null(hold), "", as.character(hold$Parlament))
+              ns('Kategorie'),
+              'Kategorie',
+              choices = levels(session$userData$dboes_db$Kategorie),
+              selected = ifelse(is.null(hold), "", as.character(hold$Kategorie))
             ),
             textInput(
               ns("Name"),
@@ -47,13 +47,13 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
             selectInput(
               ns('Partei'),
               'Partei',
-              choices = levels(dboes_db$Partei),
+              choices = levels(session$userData$dboes_db$Partei),
               selected = ifelse(is.null(hold), "", as.character(hold$Partei))
             ),
             selectInput(
               ns('Geschlecht'),
               'Geschlecht',
-              choices = levels(dboes_db$Geschlecht),
+              choices = levels(session$userData$dboes_db$Geschlecht),
               selected = ifelse(is.null(hold), "", as.character(hold$Geschlecht))
             )
           )
@@ -69,32 +69,32 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
                   column(
                     width = 6,
                     textInput(
-                      ns("Twitter_screen_name"),
-                      'Twitter_screen_name',
-                      value = ifelse(is.null(hold), "", hold$Twitter_screen_name)
+                      ns("SM_Twitter_user"),
+                      'SM_Twitter_user',
+                      value = ifelse(is.null(hold), "", hold$SM_Twitter_user)
                     )
                   ),
                   column(
                     width = 6,
                     textInput(
-                      ns("Twitter_id"),
-                      'Twitter_id',
-                      value = ifelse(is.null(hold), "", hold$Twitter_id)
+                      ns("SM_Twitter_id"),
+                      'SM_Twitter_id',
+                      value = ifelse(is.null(hold), "", hold$SM_Twitter_id)
                     )
                   )
                 ),
                 actionButton(ns("buttonTwitter"), label = "Search"),
-                DT::dataTableOutput(ns("searchOutput"))
+                DT::dataTableOutput(ns("searchOutput")) %>% withSpinner()
               ),
               tabPanel(
-                "Wikipedia", 
+                "Wikipedia_URL", 
                 fluidRow(
                   column(
                     width = 12,
                     textInput(
-                      ns("Wikipedia"),
-                      'Wikipedia',
-                      value = ifelse(is.null(hold), "", hold$Wikipedia)
+                      ns("Wikipedia_URL"),
+                      'Wikipedia_URL',
+                      value = ifelse(is.null(hold), "", hold$Wikipedia_URL)
                     )
                   )
                 )
@@ -143,7 +143,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       rownames = FALSE,
       escape = FALSE,
       options = list(paging = FALSE, searching = FALSE, lengthMenu = NULL)
-    ) 
+    )
   })
   
   
@@ -152,15 +152,15 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     hold <- dboes_to_edit()
     
     out <- list(
-      uid = if (is.null(hold)) NA else hold$uid,
+      uuid = if (is.null(hold)) NA else hold$uuid,
       data = list(
-        "Parlament" = input$Parlament,
+        "Kategorie" = input$Kategorie,
         "Name" = input$Name,
         "Partei" = input$Partei,
         "Geschlecht" = input$Geschlecht,
-        "Twitter_screen_name" = input$Twitter_screen_name,
-        "Twitter_id" = input$Twitter_id,
-        "Wikipedia" = input$Wikipedia
+        "SM_Twitter_user" = input$SM_Twitter_user,
+        "SM_Twitter_id" = input$SM_Twitter_id,
+        "Wikipedia_URL" = input$Wikipedia_URL
       )
     )
     
@@ -198,24 +198,26 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       
       colnames_to_update <- c(
         "Name",
+        "Kategorie",
         "Partei",
-        "Parlament",
         "Geschlecht",
-        "Twitter_id",
-        "Twitter_screen_name",
-        "Wikipedia"
+        "SM_Twitter_user",
+        "SM_Twitter_id",
+        "Wikipedia_URL"
       )
       
-      if (is.na(dat$uid)) {
+      if (is.na(dat$uuid)) {
         
         # creating a new entry
-        uid <- uuid::UUIDgenerate()
-        dboes_db[uid, colnames_to_update] <<- dat$data[colnames_to_update]
+        uuid <- uuid::UUIDgenerate()
+        colnames_to_update <- c("uuid", colnames_to_update)
+        dat$data$uuid <- uuid
+        session$userData$dboes_db[uuid, colnames_to_update] <- dat$data[colnames_to_update]
         
       } else {
         
         # editing an existing entry
-        dboes_db[dat$uid, colnames_to_update] <<- dat$data[colnames_to_update]
+        session$userData$dboes_db[dat$uuid, colnames_to_update] <- dat$data[colnames_to_update]
         
       }
       
