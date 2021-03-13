@@ -1,7 +1,7 @@
-#Steckbriefe der Typen in DBÖS 2.0
+# Steckbriefe der Typen in DBÖS 2.0
 
 
-##Parlamentarier:innen
+## Parlamentarier:innen
 --------------------
 * **Definition** Abgeordnete aus Bundesstag, Landtagen sowie deutsche Abgeordnete des Europaparlaments
 * **abgrenzbare Grundgesamtheit?** Ja
@@ -15,7 +15,7 @@
   * (+) ..
   * (-) ...
 
-##Rundfunk
+## Rundfunk
 --------
 * **Definition** Öffentlich-Rechtliche Rundfunk- und Fernsehsender sowie privatwirtschaftliche, lizenzierte Rundfunk- und Fernsehsender
 * **abgrenzbare Grundgesamtheit?** Ja
@@ -33,7 +33,7 @@
   * (-) keine Social-Media-Profile
 
 
-##Zeitungen
+## Zeitungen
 ---------
 * **Definition** Tages- und Wochenzeitungen
 * **abgrenzbare Grundgesamtheit?** Ja
@@ -53,7 +53,7 @@
   * (-) einzelne Einträge sind in der BDZV-Datenbank fehlerhaft, z.B. "Express"; "Muster-Zeitung", ...
   * (-) URLs der Social-Media-Accounts sind nicht immer "bereinigt"
 
-##Parteigliederungen
+## Parteigliederungen
 -------------
 * **Definition** Im Bundestag vertretene Parteien mit Bundes- und Landesgliederungen sowie Jugendorganisationen (Bund und Länder); Fraktionen der in einem Landtag vertretenen Parteien + Landesgliederung (falls nicht im Bundestag vertreten); zu BTW seit 2013 zugelassene Parteien
 * **abgrenzbare Grundgesamtheit?** Ja
