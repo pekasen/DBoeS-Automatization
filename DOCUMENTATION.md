@@ -20,7 +20,7 @@
 * **Definition** Öffentlich-Rechtliche Rundfunk- und Fernsehsender sowie privatwirtschaftliche, lizenzierte Rundfunk- und Fernsehsender
 * **abgrenzbare Grundgesamtheit?** Ja
 * **Aktualisierungsrhythmus** tbd (jährlich?)
-* **Umfang** 713 Einträge (Stand Anfang Januar 2021) 
+* **Umfang** 707 Einträge (Stand Anfang Januar 2021) 
 * **Recherchestand** für 469 Einträge sind Daten aus alter DBÖS importiert (Stand: Nov. 2017); für die verbleibenden 244 Einträge müssen Angaben recherchiert werden (v.a. Twitter + Facebook)
 * **wo liegt aktueller Stand** bei JHS C:\Projekte\HBI-Projekte\AG Digitale Spuren\06_DBÖS für FGZ\Medienangebote\Typ03_Rundfunkprogramm
 
