@@ -1,11 +1,12 @@
 import os
 import unittest
+from pathlib import Path
 
 import pandas as pd
 import tweepy
 from scraper.twitter_fetcher import (EntityOnTwitter, OAuthorizer,
-                                     TwitterAccount, account_search,
-                                     connect_to_twitter)
+                                     TwitterAccount, TwitterEntityGroup,
+                                     account_search, connect_to_twitter)
 
 
 class TestUserSearch(unittest.TestCase):
@@ -26,7 +27,8 @@ class TestUserSearch(unittest.TestCase):
     def test_search_account(self):
 
         name = "Markus Söder"
-        fields = ['id', 'verified', 'screen_name', 'name', 'description', 'profile_image_url_https']
+        fields = ['id', 'verified', 'screen_name', 'name',
+                  'description', 'profile_image_url_https']
 
         result = account_search(name, fields)
 
@@ -50,7 +52,8 @@ class TestUserSearch(unittest.TestCase):
             profile_name=''
         )
 
-        self.assertEqual(twitter_account.data['url'], 'https://twitter.com/screen_name')
+        self.assertEqual(
+            twitter_account.data['url'], 'https://twitter.com/screen_name')
 
     def test_search_account_for_EntityOnTwitter(self):
 
@@ -58,9 +61,21 @@ class TestUserSearch(unittest.TestCase):
 
         twitter_entity.search_accounts()
 
-        account_names = [account.data['user_name'] for account in twitter_entity.twitter_accounts]
+        account_names = [account.data['user_name']
+                         for account in twitter_entity.twitter_accounts]
 
         self.assertIn('Markus_Soeder', account_names)
+
+
+class TestTwitterEntityGroup(unittest.TestCase):
+
+    def test_check_accounts(self):
+        twitter_group = TwitterEntityGroup(
+            Path.cwd()/'test'/'data'/'Parlamentarier.csv')
+        df = twitter_group.check_accounts()
+
+        self.assertIn('hanno_bachmann', df['SM_Twitter_user'].values)  # renamed
+        self.assertIn('torstenhoferspd', df['SM_Twitter_user'].values)  # wrong Twitter ID
 
 
 if __name__ == '__main__':
