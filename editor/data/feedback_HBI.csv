@@ -1,266 +1,256 @@
-"","Twitter_id","Name","Twitter_screen_name","Grund","Weitere.Bemerkungen"
-"1","4546462701","Mazlum Koc","Mazlum21752231","Abweichung HBI-Liste","falscher Account"
-"2","2831352701","MP Stephan Weil","MpStephanWeil","Abweichung HBI-Liste","falscher Account"
-"3","797137333820784640","Tino Chrupalla","Tino_Chrupalla","Abweichung HBI-Liste","falscher Account"
-"4","1125751445205262336","Gitta Connemann","gitta_connemann","Abweichung HBI-Liste","falscher Account"
-"5","1083371289786634240","Dirk Heidenblut","DHeidenblut","Abweichung HBI-Liste","falscher Account"
-"6","1038034431385247745","Yasmin Fahimi","FahimiYasmin","Abweichung HBI-Liste","falscher Account"
-"7","1006099793888841729","Matthias Seestern-Pauly","mseesternpauly","Abweichung HBI-Liste","falscher Account"
-"8","996440442819502082","Bruno Hollnagel","DrHollnagel","Abweichung HBI-Liste","falscher Account"
-"9","988765113606918144","Ulrich Lechte","ulrichlechte","Abweichung HBI-Liste","falscher Account"
-"10","951773879822880768","Erhard Grundl","Erhard_Grundl","Abweichung HBI-Liste","falscher Account"
-"11","800457587510476800","Gökay Akbulut","AkbulutGokay","Abweichung HBI-Liste","falscher Account"
-"12","1049279796574871559","Ralph Müller","dr_afd","Abweichung HBI-Liste","ID/screen_name fehlt"
-"13","993826627686666240","Doris Rauscher","Doris_Rauscher","Abweichung HBI-Liste","ID/screen_name fehlt"
-"14","993158303558586373","MargitWild","MargitWild","Abweichung HBI-Liste","ID/screen_name fehlt"
-"15","981110123958587392","Tobias Reiß","TobiasReissMdL","Abweichung HBI-Liste","ID/screen_name fehlt"
-"16","904260098494746624","Alexander Hold","fw_hold","Abweichung HBI-Liste","ID/screen_name fehlt"
-"17","755714885682683905","Josef Schmid","schmid1_j","Abweichung HBI-Liste","ID/screen_name fehlt"
-"18","2394172854","Kerstin Schreyer","KS_MdL","Abweichung HBI-Liste","ID/screen_name fehlt"
-"19","81374443","Susanne Kurz","sannekurz","Abweichung HBI-Liste","ID/screen_name fehlt"
-"20","1202952565329149953","Stephan Standfuß","StandfuStephan","Abweichung HBI-Liste","ID/screen_name fehlt"
-"21","1169547234058412032","Frank Zimmermann","FrankZ_MdA","Abweichung HBI-Liste","ID/screen_name fehlt"
-"22","1114491811064578049","Torsten Hofer","TorstenHoferSPD","Abweichung HBI-Liste","ID/screen_name fehlt"
-"23","1103948172274139136","Iris Spranger","IrisSpranger","Abweichung HBI-Liste","ID/screen_name fehlt"
-"24","1088384585686237184","FranzKerker","franzkerker","Abweichung HBI-Liste","ID/screen_name fehlt"
-"25","1081601912565317632","Christian Buchholz","BuchholzMda","Abweichung HBI-Liste","ID/screen_name fehlt"
-"26","1073175051451752448","Hans-Joachim Berg","HansJoachimBerg","Abweichung HBI-Liste","ID/screen_name fehlt"
-"27","1052194516331970561","Harald Wolf","HaraldWolf20","Abweichung HBI-Liste","ID/screen_name fehlt"
-"28","1001477777252634625","Herbert Mohr","herbert_mohr","Abweichung HBI-Liste","ID/screen_name fehlt"
-"29","1001389807728242689","Raed Saleh","RaedSalehBerlin","Abweichung HBI-Liste","ID/screen_name fehlt"
-"30","981246353920667649","Dieter Neuendorf","DieterNeuendorf","Abweichung HBI-Liste","ID/screen_name fehlt"
-"31","874969224699154433","Florian Graf","graf_berlin","Abweichung HBI-Liste","ID/screen_name fehlt"
-"32","862297859525423105","Sibylle Meister","SibylleMeister","Abweichung HBI-Liste","ID/screen_name fehlt"
-"33","4174833567","Catherina Pieroth","CathPieroth","Abweichung HBI-Liste","ID/screen_name fehlt"
-"34","3240319751","Udo Wolf","UdoWolfMdA","Abweichung HBI-Liste","ID/screen_name fehlt"
-"35","1288071200","Dirk Stettner","DirkStettner","Abweichung HBI-Liste","ID/screen_name fehlt"
-"36","1253235618081116167","Carla Kniestedt","CKniestedt","Abweichung HBI-Liste","ID/screen_name fehlt"
-"37","1226482835500019714","Danny Eichelbaum","DannyEichelbaum","Abweichung HBI-Liste","ID/screen_name fehlt"
-"38","1245678398518763520","Carsten Sieling","carstensieling","Abweichung HBI-Liste","ID/screen_name fehlt"
-"39","1878624326","Holger Welt","holgerwelt","Abweichung HBI-Liste","ID/screen_name fehlt"
-"40","1326461934280052737","Insa Tietjen","InsaTietjen","Abweichung HBI-Liste","ID/screen_name fehlt"
-"41","1247537829090963457","Sarah Timmann","SarahTimmann","Abweichung HBI-Liste","ID/screen_name fehlt"
-"42","1189485948343586818","Philine Sturzenbecher","Psturzenbecher","Abweichung HBI-Liste","ID/screen_name fehlt"
-"43","1182394262589247492","Anke Frieling","AnkeFrieling","Abweichung HBI-Liste","ID/screen_name fehlt"
-"44","1177611234046283776","Alske Freter","AlskeFreter","Abweichung HBI-Liste","ID/screen_name fehlt"
-"45","1162979689020952576","Marc Schemmel","MarcSchemmel","Abweichung HBI-Liste","ID/screen_name fehlt"
-"46","1162105569899098131","Maryam Blumenthal","Mary_Blumenthal","Abweichung HBI-Liste","ID/screen_name fehlt"
-"47","1155866473686011905","Miriam Putz","MiriamPutz","Abweichung HBI-Liste","ID/screen_name fehlt"
-"48","1146359322634596352","Sandro Kappe","KappeSandro","Abweichung HBI-Liste","ID/screen_name fehlt"
-"49","1085265105846181888","Julia Barth","juliabarth_hh","Abweichung HBI-Liste","ID/screen_name fehlt"
-"50","1084492694859194369","Zohra Mojadeddi","ZMojadeddi","Abweichung HBI-Liste","ID/screen_name fehlt"
-"51","1053198649700827136","Andreas Dressel","ADressel","Abweichung HBI-Liste","ID/screen_name fehlt"
-"52","1023546997230522368","Ralf Neubauer","ralfneubauerhh","Abweichung HBI-Liste","ID/screen_name fehlt"
-"53","1014453121068789760","Linus Jünemann","gruenpfleger","Abweichung HBI-Liste","ID/screen_name fehlt"
-"54","972051445871718401","Melanie Leonhard","melanieleonhard","Abweichung HBI-Liste","ID/screen_name fehlt"
-"55","964659367000801282","Güngör Yilmaz","GngrYilmaz6","Abweichung HBI-Liste","ID/screen_name fehlt"
-"56","948849826015432704","Miriam Block","mibloq","Abweichung HBI-Liste","ID/screen_name fehlt"
-"57","939539240257511425","Ivy May Müller","ivymaymueller","Abweichung HBI-Liste","ID/screen_name fehlt"
-"58","918382563827339264","Jan Koltze","JanKoltze","Abweichung HBI-Liste","ID/screen_name fehlt"
-"59","905001561633558528","Carsten Brosda","CarstenBrosda","Abweichung HBI-Liste","ID/screen_name fehlt"
-"60","851712947130961920","David Stoop","DavidStoopHH","Abweichung HBI-Liste","ID/screen_name fehlt"
-"61","803588337332264961","Jenny Jasberg","jenny_jasberg","Abweichung HBI-Liste","ID/screen_name fehlt"
-"62","754063296911773697","Sina Aylin Demirhan","SinaDemirhan","Abweichung HBI-Liste","ID/screen_name fehlt"
-"63","737743836949123072","Christa Möller","moeller_metzger","Abweichung HBI-Liste","ID/screen_name fehlt"
-"64","4795095746","Krzysztof Walczak","Rekonstrukteur","Abweichung HBI-Liste","ID/screen_name fehlt"
-"65","4243175841","Juliane Timmermann","JuTiHH","Abweichung HBI-Liste","ID/screen_name fehlt"
-"66","4026886997","Rosa Domm","rosadomm_","Abweichung HBI-Liste","ID/screen_name fehlt"
-"67","4017855855","Lisa Kern","GrueneLisa","Abweichung HBI-Liste","ID/screen_name fehlt"
-"68","3221529797","Silke Seif","SilkeSeif","Abweichung HBI-Liste","ID/screen_name fehlt"
-"69","2872405828","Jens Kerstan","JensKerstan","Abweichung HBI-Liste","ID/screen_name fehlt"
-"70","2757527728","Andrea Nunne","anunnehh","Abweichung HBI-Liste","ID/screen_name fehlt"
-"71","2485038029","Baris Önes","BarisOenes","Abweichung HBI-Liste","ID/screen_name fehlt"
-"72","2232282311","Yusuf Uzundag","YusufUzundag","Abweichung HBI-Liste","ID/screen_name fehlt"
-"73","1125962791","Till Steffen","till_steffen","Abweichung HBI-Liste","ID/screen_name fehlt"
-"74","514336872","Dennis Paustian-Döscher","Pausti1980","Abweichung HBI-Liste","ID/screen_name fehlt"
-"75","340977747","Iftikhar Malik","iftikharDE","Abweichung HBI-Liste","ID/screen_name fehlt"
-"76","262673926","Lena Zagst","lenazagst","Abweichung HBI-Liste","ID/screen_name fehlt"
-"77","63158667","Katharina Fegebank","fegebanks","Abweichung HBI-Liste","ID/screen_name fehlt"
-"78","23358017","Michael Gwosdz","platz13","Abweichung HBI-Liste","ID/screen_name fehlt"
-"79","1326177814597545995","Moritz Promny","MoritzPromny","Abweichung HBI-Liste","ID/screen_name fehlt"
-"80","1218516643313340416","Ann Christin von Allwörden","ACvA_MdL","Abweichung HBI-Liste","ID/screen_name fehlt"
-"81","1030760282816176128","Ralph Weber","WeberProf","Abweichung HBI-Liste","ID/screen_name fehlt"
-"82","1037791106518409216","Mareike Lotte Wulf","MareikeWulf","Abweichung HBI-Liste","ID/screen_name fehlt"
-"83","51991784","Hendrik Schmitz","HendrikSchmitz","Abweichung HBI-Liste","ID/screen_name fehlt"
-"84","45526030","Marc Lürbke","MarcLuerbke","Abweichung HBI-Liste","ID/screen_name fehlt"
-"85","30204974","Matthias Kerkhoff","matthias1979","Abweichung HBI-Liste","ID/screen_name fehlt"
-"86","20316459","Stefan Engstfeld","Engstfelder","Abweichung HBI-Liste","ID/screen_name fehlt"
-"87","18424211","joernfreynick","joernfreynick","Abweichung HBI-Liste","ID/screen_name fehlt"
-"88","1.18517274125682e+18","Gabriele Bublies-Leifert","LeifertBublies","Abweichung HBI-Liste","ID/screen_name fehlt"
-"89","1055072589889134592","Nico Steinbach","nico_steinbach","Abweichung HBI-Liste","ID/screen_name fehlt"
-"90","9.3657843118948698e+17","Nina Klinkel","NinaKlinkel","Abweichung HBI-Liste","ID/screen_name fehlt"
-"91","1176403524445495297","MdL André Barth","BarthMdl","Abweichung HBI-Liste","ID/screen_name fehlt"
-"92","1141235635673608193","Anna_Gorskih","gorskih_anna","Abweichung HBI-Liste","ID/screen_name fehlt"
-"93","1036213002717024256","Toni Mertsching","ToniMertsching","Abweichung HBI-Liste","ID/screen_name fehlt"
-"94","4010671571","Lucie Hammecke","lucies_ecke","Abweichung HBI-Liste","ID/screen_name fehlt"
-"95","2496972553","Marika Tändler-Walenta","Marikat5","Abweichung HBI-Liste","ID/screen_name fehlt"
-"96","875410448","Christin Melcher","ChMelcher","Abweichung HBI-Liste","ID/screen_name fehlt"
-"97","393264968","Michael Kretschmer","MPKretschmer","Abweichung HBI-Liste","ID/screen_name fehlt"
-"98","382136566","Thomas Löser","ThomasLoeserDD","Abweichung HBI-Liste","ID/screen_name fehlt"
-"99","21618444","Daniel Gerber","gerbsen","Abweichung HBI-Liste","ID/screen_name fehlt"
-"100","3246262145","Daniel Günther","DGuenther_CDUSH","Abweichung HBI-Liste","ID/screen_name fehlt"
-"101","595407924","Stefan Weber","StefanWeberSE","Abweichung HBI-Liste","ID/screen_name fehlt"
-"102","32009149","Katja Mitteldorf","KatjaMitteldorf","Abweichung HBI-Liste","ID/screen_name fehlt"
-"104","1340469592666324992","Claudia Schmidtke","MdB_Schmidtke","Abweichung HBI-Liste","ID/screen_name fehlt"
-"105","1235523759597068288","Charlotte Schneidewind-Hartnagel","charlotte_mdb","Abweichung HBI-Liste","ID/screen_name fehlt"
-"106","1201838123841404929","Gerhard Zickenheiner","GZickenheiner","Abweichung HBI-Liste","ID/screen_name fehlt"
-"107","1193925069476696064","Christoph de Vries","VriesChristoph","Abweichung HBI-Liste","ID/screen_name fehlt"
-"108","1187686813168820224","Jürgen Martens","juergen_martens","Abweichung HBI-Liste","ID/screen_name fehlt"
-"109","1181598578508214272","Thorsten Frei","thorsten_frei","Abweichung HBI-Liste","ID/screen_name fehlt"
-"110","1159457070124605442","Martin Hohmann","HohmannMdb","Abweichung HBI-Liste","ID/screen_name fehlt"
-"111","1159072277746593792","Martin Patzelt","MPatzeltCDU","Abweichung HBI-Liste","ID/screen_name fehlt"
-"112","1148916458983964673","Dagmar Freitag","DagmarFreitag13","Abweichung HBI-Liste","ID/screen_name fehlt"
-"113","1135510177292197888","Elisabeth Motschmann","ElisabethMotsc1","Abweichung HBI-Liste","ID/screen_name fehlt"
-"114","1132260527378489345","Michael Hennrich","MichaelHennric2","Abweichung HBI-Liste","ID/screen_name fehlt"
-"115","1127961248493129728","Albert Stegemann","StegemannAlbert","Abweichung HBI-Liste","ID/screen_name fehlt"
-"116","1113004743733993472","Bernd Rützel","ruetzelbernd","Abweichung HBI-Liste","ID/screen_name fehlt"
-"117","1096063189249331201","Susanne Ferschl","SusanneFerschl","Abweichung HBI-Liste","ID/screen_name fehlt"
-"118","1095023450790547457","Karin Maag","MaagKarin","Abweichung HBI-Liste","ID/screen_name fehlt"
-"119","1085599614122762242","Eckhard Gnodtke","EckhardGnodtke","Abweichung HBI-Liste","ID/screen_name fehlt"
-"120","1085494381405237251","Christoph Hoffmann","HoffmannForest","Abweichung HBI-Liste","ID/screen_name fehlt"
-"121","1082925763316367360","Antje Tillmann","AntjeTillmann","Abweichung HBI-Liste","ID/screen_name fehlt"
-"122","1071665423140249600","Bernd Westphal","BerndWestphal4","Abweichung HBI-Liste","ID/screen_name fehlt"
-"123","1070312229139025920","Claudia Moll","ClaudiaMollMdB","Abweichung HBI-Liste","ID/screen_name fehlt"
-"124","1061873979760263168","Nicole Bauer","nicole_ae_bauer","Abweichung HBI-Liste","ID/screen_name fehlt"
-"125","1052524172717375488","Thomas Rachel","_ThomasRachel","Abweichung HBI-Liste","ID/screen_name fehlt"
-"126","1042109887604563968","Wiebke Esdar","wiebkeesdar1","Abweichung HBI-Liste","ID/screen_name fehlt"
-"127","1040160799208161280","Norbert Röttgen","n_roettgen","Abweichung HBI-Liste","ID/screen_name fehlt"
-"128","1020297087970435072","Jessica Tatti","jessica_tatti","Abweichung HBI-Liste","ID/screen_name fehlt"
-"129","1019846605044936705","Daniela Ludwig","DaniLudwigMdB","Abweichung HBI-Liste","ID/screen_name fehlt"
-"130","1003656299589132291","Wolfgang Wiehle","WolfgangWiehle","Abweichung HBI-Liste","ID/screen_name fehlt"
-"131","1001837201276235777","Renata Alt","RenataAlt_MdB","Abweichung HBI-Liste","ID/screen_name fehlt"
-"132","998867063274921984","Britta Dassler","BrittaDassler","Abweichung HBI-Liste","ID/screen_name fehlt"
-"133","997138767763750912","Markus Herbrand","HerbrandMarkus","Abweichung HBI-Liste","ID/screen_name fehlt"
-"134","995228494023086080","Karsten Klein","MdBKlein","Abweichung HBI-Liste","ID/screen_name fehlt"
-"135","989145249682526213","Nicole Westig","NicoleWestig","Abweichung HBI-Liste","ID/screen_name fehlt"
-"136","984735466783232000","Manuela Rottmann","ManuelaRottman","Abweichung HBI-Liste","ID/screen_name fehlt"
-"137","976107205849206784","Grigorios Aggelidis","aggelidis_fdp","Abweichung HBI-Liste","ID/screen_name fehlt"
-"138","974589289689427968","Martin Neumann","_MartinNeumann","Abweichung HBI-Liste","ID/screen_name fehlt"
-"139","971040144420720641","Bettina Hoffmann","bhoffmann_mdb","Abweichung HBI-Liste","ID/screen_name fehlt"
-"140","966707365893558273","Gero Hocker","GeroHocker","Abweichung HBI-Liste","ID/screen_name fehlt"
-"141","965591555783430144","Hansjörg Müller","MdB_Mueller_AfD","Abweichung HBI-Liste","ID/screen_name fehlt"
-"142","959105406416162823","Katja Keul","KatjaKeul","Abweichung HBI-Liste","ID/screen_name fehlt"
-"143","955357684013953025","Kirsten Kappert-Gonther","KirstenKappert","Abweichung HBI-Liste","ID/screen_name fehlt"
-"144","944181149424898048","Fabian Jacobi","Jacobi_AfD","Abweichung HBI-Liste","ID/screen_name fehlt"
-"145","943082490482262016","Margit Stumpp","margit_stumpp","Abweichung HBI-Liste","ID/screen_name fehlt"
-"146","937678874095300609","Katja Mast","KatjaMast","Abweichung HBI-Liste","ID/screen_name fehlt"
-"147","935456332655874048","Gerald Ullrich","G_UllrichFDP","Abweichung HBI-Liste","ID/screen_name fehlt"
-"148","934029228886065152","Amira Mohamed Ali","Amira_M_Ali","Abweichung HBI-Liste","ID/screen_name fehlt"
-"149","928335737803722753","Christoph Ploß","christophploss","Abweichung HBI-Liste","ID/screen_name fehlt"
-"150","925657781759332353","Hagen Reinhold","reinholdmdb","Abweichung HBI-Liste","ID/screen_name fehlt"
-"151","917756296555892736","Jürgen Braun","JuergenBraunAfD","Abweichung HBI-Liste","ID/screen_name fehlt"
-"152","804064797977444352","Rainer Kraft","Dr_Rainer_Kraft","Abweichung HBI-Liste","ID/screen_name fehlt"
-"153","729360191263780867","Marcus Bühl","Marcus_Buehl","Abweichung HBI-Liste","ID/screen_name fehlt"
-"154","4858227178","Sarah Ryglewski","RyglewskiS","Abweichung HBI-Liste","ID/screen_name fehlt"
-"155","3408940048","Jan Nolte","Jan_Nolte_AfD","Abweichung HBI-Liste","ID/screen_name fehlt"
-"156","3384789731","Peter Felser","PeterFelser","Abweichung HBI-Liste","ID/screen_name fehlt"
-"157","3242322815","Thomas Ehrhorn","Thomas_Ehrhorn","Abweichung HBI-Liste","ID/screen_name fehlt"
-"158","3105025175","Nicole Höchst","Nicole_Hoechst","Abweichung HBI-Liste","ID/screen_name fehlt"
-"159","2368711488","Birgit Malsack-Winkemann","MalsackWinkeman","Abweichung HBI-Liste","ID/screen_name fehlt"
-"160","1743275384","Alex Kulitz","AKulitz","Abweichung HBI-Liste","ID/screen_name fehlt"
-"161","1402997803","Lars Herrmann","hermiworld","Abweichung HBI-Liste","ID/screen_name fehlt"
-"162","235703405","Andreas Wagner","Andi_Wagner","Abweichung HBI-Liste","ID/screen_name fehlt"
-"163","2715759820","Peter Tschentscher","TschenPe","Abweichung HBI-Liste","ID/screen_name fehlt; offizieller Partei-Account genutzt"
-"164","1073519002083840001","Tino Schopf","TinoSchopf","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"165","899574658189676544","Gaby Gottwald","gaby_gottwald","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"166","2686925317","Maja Lasic","LasicMaja","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"167","67401154","Philipp Bertram","BertramPH","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"168","2847025463","Gudrun Schittek","GSchittek","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"169","265657456","Lisa Maria Otte","LisaMariaOtte","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"170","77224087","Arne Platzbecker","arneplatzbecker","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"171","17267632","Eka von Kalben","ekavonkalben","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt"
-"172","3015814120","Kristian Ronneburg","k_ronneburg","Abweichung HBI-Liste","Name falsch; ID/screen_name fehlt,"
-"173","788420865012695040","Doris von Sayn-Wittgenstein","v_Wittgenstein","Abweichung HBI-Liste","Name falsch; screen_name falsch"
-"174","4861233617","Tobias von der Heide","TobiasvdHeide","Abweichung HBI-Liste","Name falsch; screen_name falsch"
-"175","81636905","Dilek Kalayci","dil_kal","Abweichung HBI-Liste","Name falsch; screen_name falsch; Geschlecht falsch"
-"176","1683845126","Team PetraPau","TeamPetraPau","Abweichung HBI-Liste","Person/Account fehlt"
-"177","905516414257258497","Fraktion der Freien Demokraten","fdpbt","Abweichung HBI-Liste","Person/Account fehlt"
-"178","347792540","SPD-Fraktion im Bundestag","spdbt","Abweichung HBI-Liste","Person/Account fehlt"
-"179","46085533","CDU/CSU","cducsubt","Abweichung HBI-Liste","Person/Account fehlt"
-"180","24725119","Grüne im Bundestag","GrueneBundestag","Abweichung HBI-Liste","Person/Account fehlt"
-"181","18933321","linksfraktion","Linksfraktion","Abweichung HBI-Liste","Person/Account fehlt"
-"182","1217153786562711554","Franziska Leschewitz","f_leschewitz","Abweichung HBI-Liste","Person/Account fehlt"
-"183","1210696213961609216","Alexander Wieberneit","AWieberneit","Abweichung HBI-Liste","Person/Account fehlt"
-"184","815897178766016513","Pankower Abgeordnete","Pankow_im_AGH","Abweichung HBI-Liste","Person/Account fehlt"
-"185","27948346","hennerschmidt","hennerschmidt","Abweichung HBI-Liste","Person/Account fehlt"
-"186","827613612608991232","Ricarda Budke","RicardaBudke","Abweichung HBI-Liste","Person/Account fehlt"
-"187","1250426686270660608","Stephanie Rose","dielinke_rose","Abweichung HBI-Liste","Person/Account fehlt"
-"188","1104544908990431233","Olga Petersen","OlgaPetersenAfD","Abweichung HBI-Liste","Person/Account fehlt"
-"189","49765631","Sandra Johann","johann_sandra","Abweichung HBI-Liste","Person/Account fehlt"
-"190","1333753509213298688","Janine Merz","JanineMerz","Abweichung HBI-Liste","Person/Account fehlt"
-"191","3290227454","Laura Wahl","dieGrueneWahl","Abweichung HBI-Liste","Person/Account fehlt"
-"192","3083754916","Babett Pfefferlein","BPfefferlein","Abweichung HBI-Liste","Person/Account fehlt"
-"193","23217308","Denny Möller","demoe","Abweichung HBI-Liste","Person/Account fehlt"
-"194","827090742162100224","Manja Schüle","ManjaSchuele","Abweichung HBI-Liste","Person/Account fehlt"
-"195","426403057","Christine Buchholz","ch_buchholz","Abweichung HBI-Liste","Person/Account fehlt"
-"196","38272947","Hiltrud Lotze","HiltrudLotze","Abweichung HBI-Liste","Person/Account fehlt"
-"197","29858729","Julia Klöckner","JuliaKloeckner","Abweichung HBI-Liste","Person/Account fehlt"
-"198","958634602905718785","Katharina Willkomm","k_willkomm","Abweichung HBI-Liste","Person/Account fehlt"
-"199","1136560212599627776","Doris Senger","DorisSenger_MdL","Abweichung HBI-Liste","screen_name falsch"
-"200","425251549","Heinrich Fiechtner","DrFiechtner","Abweichung HBI-Liste","screen_name falsch"
-"201","234964135","Daniel Lede Abal","ledeabal","Abweichung HBI-Liste","screen_name falsch"
-"202","990305861607264256","Alexandra Hiersemann","HiersemannAlexa","Abweichung HBI-Liste","screen_name falsch"
-"203","876100980554772481","Andi Krahl","andkrahl","Abweichung HBI-Liste","screen_name falsch"
-"204","819481318224523264","Martin Hagen","_MartinHagen","Abweichung HBI-Liste","screen_name falsch"
-"205","95671546","Wolfgang Heubisch","heubisch","Abweichung HBI-Liste","screen_name falsch"
-"206","883561437645475840","Dana Guth","Dana_Guth_LKR","Abweichung HBI-Liste","screen_name falsch"
-"207","1088619468","Sebastian Lechner","SebLechner","Abweichung HBI-Liste","screen_name falsch"
-"208","830011603202486272","Simone Wendland","_SimoneWendland","Abweichung HBI-Liste","screen_name falsch"
-"209","572120446","Dietmar Panske","DietmarPanske","Abweichung HBI-Liste","screen_name falsch"
-"210","3096416285","Michael Wäschenbach","MiWae21","Abweichung HBI-Liste","screen_name falsch"
-"211","28973422","Matthias Joa","MatthiasJoa_AfD","Abweichung HBI-Liste","screen_name falsch"
-"212","3321753670","Jan Wenzel Schmidt","jws_afd","Abweichung HBI-Liste","screen_name falsch"
-"213","73410805","Andreas Tietze","tietze_andreas","Abweichung HBI-Liste","screen_name falsch"
-"214","1152196969915396096","Lutz Liebscher","LutzLiebscher","Abweichung HBI-Liste","screen_name falsch"
-"215","910878654535749632","Andreas Bleck","andreasbleckmdb","Abweichung HBI-Liste","screen_name falsch"
-"216","885167849685340161","Michael Espendiller","DrMEspendiller","Abweichung HBI-Liste","screen_name falsch"
-"217","861992050358616064","Christoph Meyer","Meyer_FDP","Abweichung HBI-Liste","screen_name falsch"
-"218","849567328899616768","Achim Kessler","AchimKesslerMdB","Abweichung HBI-Liste","screen_name falsch"
-"219","831541837965967361","René Springer","Rene_Springer","Abweichung HBI-Liste","screen_name falsch"
-"220","815469233090023424","Dirk Wiese Sauerland","DirkWieseSPD","Abweichung HBI-Liste","screen_name falsch"
-"221","810957560723505152","Petr Bystron","PetrBystronAfD","Abweichung HBI-Liste","screen_name falsch"
-"222","4875914470","Rüdiger Lucassen","MdB_Lucassen","Abweichung HBI-Liste","screen_name falsch"
-"223","4819478705","Doris Achelwilm","DorisAchelwilm","Abweichung HBI-Liste","screen_name falsch"
-"224","3188225915","Torbjörn Kartes","KartesMdB","Abweichung HBI-Liste","screen_name falsch"
-"225","1543429536","Michel Brandt","michel_brandt_","Abweichung HBI-Liste","screen_name falsch"
-"226","1425035358","Elisabeth Kaiser","Kaiser_SPD","Abweichung HBI-Liste","screen_name falsch"
-"227","1412287272","Stephan Protschka","AfDProtschka","Abweichung HBI-Liste","screen_name falsch"
-"228","1356753444","Johannes Schraps","jschraps","Abweichung HBI-Liste","screen_name falsch"
-"229","1334019378","Christian von Stetten","CvStetten","Abweichung HBI-Liste","screen_name falsch"
-"230","609972369","Andrew Ullmann","UllmannMdB","Abweichung HBI-Liste","screen_name falsch"
-"231","474013625","Sylvia Kotting-Uhl","KottingUhl","Abweichung HBI-Liste","screen_name falsch"
-"232","449619355","Jens Zimmermann","JensZSPD","Abweichung HBI-Liste","screen_name falsch"
-"233","175071092","Jürgen Pohl","Pohl_MdB","Abweichung HBI-Liste","screen_name falsch"
-"234","143882918","Helin Evrim Sommer","HESommer","Abweichung HBI-Liste","screen_name falsch"
-"235","77928749","Frank Junge","jungeinberlin","Abweichung HBI-Liste","screen_name falsch"
-"236","30838821","Andreas Rimkus","Andreas_Rimkus","Abweichung HBI-Liste","screen_name falsch"
-"237","960463104537657344","Bijan Djir-Sarai","DjirSarai","Abweichung HBI-Liste","screen_name falsch"
-"238","19177808","Uwe Schulz","Uwe_Schulz_AfD","Abweichung HBI-Liste","screen_name falsch"
-"239","1019949632108064768","Alexandra Geese","AlexandraGeese","Abweichung HBI-Liste","screen_name falsch"
-"240","20344328","Michael Bloss","micha_bloss","Abweichung HBI-Liste","screen_name falsch"
-"241","4819478705","Doris Maria Achelwilm","doris_achelwilm","Abweichung HBI-Liste","screen_name falsch"
-"242","727753463229206528","Rainer Balzer","DrRainerBalzer","Abweichung HBI-Liste","screen_name falsch"
-"246","887345693526036480","Sandra Bubendorfer-Licht","Sbubendorfer","Abweichung HBI-Liste; Abweichung EPINetz-Liste","screen_name falsch; Person/Account fehlt"
-"249","856807050294251520","Carl-Julius Cronenberg","CarloCronenberg","Abweichung HBI-Liste; Abweichung EPINetz-Liste","screen_name falsch; Person/Account fehlt"
-"250","58777977","Kees de Vries","keesdevriescdu","Inaktiv; Abweichung HBI-Liste; Abweichung EPINetz-Liste","screen_name falsch; Person/Account fehlt"
-"255","1334019378","Christian Alexander Freiherr von Stetten","Stettenchris","Abweichung HBI-Liste","Name falsch; screen_name falsch"
-"260","877919294998315008","Stefan Herre","StefanHerreMdL","Account nicht länger relevant",NA
-"262","760184727752077312","Karsten Hilse","Karsten_Hilse","Abweichung HBI-Liste; Abweichung EPINetz-Liste","screen_name falsch; Person/Account fehlt;"
-"265","77928749","Frank Michael Junge","fjunge","Abweichung HBI-Liste","screen_name falsch"
-"267","3188225915","Jens Torbjörn Kartes","torbjoernkartes","Abweichung HBI-Liste","screen_name falsch"
-"269","102080844","Jens Kestner","JensKestner","Abweichung HBI-Liste; Abweichung EPINetz-Liste","screen_name falsch; Person/Account fehlt"
-"270","81636905","Dilek Kolat","dilkol","Abweichung HBI-Liste","Name falsch; screen_name falsch; Geschlecht falsch "
-"271","185615819","Petra Köpping","Koepping","Account nicht länger relevant",NA
-"275","4875914470","Hans-Rüdiger Lucassen","buerger2016","Abweichung HBI-Liste","screen_name falsch"
-"277","912243750809817088","Siemtje Möller","SiemtjeMoeller","Abweichung HBI-Liste","screen_name falsch"
-"278","774309860812918784","Gerold Joachim Otten","gerold_otten","Inaktiv; Abweichung HBI-Liste","screen_name falsch"
-"280","1273010575","Frauke Petry","fraukepetry","Abweichung HBI-Liste; Abweichung EPINetz-Liste","Falsche Partei; Person/Account fehlt"
-"283","1868420712","Jan Quast","Jan_Quast","Account nicht länger relevant",NA
-"285","788420865012695040","Doris Sayn-Witthenstien","WittgensteinAfD","Abweichung HBI-Liste","screen_name falsch; Name falsch"
-"286","3105222699","Robby Schlund","Robby_Schlund","Inaktiv; Abweichung HBI-Liste","screen_name falsch"
-"287","3321753670","Jan Schmidt","jaweschmi","Abweichung HBI-Liste","screen_name falsch; Name falsch"
-"288","54188981","Guntram  Schneider","Guntram_S","Account nicht länger relevant",NA
-"292","143882918","Evrim Sommer","evrimsommer","Abweichung HBI-Liste","screen_name falsch"
-"297","3197641246","Heike Werner","Min_HeikeWerner","Abweichung HBI-Liste; Abweichung EPINetz-Liste","screen_name falsch; Person/Account fehlt"
-"298","815469233090023424","Dirk Wiese","dirkwiese4","Abweichung HBI-Liste","screen_name falsch"
-"300","1308675588","Heribert Friedman","HeriFriedmann","In HBI-Liste verrutscht",NA
+,Twitter_id,Name,Twitter_screen_name,Grund,Weitere.Bemerkungen
+218,849567328899616768,Achim Kessler,AchimKesslerMdB,Abweichung HBI-Liste,screen_name falsch
+115,1127961248493129728,Albert Stegemann,StegemannAlbert,Abweichung HBI-Liste,ID/screen_name fehlt
+160,1743275384,Alex Kulitz,AKulitz,Abweichung HBI-Liste,ID/screen_name fehlt
+16,904260098494746624,Alexander Hold,fw_hold,Abweichung HBI-Liste,ID/screen_name fehlt
+183,1210696213961609216,Alexander Wieberneit,AWieberneit,Abweichung HBI-Liste,Person/Account fehlt
+239,1019949632108064768,Alexandra Geese,AlexandraGeese,Abweichung HBI-Liste,screen_name falsch
+202,990305861607264256,Alexandra Hiersemann,HiersemannAlexa,Abweichung HBI-Liste,screen_name falsch
+44,1177611234046283776,Alske Freter,AlskeFreter,Abweichung HBI-Liste,ID/screen_name fehlt
+148,934029228886065152,Amira Mohamed Ali,Amira_M_Ali,Abweichung HBI-Liste,ID/screen_name fehlt
+203,876100980554772481,Andi Krahl,andkrahl,Abweichung HBI-Liste,screen_name falsch
+91,1176403524445495297,André Barth,BarthMdl,Abweichung HBI-Liste,ID/screen_name fehlt
+70,2757527728,Andrea Nunne,anunnehh,Abweichung HBI-Liste,ID/screen_name fehlt
+215,910878654535749632,Andreas Bleck,andreasbleckmdb,Abweichung HBI-Liste,screen_name falsch
+51,1053198649700827136,Andreas Dressel,ADressel,Abweichung HBI-Liste,ID/screen_name fehlt
+236,30838821,Andreas Rimkus,Andreas_Rimkus,Abweichung HBI-Liste,screen_name falsch
+213,73410805,Andreas Tietze,tietze_andreas,Abweichung HBI-Liste,screen_name falsch
+162,235703405,Andreas Wagner,Andi_Wagner,Abweichung HBI-Liste,ID/screen_name fehlt
+230,609972369,Andrew Ullmann,UllmannMdB,Abweichung HBI-Liste,screen_name falsch
+43,1182394262589247492,Anke Frieling,AnkeFrieling,Abweichung HBI-Liste,ID/screen_name fehlt
+80,1218516643313340416,Ann Christin von Allwörden,ACvA_MdL,Abweichung HBI-Liste,ID/screen_name fehlt
+92,1141235635673608193,Anna_Gorskih,gorskih_anna,Abweichung HBI-Liste,ID/screen_name fehlt
+121,1082925763316367360,Antje Tillmann,AntjeTillmann,Abweichung HBI-Liste,ID/screen_name fehlt
+170,77224087,Arne Platzbecker,arneplatzbecker,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+192,3083754916,Babett Pfefferlein,BPfefferlein,Abweichung HBI-Liste,Person/Account fehlt
+71,2485038029,Baris Önes,BarisOenes,Abweichung HBI-Liste,ID/screen_name fehlt
+116,1113004743733993472,Bernd Rützel,ruetzelbernd,Abweichung HBI-Liste,ID/screen_name fehlt
+122,1071665423140249600,Bernd Westphal,BerndWestphal4,Abweichung HBI-Liste,ID/screen_name fehlt
+139,971040144420720641,Bettina Hoffmann,bhoffmann_mdb,Abweichung HBI-Liste,ID/screen_name fehlt
+237,960463104537657344,Bijan Djir-Sarai,DjirSarai,Abweichung HBI-Liste,screen_name falsch
+159,2368711488,Birgit Malsack-Winkemann,MalsackWinkeman,Abweichung HBI-Liste,ID/screen_name fehlt
+132,998867063274921984,Britta Dassler,BrittaDassler,Abweichung HBI-Liste,ID/screen_name fehlt
+8,996440442819502082,Bruno Hollnagel,DrHollnagel,Abweichung HBI-Liste,falscher Account
+249,856807050294251520,Carl-Julius Cronenberg,CarloCronenberg,Abweichung HBI-Liste; Abweichung EPINetz-Liste,screen_name falsch; Person/Account fehlt
+36,1253235618081116167,Carla Kniestedt,CKniestedt,Abweichung HBI-Liste,ID/screen_name fehlt
+59,905001561633558528,Carsten Brosda,CarstenBrosda,Abweichung HBI-Liste,ID/screen_name fehlt
+38,1245678398518763520,Carsten Sieling,carstensieling,Abweichung HBI-Liste,ID/screen_name fehlt
+33,4174833567,Catherina Pieroth,CathPieroth,Abweichung HBI-Liste,ID/screen_name fehlt
+179,46085533,CDU/CSU,cducsubt,Abweichung HBI-Liste,Person/Account fehlt
+105,1235523759597068288,Charlotte Schneidewind-Hartnagel,charlotte_mdb,Abweichung HBI-Liste,ID/screen_name fehlt
+63,737743836949123072,Christa Möller,moeller_metzger,Abweichung HBI-Liste,ID/screen_name fehlt
+25,1081601912565317632,Christian Buchholz,BuchholzMda,Abweichung HBI-Liste,ID/screen_name fehlt
+229,1334019378,Christian von Stetten,CvStetten,Abweichung HBI-Liste,screen_name falsch
+96,875410448,Christin Melcher,ChMelcher,Abweichung HBI-Liste,ID/screen_name fehlt
+195,426403057,Christine Buchholz,ch_buchholz,Abweichung HBI-Liste,Person/Account fehlt
+107,1193925069476696064,Christoph de Vries,VriesChristoph,Abweichung HBI-Liste,ID/screen_name fehlt
+120,1085494381405237251,Christoph Hoffmann,HoffmannForest,Abweichung HBI-Liste,ID/screen_name fehlt
+217,861992050358616064,Christoph Meyer,Meyer_FDP,Abweichung HBI-Liste,screen_name falsch
+149,928335737803722753,Christoph Ploß,christophploss,Abweichung HBI-Liste,ID/screen_name fehlt
+123,1070312229139025920,Claudia Moll,ClaudiaMollMdB,Abweichung HBI-Liste,ID/screen_name fehlt
+104,1340469592666324992,Claudia Schmidtke,MdB_Schmidtke,Abweichung HBI-Liste,ID/screen_name fehlt
+112,1148916458983964673,Dagmar Freitag,DagmarFreitag13,Abweichung HBI-Liste,ID/screen_name fehlt
+206,883561437645475840,Dana Guth,Dana_Guth_LKR,Abweichung HBI-Liste,screen_name falsch
+99,21618444,Daniel Gerber,gerbsen,Abweichung HBI-Liste,ID/screen_name fehlt
+100,3246262145,Daniel Günther,DGuenther_CDUSH,Abweichung HBI-Liste,ID/screen_name fehlt
+201,234964135,Daniel Lede Abal,ledeabal,Abweichung HBI-Liste,screen_name falsch
+129,1019846605044936705,Daniela Ludwig,DaniLudwigMdB,Abweichung HBI-Liste,ID/screen_name fehlt
+37,1226482835500019714,Danny Eichelbaum,DannyEichelbaum,Abweichung HBI-Liste,ID/screen_name fehlt
+60,851712947130961920,David Stoop,DavidStoopHH,Abweichung HBI-Liste,ID/screen_name fehlt
+74,514336872,Dennis Paustian-Döscher,Pausti1980,Abweichung HBI-Liste,ID/screen_name fehlt
+193,23217308,Denny Möller,demoe,Abweichung HBI-Liste,Person/Account fehlt
+30,981246353920667649,Dieter Neuendorf,DieterNeuendorf,Abweichung HBI-Liste,ID/screen_name fehlt
+209,572120446,Dietmar Panske,DietmarPanske,Abweichung HBI-Liste,screen_name falsch
+175,81636905,Dilek Kalayci,dil_kal,Abweichung HBI-Liste,Name falsch; screen_name falsch; Geschlecht falsch
+5,1083371289786634240,Dirk Heidenblut,DHeidenblut,Abweichung HBI-Liste,falscher Account
+35,1288071200,Dirk Stettner,DirkStettner,Abweichung HBI-Liste,ID/screen_name fehlt
+220,815469233090023424,Dirk Wiese Sauerland,DirkWieseSPD,Abweichung HBI-Liste,screen_name falsch
+223,4819478705,Doris Achelwilm,DorisAchelwilm,Abweichung HBI-Liste,screen_name falsch
+13,993826627686666240,Doris Rauscher,Doris_Rauscher,Abweichung HBI-Liste,ID/screen_name fehlt
+199,1136560212599627776,Doris Senger,DorisSenger_MdL,Abweichung HBI-Liste,screen_name falsch
+173,788420865012695040,Doris von Sayn-Wittgenstein,v_Wittgenstein,Abweichung HBI-Liste,Name falsch; screen_name falsch
+119,1085599614122762242,Eckhard Gnodtke,EckhardGnodtke,Abweichung HBI-Liste,ID/screen_name fehlt
+171,17267632,Eka von Kalben,ekavonkalben,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+226,1425035358,Elisabeth Kaiser,Kaiser_SPD,Abweichung HBI-Liste,screen_name falsch
+113,1135510177292197888,Elisabeth Motschmann,ElisabethMotsc1,Abweichung HBI-Liste,ID/screen_name fehlt
+10,951773879822880768,Erhard Grundl,Erhard_Grundl,Abweichung HBI-Liste,falscher Account
+144,944181149424898048,Fabian Jacobi,Jacobi_AfD,Abweichung HBI-Liste,ID/screen_name fehlt
+31,874969224699154433,Florian Graf,graf_berlin,Abweichung HBI-Liste,ID/screen_name fehlt
+177,905516414257258497,Fraktion der Freien Demokraten,fdpbt,Abweichung HBI-Liste,Person/Account fehlt
+235,77928749,Frank Junge,jungeinberlin,Abweichung HBI-Liste,screen_name falsch
+21,1169547234058412032,Frank Zimmermann,FrankZ_MdA,Abweichung HBI-Liste,ID/screen_name fehlt
+24,1088384585686237184,Franz Kerker,franzkerker,Abweichung HBI-Liste,ID/screen_name fehlt
+182,1217153786562711554,Franziska Leschewitz,f_leschewitz,Abweichung HBI-Liste,Person/Account fehlt
+280,1273010575,Frauke Petry,fraukepetry,Abweichung HBI-Liste; Abweichung EPINetz-Liste,Falsche Partei; Person/Account fehlt
+88,1.18517274125682e+18,Gabriele Bublies-Leifert,LeifertBublies,Abweichung HBI-Liste,ID/screen_name fehlt
+165,899574658189676544,Gaby Gottwald,gaby_gottwald,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+147,935456332655874048,Gerald Ullrich,G_UllrichFDP,Abweichung HBI-Liste,ID/screen_name fehlt
+106,1201838123841404929,Gerhard Zickenheiner,GZickenheiner,Abweichung HBI-Liste,ID/screen_name fehlt
+140,966707365893558273,Gero Hocker,GeroHocker,Abweichung HBI-Liste,ID/screen_name fehlt
+278,774309860812918784,Gerold Joachim Otten,gerold_otten,Inaktiv; Abweichung HBI-Liste,screen_name falsch
+4,1125751445205262336,Gitta Connemann,gitta_connemann,Abweichung HBI-Liste,falscher Account
+11,800457587510476800,Gökay Akbulut,AkbulutGokay,Abweichung HBI-Liste,falscher Account
+137,976107205849206784,Grigorios Aggelidis,aggelidis_fdp,Abweichung HBI-Liste,ID/screen_name fehlt
+180,24725119,Grüne im Bundestag,GrueneBundestag,Abweichung HBI-Liste,Person/Account fehlt
+168,2847025463,Gudrun Schittek,GSchittek,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+55,964659367000801282,Güngör Yilmaz,GngrYilmaz6,Abweichung HBI-Liste,ID/screen_name fehlt
+288,54188981,Guntram Schneider,Guntram_S,Account nicht länger relevant,NA
+150,925657781759332353,Hagen Reinhold,reinholdmdb,Abweichung HBI-Liste,ID/screen_name fehlt
+26,1073175051451752448,Hans-Joachim Berg,HansJoachimBerg,Abweichung HBI-Liste,ID/screen_name fehlt
+141,965591555783430144,Hansjörg Müller,MdB_Mueller_AfD,Abweichung HBI-Liste,ID/screen_name fehlt
+27,1052194516331970561,Harald Wolf,HaraldWolf20,Abweichung HBI-Liste,ID/screen_name fehlt
+297,3197641246,Heike Werner,Min_HeikeWerner,Abweichung HBI-Liste; Abweichung EPINetz-Liste,screen_name falsch; Person/Account fehlt
+200,425251549,Heinrich Fiechtner,DrFiechtner,Abweichung HBI-Liste,screen_name falsch
+234,143882918,Evrim Sommer,HESommer,Abweichung HBI-Liste,screen_name falsch
+83,51991784,Hendrik Schmitz,HendrikSchmitz,Abweichung HBI-Liste,ID/screen_name fehlt
+185,27948346,hennerschmidt,hennerschmidt,Abweichung HBI-Liste,Person/Account fehlt
+28,1001477777252634625,Herbert Mohr,herbert_mohr,Abweichung HBI-Liste,ID/screen_name fehlt
+300,1308675588,Heribert Friedman,HeriFriedmann,In HBI-Liste verrutscht,NA
+196,38272947,Hiltrud Lotze,HiltrudLotze,Abweichung HBI-Liste,Person/Account fehlt
+39,1878624326,Holger Welt,holgerwelt,Abweichung HBI-Liste,ID/screen_name fehlt
+75,340977747,Iftikhar Malik,iftikharDE,Abweichung HBI-Liste,ID/screen_name fehlt
+40,1326461934280052737,Insa Tietjen,InsaTietjen,Abweichung HBI-Liste,ID/screen_name fehlt
+23,1103948172274139136,Iris Spranger,IrisSpranger,Abweichung HBI-Liste,ID/screen_name fehlt
+57,939539240257511425,Ivy May Müller,ivymaymueller,Abweichung HBI-Liste,ID/screen_name fehlt
+58,918382563827339264,Jan Koltze,JanKoltze,Abweichung HBI-Liste,ID/screen_name fehlt
+155,3408940048,Jan Nolte,Jan_Nolte_AfD,Abweichung HBI-Liste,ID/screen_name fehlt
+283,1868420712,Jan Quast,Jan_Quast,Account nicht länger relevant,NA
+212,3321753670,Jan Wenzel Schmidt,jws_afd,Abweichung HBI-Liste,screen_name falsch
+190,1333753509213298688,Janine Merz,JanineMerz,Abweichung HBI-Liste,Person/Account fehlt
+61,803588337332264961,Jenny Jasberg,jenny_jasberg,Abweichung HBI-Liste,ID/screen_name fehlt
+69,2872405828,Jens Kerstan,JensKerstan,Abweichung HBI-Liste,ID/screen_name fehlt
+269,102080844,Jens Kestner,JensKestner,Abweichung HBI-Liste; Abweichung EPINetz-Liste,screen_name falsch; Person/Account fehlt
+232,449619355,Jens Zimmermann,JensZSPD,Abweichung HBI-Liste,screen_name falsch
+128,1020297087970435072,Jessica Tatti,jessica_tatti,Abweichung HBI-Liste,ID/screen_name fehlt
+87,18424211,joernfreynick,joernfreynick,Abweichung HBI-Liste,ID/screen_name fehlt
+228,1356753444,Johannes Schraps,jschraps,Abweichung HBI-Liste,screen_name falsch
+17,755714885682683905,Josef Schmid,schmid1_j,Abweichung HBI-Liste,ID/screen_name fehlt
+49,1085265105846181888,Julia Barth,juliabarth_hh,Abweichung HBI-Liste,ID/screen_name fehlt
+197,29858729,Julia Klöckner,JuliaKloeckner,Abweichung HBI-Liste,Person/Account fehlt
+65,4243175841,Juliane Timmermann,JuTiHH,Abweichung HBI-Liste,ID/screen_name fehlt
+151,917756296555892736,Jürgen Braun,JuergenBraunAfD,Abweichung HBI-Liste,ID/screen_name fehlt
+108,1187686813168820224,Jürgen Martens,juergen_martens,Abweichung HBI-Liste,ID/screen_name fehlt
+233,175071092,Jürgen Pohl,Pohl_MdB,Abweichung HBI-Liste,screen_name falsch
+118,1095023450790547457,Karin Maag,MaagKarin,Abweichung HBI-Liste,ID/screen_name fehlt
+262,760184727752077312,Karsten Hilse,Karsten_Hilse,Abweichung HBI-Liste; Abweichung EPINetz-Liste,screen_name falsch; Person/Account fehlt;
+134,995228494023086080,Karsten Klein,MdBKlein,Abweichung HBI-Liste,ID/screen_name fehlt
+77,63158667,Katharina Fegebank,fegebanks,Abweichung HBI-Liste,ID/screen_name fehlt
+198,958634602905718785,Katharina Willkomm,k_willkomm,Abweichung HBI-Liste,Person/Account fehlt
+142,959105406416162823,Katja Keul,KatjaKeul,Abweichung HBI-Liste,ID/screen_name fehlt
+146,937678874095300609,Katja Mast,KatjaMast,Abweichung HBI-Liste,ID/screen_name fehlt
+102,32009149,Katja Mitteldorf,KatjaMitteldorf,Abweichung HBI-Liste,ID/screen_name fehlt
+250,58777977,Kees de Vries,keesdevriescdu,Inaktiv; Abweichung HBI-Liste; Abweichung EPINetz-Liste,screen_name falsch; Person/Account fehlt
+18,2394172854,Kerstin Schreyer,KS_MdL,Abweichung HBI-Liste,ID/screen_name fehlt
+143,955357684013953025,Kirsten Kappert-Gonther,KirstenKappert,Abweichung HBI-Liste,ID/screen_name fehlt
+172,3015814120,Kristian Ronneburg,k_ronneburg,Abweichung HBI-Liste,"Name falsch; ID/screen_name fehlt,"
+64,4795095746,Krzysztof Walczak,Rekonstrukteur,Abweichung HBI-Liste,ID/screen_name fehlt
+161,1402997803,Lars Herrmann,hermiworld,Abweichung HBI-Liste,ID/screen_name fehlt
+191,3290227454,Laura Wahl,dieGrueneWahl,Abweichung HBI-Liste,Person/Account fehlt
+76,262673926,Lena Zagst,lenazagst,Abweichung HBI-Liste,ID/screen_name fehlt
+181,18933321,linksfraktion,Linksfraktion,Abweichung HBI-Liste,Person/Account fehlt
+53,1014453121068789760,Linus Jünemann,gruenpfleger,Abweichung HBI-Liste,ID/screen_name fehlt
+67,4017855855,Lisa Kern,GrueneLisa,Abweichung HBI-Liste,ID/screen_name fehlt
+169,265657456,Lisa Maria Otte,LisaMariaOtte,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+94,4010671571,Lucie Hammecke,lucies_ecke,Abweichung HBI-Liste,ID/screen_name fehlt
+214,1152196969915396096,Lutz Liebscher,LutzLiebscher,Abweichung HBI-Liste,screen_name falsch
+166,2686925317,Maja Lasic,LasicMaja,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+194,827090742162100224,Manja Schüle,ManjaSchuele,Abweichung HBI-Liste,Person/Account fehlt
+136,984735466783232000,Manuela Rottmann,ManuelaRottman,Abweichung HBI-Liste,ID/screen_name fehlt
+84,45526030,Marc Lürbke,MarcLuerbke,Abweichung HBI-Liste,ID/screen_name fehlt
+45,1162979689020952576,Marc Schemmel,MarcSchemmel,Abweichung HBI-Liste,ID/screen_name fehlt
+153,729360191263780867,Marcus Bühl,Marcus_Buehl,Abweichung HBI-Liste,ID/screen_name fehlt
+82,1037791106518409216,Mareike Lotte Wulf,MareikeWulf,Abweichung HBI-Liste,ID/screen_name fehlt
+145,943082490482262016,Margit Stumpp,margit_stumpp,Abweichung HBI-Liste,ID/screen_name fehlt
+14,993158303558586373,Margit Wild,MargitWild,Abweichung HBI-Liste,ID/screen_name fehlt
+95,2496972553,Marika Tändler-Walenta,Marikat5,Abweichung HBI-Liste,ID/screen_name fehlt
+133,997138767763750912,Markus Herbrand,HerbrandMarkus,Abweichung HBI-Liste,ID/screen_name fehlt
+204,819481318224523264,Martin Hagen,_MartinHagen,Abweichung HBI-Liste,screen_name falsch
+110,1159457070124605442,Martin Hohmann,HohmannMdb,Abweichung HBI-Liste,ID/screen_name fehlt
+138,974589289689427968,Martin Neumann,_MartinNeumann,Abweichung HBI-Liste,ID/screen_name fehlt
+111,1159072277746593792,Martin Patzelt,MPatzeltCDU,Abweichung HBI-Liste,ID/screen_name fehlt
+46,1162105569899098131,Maryam Blumenthal,Mary_Blumenthal,Abweichung HBI-Liste,ID/screen_name fehlt
+211,28973422,Matthias Joa,MatthiasJoa_AfD,Abweichung HBI-Liste,screen_name falsch
+85,30204974,Matthias Kerkhoff,matthias1979,Abweichung HBI-Liste,ID/screen_name fehlt
+7,1006099793888841729,Matthias Seestern-Pauly,mseesternpauly,Abweichung HBI-Liste,falscher Account
+1,4546462701,Mazlum Koc,Mazlum21752231,Abweichung HBI-Liste,falscher Account
+54,972051445871718401,Melanie Leonhard,melanieleonhard,Abweichung HBI-Liste,ID/screen_name fehlt
+240,20344328,Michael Bloss,micha_bloss,Abweichung HBI-Liste,screen_name falsch
+216,885167849685340161,Michael Espendiller,DrMEspendiller,Abweichung HBI-Liste,screen_name falsch
+78,23358017,Michael Gwosdz,platz13,Abweichung HBI-Liste,ID/screen_name fehlt
+114,1132260527378489345,Michael Hennrich,MichaelHennric2,Abweichung HBI-Liste,ID/screen_name fehlt
+97,393264968,Michael Kretschmer,MPKretschmer,Abweichung HBI-Liste,ID/screen_name fehlt
+210,3096416285,Michael Wäschenbach,MiWae21,Abweichung HBI-Liste,screen_name falsch
+225,1543429536,Michel Brandt,michel_brandt_,Abweichung HBI-Liste,screen_name falsch
+56,948849826015432704,Miriam Block,mibloq,Abweichung HBI-Liste,ID/screen_name fehlt
+47,1155866473686011905,Miriam Putz,MiriamPutz,Abweichung HBI-Liste,ID/screen_name fehlt
+79,1326177814597545995,Moritz Promny,MoritzPromny,Abweichung HBI-Liste,ID/screen_name fehlt
+89,1055072589889134592,Nico Steinbach,nico_steinbach,Abweichung HBI-Liste,ID/screen_name fehlt
+124,1061873979760263168,Nicole Bauer,nicole_ae_bauer,Abweichung HBI-Liste,ID/screen_name fehlt
+158,3105025175,Nicole Höchst,Nicole_Hoechst,Abweichung HBI-Liste,ID/screen_name fehlt
+135,989145249682526213,Nicole Westig,NicoleWestig,Abweichung HBI-Liste,ID/screen_name fehlt
+90,9.3657843118948698e+17,Nina Klinkel,NinaKlinkel,Abweichung HBI-Liste,ID/screen_name fehlt
+127,1040160799208161280,Norbert Röttgen,n_roettgen,Abweichung HBI-Liste,ID/screen_name fehlt
+188,1104544908990431233,Olga Petersen,OlgaPetersenAfD,Abweichung HBI-Liste,Person/Account fehlt
+184,815897178766016513,Pankower Abgeordnete,Pankow_im_AGH,Abweichung HBI-Liste,Person/Account fehlt
+156,3384789731,Peter Felser,PeterFelser,Abweichung HBI-Liste,ID/screen_name fehlt
+163,2715759820,Peter Tschentscher,TschenPe,Abweichung HBI-Liste,ID/screen_name fehlt; offizieller Partei-Account genutzt
+221,810957560723505152,Petr Bystron,PetrBystronAfD,Abweichung HBI-Liste,screen_name falsch
+271,185615819,Petra Köpping,Koepping,Account nicht länger relevant,NA
+42,1189485948343586818,Philine Sturzenbecher,Psturzenbecher,Abweichung HBI-Liste,ID/screen_name fehlt
+167,67401154,Philipp Bertram,BertramPH,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+29,1001389807728242689,Raed Saleh,RaedSalehBerlin,Abweichung HBI-Liste,ID/screen_name fehlt
+242,727753463229206528,Rainer Balzer,DrRainerBalzer,Abweichung HBI-Liste,screen_name falsch
+152,804064797977444352,Rainer Kraft,Dr_Rainer_Kraft,Abweichung HBI-Liste,ID/screen_name fehlt
+52,1023546997230522368,Ralf Neubauer,ralfneubauerhh,Abweichung HBI-Liste,ID/screen_name fehlt
+12,1049279796574871559,Ralph Müller,dr_afd,Abweichung HBI-Liste,ID/screen_name fehlt
+81,1030760282816176128,Ralph Weber,WeberProf,Abweichung HBI-Liste,ID/screen_name fehlt
+131,1001837201276235777,Renata Alt,RenataAlt_MdB,Abweichung HBI-Liste,ID/screen_name fehlt
+219,831541837965967361,René Springer,Rene_Springer,Abweichung HBI-Liste,screen_name falsch
+186,827613612608991232,Ricarda Budke,RicardaBudke,Abweichung HBI-Liste,Person/Account fehlt
+286,3105222699,Robby Schlund,Robby_Schlund,Inaktiv; Abweichung HBI-Liste,screen_name falsch
+66,4026886997,Rosa Domm,rosadomm_,Abweichung HBI-Liste,ID/screen_name fehlt
+222,4875914470,Rüdiger Lucassen,MdB_Lucassen,Abweichung HBI-Liste,screen_name falsch
+246,887345693526036480,Sandra Bubendorfer-Licht,Sbubendorfer,Abweichung HBI-Liste; Abweichung EPINetz-Liste,screen_name falsch; Person/Account fehlt
+189,49765631,Sandra Johann,johann_sandra,Abweichung HBI-Liste,Person/Account fehlt
+48,1146359322634596352,Sandro Kappe,KappeSandro,Abweichung HBI-Liste,ID/screen_name fehlt
+154,4858227178,Sarah Ryglewski,RyglewskiS,Abweichung HBI-Liste,ID/screen_name fehlt
+41,1247537829090963457,Sarah Timmann,SarahTimmann,Abweichung HBI-Liste,ID/screen_name fehlt
+207,1088619468,Sebastian Lechner,SebLechner,Abweichung HBI-Liste,screen_name falsch
+32,862297859525423105,Sibylle Meister,SibylleMeister,Abweichung HBI-Liste,ID/screen_name fehlt
+277,912243750809817088,Siemtje Möller,SiemtjeMoeller,Abweichung HBI-Liste,screen_name falsch
+68,3221529797,Silke Seif,SilkeSeif,Abweichung HBI-Liste,ID/screen_name fehlt
+208,830011603202486272,Simone Wendland,_SimoneWendland,Abweichung HBI-Liste,screen_name falsch
+62,754063296911773697,Sina Aylin Demirhan,SinaDemirhan,Abweichung HBI-Liste,ID/screen_name fehlt
+178,347792540,SPD-Fraktion im Bundestag,spdbt,Abweichung HBI-Liste,Person/Account fehlt
+86,20316459,Stefan Engstfeld,Engstfelder,Abweichung HBI-Liste,ID/screen_name fehlt
+260,877919294998315008,Stefan Herre,StefanHerreMdL,Account nicht länger relevant,NA
+101,595407924,Stefan Weber,StefanWeberSE,Abweichung HBI-Liste,ID/screen_name fehlt
+227,1412287272,Stephan Protschka,AfDProtschka,Abweichung HBI-Liste,screen_name falsch
+20,1202952565329149953,Stephan Standfuß,StandfuStephan,Abweichung HBI-Liste,ID/screen_name fehlt
+2,2831352701,Stephan Weil,MpStephanWeil,Abweichung HBI-Liste,falscher Account
+187,1250426686270660608,Stephanie Rose,dielinke_rose,Abweichung HBI-Liste,Person/Account fehlt
+117,1096063189249331201,Susanne Ferschl,SusanneFerschl,Abweichung HBI-Liste,ID/screen_name fehlt
+19,81374443,Susanne Kurz,sannekurz,Abweichung HBI-Liste,ID/screen_name fehlt
+231,474013625,Sylvia Kotting-Uhl,KottingUhl,Abweichung HBI-Liste,screen_name falsch
+176,1683845126,Team PetraPau,TeamPetraPau,Abweichung HBI-Liste,Person/Account fehlt
+157,3242322815,Thomas Ehrhorn,Thomas_Ehrhorn,Abweichung HBI-Liste,ID/screen_name fehlt
+98,382136566,Thomas Löser,ThomasLoeserDD,Abweichung HBI-Liste,ID/screen_name fehlt
+125,1052524172717375488,Thomas Rachel,_ThomasRachel,Abweichung HBI-Liste,ID/screen_name fehlt
+109,1181598578508214272,Thorsten Frei,thorsten_frei,Abweichung HBI-Liste,ID/screen_name fehlt
+73,1125962791,Till Steffen,till_steffen,Abweichung HBI-Liste,ID/screen_name fehlt
+3,797137333820784640,Tino Chrupalla,Tino_Chrupalla,Abweichung HBI-Liste,falscher Account
+164,1073519002083840001,Tino Schopf,TinoSchopf,Abweichung HBI-Liste,Name falsch; ID/screen_name fehlt
+15,981110123958587392,Tobias Reiß,TobiasReissMdL,Abweichung HBI-Liste,ID/screen_name fehlt
+174,4861233617,Tobias von der Heide,TobiasvdHeide,Abweichung HBI-Liste,Name falsch; screen_name falsch
+93,1036213002717024256,Toni Mertsching,ToniMertsching,Abweichung HBI-Liste,ID/screen_name fehlt
+224,3188225915,Torbjörn Kartes,KartesMdB,Abweichung HBI-Liste,screen_name falsch
+22,1114491811064578049,Torsten Hofer,TorstenHoferSPD,Abweichung HBI-Liste,ID/screen_name fehlt
+34,3240319751,Udo Wolf,UdoWolfMdA,Abweichung HBI-Liste,ID/screen_name fehlt
+9,988765113606918144,Ulrich Lechte,ulrichlechte,Abweichung HBI-Liste,falscher Account
+238,19177808,Uwe Schulz,Uwe_Schulz_AfD,Abweichung HBI-Liste,screen_name falsch
+126,1042109887604563968,Wiebke Esdar,wiebkeesdar1,Abweichung HBI-Liste,ID/screen_name fehlt
+205,95671546,Wolfgang Heubisch,heubisch,Abweichung HBI-Liste,screen_name falsch
+130,1003656299589132291,Wolfgang Wiehle,WolfgangWiehle,Abweichung HBI-Liste,ID/screen_name fehlt
+6,1038034431385247745,Yasmin Fahimi,FahimiYasmin,Abweichung HBI-Liste,falscher Account
+72,2232282311,Yusuf Uzundag,YusufUzundag,Abweichung HBI-Liste,ID/screen_name fehlt
+50,1084492694859194369,Zohra Mojadeddi,ZMojadeddi,Abweichung HBI-Liste,ID/screen_name fehlt
