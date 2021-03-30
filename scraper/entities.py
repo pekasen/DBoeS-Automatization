@@ -7,7 +7,7 @@ from uuid import uuid4
 
 import pandas as pd
 
-from .schema import schema
+from schema import schema
 
 
 class Entity:
@@ -127,7 +127,7 @@ class EntityGroup:
     '''
     def __init__(self, path):
 
-        self.df = pd.read_csv(path)
+        self.df = pd.read_csv(path, dtype=str)
         self.origin = path
         if 'id' not in self.df.columns:
             self.entities = [Entity(name) for name in self.df['Name'].values]
