@@ -108,10 +108,21 @@ corrected_dboes <- merged_dboes %>%
 corrected_dboes[!is.na(corrected_dboes$SM_Twitter_id.y), c("SM_Twitter_id.x", "SM_Twitter_user.x")] <- corrected_dboes[!is.na(corrected_dboes$SM_Twitter_id.y), c("SM_Twitter_id.y", "SM_Twitter_user.y")]
 corrected_dboes <- corrected_dboes %>%
   select(-SM_Twitter_id.y, -SM_Twitter_user.y) %>%
-  rename(SM_Twitter_id = SM_Twitter_id.x, SM_Twitter_user = SM_Twitter_user.x) %>%
-  rename(Kategorie = Parlament, Partei = Fraktion)
+  rename(SM_Twitter_id = SM_Twitter_id.x, SM_Twitter_user = SM_Twitter_user.x)
+  # %>% rename(Kategorie = Parlament, Partei = Fraktion)
 
+lidx <- corrected_dboes$Partei %in% c("LINKE", "Linke", "DIE LINKE")
+corrected_dboes$Partei[lidx] <- "LINKE"
+lidx <- corrected_dboes$Partei %in% c("GRÜNE", "Grüne")
+corrected_dboes$Partei[lidx] <- "GRÜNE"
+lidx <- grepl("los", corrected_dboes$Partei)
+corrected_dboes$Partei[lidx] <- "fraktionslos"
+lidx <- corrected_dboes$Partei == "CDU/CSU (CSU)"
+corrected_dboes$Partei[lidx] <- "CSU"
+lidx <- corrected_dboes$Partei == "CDU/CSU (CDU)"
+corrected_dboes$Partei[lidx] <- "CDU"
 
+print(unique(corrected_dboes$Partei))
 
 corrected_dboes[is.na(corrected_dboes)] <- ""
 corrected_dboes <- apply(corrected_dboes, 2, as.character)
@@ -121,9 +132,7 @@ write.csv(corrected_dboes, file = "../db/reviewed/Parlamentarier.csv", fileEncod
 # Check for further duplicates
 # -----------------------------
 
-# remove Saksia Ludwig duplicates
-corrected_dboes <- corrected_dboes[-820, ]
-corrected_dboes <- corrected_dboes[-1565, ]
+print(corrected_dboes[grepl("Saskia", corrected_dboes$Name), ])
 
 dboes_db_twitter <- corrected_dboes %>%
   filter(SM_Twitter_id != "" | SM_Twitter_user != "")
