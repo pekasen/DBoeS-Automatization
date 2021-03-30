@@ -7,10 +7,12 @@ import webbrowser
 import pandas as pd
 import tweepy as tp
 
-from .credentials import twitter_api_key, twitter_api_secret_key
-from .entities import Account, Entity
+from scraper.credentials import twitter_api_key, twitter_api_secret_key
+from scraper.entities import Account, Entity, EntityGroup
 
-tokens_cache_file = os.path.join(os.path.dirname(__file__), "twitter_tokens.csv")
+tokens_cache_file = os.path.join(
+    os.path.dirname(__file__), "twitter_tokens.csv")
+
 
 def connect_to_twitter():
     tokens = pd.read_csv(tokens_cache_file)
@@ -91,6 +93,63 @@ class EntityOnTwitter(Entity):
 
     def accept_account(self, twitter_id):
         super().accept_account('Twitter', platform_id=twitter_id)
+
+
+class TwitterEntityGroup(EntityGroup):
+
+    def check_accounts(self, output=None):
+
+        df = self.df
+
+        user_ids = list(
+            df['SM_Twitter_id'].dropna().drop_duplicates().astype(int).values
+        )
+
+        api = connect_to_twitter()
+
+        response_df = pd.DataFrame(
+            columns=['SM_Twitter_id', 'SM_Twitter_user'])
+
+        for i in range(int(len(user_ids)/100) + 1):
+
+            user_batch = user_ids[i*100:i*100+100]
+            response = api.lookup_users(user_ids=user_batch)
+
+            for user in response:
+                response_df = response_df.append(
+                    {'SM_Twitter_id': user.id,
+                     'SM_Twitter_user': user.screen_name},
+                    ignore_index=True)
+
+        old = df[['SM_Twitter_id', 'SM_Twitter_user']]
+        new = response_df
+
+        old['SM_Twitter_user'] = old['SM_Twitter_user'].str.lower()
+        new['SM_Twitter_user'] = new['SM_Twitter_user'].str.lower()
+
+        # outer merge on all fields in schema
+        # if differences, indicate, if row is in old (left) or new (right) DataFrame
+        diff = old.merge(new, on=['SM_Twitter_id', 'SM_Twitter_user'], how='outer', indicator=True)
+
+        # delete rows that are in both DFs
+        diff = diff[diff['_merge'] != "both"]
+
+        # create new column 'old/new' instead of indicator column called '_merge'
+        diff['old/new'] = diff['_merge'].map(
+            {'left_only': 'old', 'right_only': 'new'})
+        del diff['_merge']
+
+        # sort dataframe by name
+        diff = diff.sort_values(by='SM_Twitter_id', ignore_index=True)
+
+        diff = diff.dropna()
+
+        diff['SM_Twitter_id'] = diff['SM_Twitter_id'].astype(int)
+
+        if output is not None and len(diff) > 0:
+            diff.to_csv(output, float_format='{:f}'.format)
+
+        return diff
 
 
 class OAuthorizer():
