@@ -153,8 +153,6 @@ class TwitterEntityGroup(EntityGroup):
         diff['SM_Twitter_id'] = diff['SM_Twitter_id'].astype(int)
         diff = diff.sort_values(by='SM_Twitter_id', ignore_index=True)
 
-        diff['SM_Twitter_id'] = diff['SM_Twitter_id'].astype(int)
-
         if output is not None and len(diff) > 0:
             diff.to_csv(output, float_format='{:f}'.format)
 
