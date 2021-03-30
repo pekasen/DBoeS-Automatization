@@ -1,5 +1,6 @@
 """
-Main module to run scraping of parlamentarian information from Wikipedia.
+Script to run scraping of parlamentarian information from Wikipedia.
+Basically just a functional test by now.
 """
 import os
 import shutil
@@ -12,7 +13,7 @@ import scraper
 from scraper import twitter_fetcher
 from scraper.entities import EntityGroup
 from scraper.twitter_fetcher import EntityOnTwitter
-
+from scraper.wiki_fetcher import WikiFetcher
 
 datetoday = datetime.today()
 strpdatetoday = datetoday.strftime('%d-%m-%Y')
@@ -46,7 +47,7 @@ if __name__ == "__main__":
     if not os.path.isfile('scraper/twitter_tokens.csv'):
         twitter_fetcher.OAuthorizer()
 
-    fetcher = scraper.WikiFetcher()
+    fetcher = WikiFetcher()
     fetcher.fetch_all_parliaments()
 
     print("The following files have been generated:\n")
