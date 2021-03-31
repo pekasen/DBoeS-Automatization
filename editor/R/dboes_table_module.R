@@ -89,11 +89,8 @@ dboes_table_module <- function(input, output, session) {
           session$userData$dboes_db <- read.csv(
             selected_dboes_category$Location, 
             encoding = "UTF-8", 
-            colClasses = c(
-              "created_at" = "character", 
-              "modified_at" = "character"
-            )
-          ) 
+            colClasses = "character"
+          )
           # format df data
           rownames(session$userData$dboes_db) <- session$userData$dboes_db$uuid
           format_as_factor <- c("Kategorie", "Geschlecht", "Partei")
