@@ -64,6 +64,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
           box(
             width = 12,
             tabsetPanel(
+              id = "socialmedia",
               type = "tabs",
               tabPanel(
                 "Twitter", 

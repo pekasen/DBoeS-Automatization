@@ -199,7 +199,6 @@ dboes_table_module <- function(input, output, session) {
   )
 
   dboes_to_delete <- eventReactive(input$dboes_id_to_delete, {
-    browser()
     values$dboes_entries[[session$userData$selected_category]][input$dboes_id_to_delete, ]
   })
 

@@ -1,0 +1,10 @@
+app <- ShinyDriver$new("../../")
+app$snapshotInit("del_entry")
+
+app$snapshot()
+app$setInputs(`dboes_table-delete_dboes-submit_delete` = "click", allowInputNoBinding_ = TRUE)
+#app$setInputs(`dboes_table-delete_dboes-submit_delete` = "click")
+app$setInputs(`dboes_table-save_dboes` = "click", allowInputNoBinding_ = TRUE)
+app$setInputs(`dboes_table-save_dboes-submit_save` = "click", allowInputNoBinding_ = TRUE)
+#app$setInputs(`dboes_table-save_dboes-submit_save` = "click")
+app$snapshot()

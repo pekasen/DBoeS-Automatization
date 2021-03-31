@@ -21,8 +21,6 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
     # Authorize who is able to access particular buttons (here, modules)
     req(session$userData$email == 'anonymous@leibniz-hbi.de')
     
-    browser()
-    
     showModal(
       modalDialog(
         div(
@@ -60,9 +58,6 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
     tryCatch({
 
       id <- rownames(dboes_to_delete())
-      
-      browser()
-      
       idx <- which(values$dboes_entries[[session$userData$selected_category]]$id == id)
       
       values$dboes_entries[[session$userData$selected_category]] <- values$dboes_entries[[session$userData$selected_category]][-idx, ]
