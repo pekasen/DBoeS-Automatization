@@ -152,7 +152,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     hold <- dboes_to_edit()
     
     out <- list(
-      uuid = if (is.null(hold)) NA else hold$uuid,
+      id = if (is.null(hold)) NA else hold$id,
       data = list(
         "Kategorie" = input$Kategorie,
         "Name" = input$Name,
@@ -206,18 +206,18 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         "Wikipedia_URL"
       )
       
-      if (is.na(dat$uuid)) {
+      if (is.na(dat$id)) {
         
         # creating a new entry
-        uuid <- uuid::UUIDgenerate()
-        colnames_to_update <- c("uuid", colnames_to_update)
-        dat$data$uuid <- uuid
-        session$userData$dboes_db[uuid, colnames_to_update] <- dat$data[colnames_to_update]
+        id <- uuid::UUIDgenerate()
+        colnames_to_update <- c("id", colnames_to_update)
+        dat$data$id <- id
+        session$userData$dboes_db[id, colnames_to_update] <- dat$data[colnames_to_update]
         
       } else {
         
         # editing an existing entry
-        session$userData$dboes_db[dat$uuid, colnames_to_update] <- dat$data[colnames_to_update]
+        session$userData$dboes_db[dat$id, colnames_to_update] <- dat$data[colnames_to_update]
         
       }
       

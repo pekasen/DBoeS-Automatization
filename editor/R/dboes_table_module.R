@@ -92,7 +92,7 @@ dboes_table_module <- function(input, output, session) {
             colClasses = "character"
           )
           # format df data
-          rownames(session$userData$dboes_db) <- session$userData$dboes_db$uuid
+          rownames(session$userData$dboes_db) <- session$userData$dboes_db$id
           format_as_factor <- c("Kategorie", "Geschlecht", "Partei")
           for (column in format_as_factor) {
             session$userData$dboes_db[[column]] <- factor(session$userData$dboes_db[[column]])
@@ -118,7 +118,7 @@ dboes_table_module <- function(input, output, session) {
   observeEvent(dboes_entries(), {
     out <- dboes_entries()
 
-    ids <- out$uuid
+    ids <- out$id
 
     actions <- purrr::map_chr(ids, function(id_) {
       paste0(
@@ -129,9 +129,9 @@ dboes_table_module <- function(input, output, session) {
       )
     })
 
-    # Remove the `uuid` column. We don't want to show this column to the user
+    # Remove the `id` column. We don't want to show this column to the user
     out <- out %>%
-      select(-uuid)
+      select(-id)
 
     # Set the Action Buttons row to the first column of the dboes table
     out <- cbind(
@@ -227,7 +227,7 @@ dboes_table_module <- function(input, output, session) {
 
   dboes_to_edit <- eventReactive(input$dboes_id_to_edit, {
     dboes_entries() %>%
-      filter(uuid == input$dboes_id_to_edit)
+      filter(id == input$dboes_id_to_edit)
   })
 
   callModule(
@@ -240,7 +240,7 @@ dboes_table_module <- function(input, output, session) {
 
   dboes_to_delete <- eventReactive(input$dboes_id_to_delete, {
     out <- dboes_entries() %>%
-      filter(uuid == input$dboes_id_to_delete) %>%
+      filter(id == input$dboes_id_to_delete) %>%
       as.list()
   })
 

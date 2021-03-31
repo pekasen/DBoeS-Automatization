@@ -57,9 +57,9 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
 
     tryCatch({
 
-      uuid <- dboes_to_delete()$uuid
+      id <- dboes_to_delete()$id
 
-      session$userData$dboes_db <- session$userData[-which(session$userData$uuid == uuid), ]
+      session$userData$dboes_db <- session$userData[-which(session$userData$id == id), ]
 
       session$userData$dboes_trigger(session$userData$dboes_trigger() + 1)
       showToast("success", "Entry successfully deleted")
