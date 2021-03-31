@@ -29,7 +29,7 @@ dboes_save_module <- function(input, output, session, modal_title, dboes_to_save
             style = "line-height: 1.75;",
             paste0(
               'Are you sure you want to save your edits for "',
-              dboes_to_save$Name,
+              dboes_to_save,
               '"?'
             )
           )
@@ -55,11 +55,15 @@ dboes_save_module <- function(input, output, session, modal_title, dboes_to_save
     
     tryCatch({
       
-      db_to_save <- session$userData$dboes_db
+      file_path <- dboes_db_filepaths[[dboes_to_save]] 
+      
+      db_to_save <- values$dboes_entries[[dboes_to_save]]
       db_to_save[is.na(db_to_save)] <- ""
       db_to_save <- apply(db_to_save, 2, as.character)
-      write.csv(db_to_save, file = dboes_to_save$Location, fileEncoding = "UTF-8", row.names = F)
-      showToast("success", paste0(dboes_to_save$Name, " successfully saved"))
+      
+      write.csv(db_to_save, file = file_path, fileEncoding = "UTF-8", row.names = F)
+      
+      showToast("success", paste0(dboes_to_save, " successfully saved"))
       
     }, error = function(error) {
       

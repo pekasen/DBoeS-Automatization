@@ -73,52 +73,13 @@ dboes_table_module_ui <- function(id) {
 
 dboes_table_module <- function(input, output, session) {
 
-  # trigger to reload data from the dboes table
-  session$userData$dboes_trigger <- reactiveVal(0)
-
-  # Read in dboes table from the database
-  dboes_entries <- reactive({
-    
-    session$userData$dboes_trigger()
-    
-    if (is.null(session$userData$dboes_db)) {
-      tryCatch(
-        {
-          
-          # todo: switch to reactive input$selected_csv
-          session$userData$dboes_db <- read.csv(
-            selected_dboes_category$Location, 
-            encoding = "UTF-8", 
-            colClasses = "character"
-          )
-          # format df data
-          rownames(session$userData$dboes_db) <- session$userData$dboes_db$id
-          format_as_factor <- c("Kategorie", "Geschlecht", "Partei")
-          for (column in format_as_factor) {
-            session$userData$dboes_db[[column]] <- factor(session$userData$dboes_db[[column]])
-          }
-          
-        }, error = function(err) {
-          msg <- "CSV File Connection  Error"
-          # print `msg` so that we can find it in the logs
-          print(msg)
-          # print the actual error to log it
-          print(err)
-          # show error `msg` to user.  User can then tell us about error and we can
-          # quickly identify where it cam from based on the value in `msg`
-          showToast("error", msg)
-        })
-    }
-
-    session$userData$dboes_db
-  })
-
   dboes_table_prep <- reactiveVal(NULL)
 
-  observeEvent(dboes_entries(), {
-    out <- dboes_entries()
+  observeEvent(values$dboes_entries, {
+    
+    out <- values$dboes_entries[[session$userData$selected_category]]
 
-    ids <- out$id
+    ids <- rownames(out)
 
     actions <- purrr::map_chr(ids, function(id_) {
       paste0(
@@ -128,8 +89,8 @@ dboes_table_module <- function(input, output, session) {
         </div>'
       )
     })
-
-    # Remove the `id` column. We don't want to show this column to the user
+    
+    # Remove the `uuid` column. We don't want to show this column to the user
     out <- out %>%
       select(-id)
 
@@ -213,7 +174,7 @@ dboes_table_module <- function(input, output, session) {
     dboes_save_module,
     "save_dboes",
     modal_title = "Save DBoeS",
-    dboes_to_save = selected_dboes_category,
+    dboes_to_save = session$userData$selected_category,
     modal_trigger = reactive({input$save_dboes})
   )
 
@@ -226,8 +187,7 @@ dboes_table_module <- function(input, output, session) {
   )
 
   dboes_to_edit <- eventReactive(input$dboes_id_to_edit, {
-    dboes_entries() %>%
-      filter(id == input$dboes_id_to_edit)
+    values$dboes_entries[[session$userData$selected_category]][input$dboes_id_to_edit, ]
   })
 
   callModule(
@@ -239,9 +199,8 @@ dboes_table_module <- function(input, output, session) {
   )
 
   dboes_to_delete <- eventReactive(input$dboes_id_to_delete, {
-    out <- dboes_entries() %>%
-      filter(id == input$dboes_id_to_delete) %>%
-      as.list()
+    browser()
+    values$dboes_entries[[session$userData$selected_category]][input$dboes_id_to_delete, ]
   })
 
   callModule(

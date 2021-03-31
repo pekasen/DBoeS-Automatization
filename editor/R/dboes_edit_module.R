@@ -21,7 +21,9 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
   ns <- session$ns
   
   observeEvent(modal_trigger(), {
+    
     hold <- dboes_to_edit()
+    dboes_db_category <- values$dboes_entries[[session$userData$selected_category]]
     
     search_result <- reactiveVal(data.frame())
     
@@ -33,7 +35,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
             selectInput(
               ns('Kategorie'),
               'Kategorie',
-              choices = levels(session$userData$dboes_db$Kategorie),
+              choices = levels(dboes_db_category$Kategorie),
               selected = ifelse(is.null(hold), "", as.character(hold$Kategorie))
             ),
             textInput(
@@ -47,13 +49,13 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
             selectInput(
               ns('Partei'),
               'Partei',
-              choices = levels(session$userData$dboes_db$Partei),
+              choices = levels(dboes_db_category$Partei),
               selected = ifelse(is.null(hold), "", as.character(hold$Partei))
             ),
             selectInput(
               ns('Geschlecht'),
               'Geschlecht',
-              choices = levels(session$userData$dboes_db$Geschlecht),
+              choices = unique(c(levels(dboes_db_category$Geschlecht), "divers")),
               selected = ifelse(is.null(hold), "", as.character(hold$Geschlecht))
             )
           )
@@ -144,6 +146,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       escape = FALSE,
       options = list(paging = FALSE, searching = FALSE, lengthMenu = NULL)
     )
+    
   })
   
   
@@ -164,7 +167,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       )
     )
     
-    time_now <- as.character(lubridate::with_tz(Sys.time(), tzone = "UTC"))
+    time_now <- as.character(Sys.time())
     
     if (is.null(hold)) {
       # adding a new entry
@@ -212,16 +215,15 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         id <- uuid::UUIDgenerate()
         colnames_to_update <- c("id", colnames_to_update)
         dat$data$id <- id
-        session$userData$dboes_db[id, colnames_to_update] <- dat$data[colnames_to_update]
+        values$dboes_entries[[session$userData$selected_category]][id, colnames_to_update] <- dat$data[colnames_to_update]
         
       } else {
         
         # editing an existing entry
-        session$userData$dboes_db[dat$id, colnames_to_update] <- dat$data[colnames_to_update]
+        values$dboes_entries[[session$userData$selected_category]][dat$id, colnames_to_update] <- dat$data[colnames_to_update]
         
       }
       
-      session$userData$dboes_trigger(session$userData$dboes_trigger() + 1)
       showToast("success", paste0(modal_title, " Success"))
       
     }, error = function(error) {
