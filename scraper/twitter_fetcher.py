@@ -7,8 +7,8 @@ import webbrowser
 import pandas as pd
 import tweepy as tp
 
-from scraper.credentials import twitter_api_key, twitter_api_secret_key
-from scraper.entities import Account, Entity, EntityGroup
+from credentials import twitter_api_key, twitter_api_secret_key
+from entities import Account, Entity, EntityGroup
 
 tokens_cache_file = os.path.join(
     os.path.dirname(__file__), "twitter_tokens.csv")
@@ -98,11 +98,21 @@ class EntityOnTwitter(Entity):
 class TwitterEntityGroup(EntityGroup):
 
     def check_accounts(self, output=None):
+        '''checks, based on Twitter user ID, whether accounts in group have changed or have been deleted
+
+        Args:
+            output (str): path for CSV output. Defaults to `None`.
+
+        Returns:
+            diff (pandas.DataFrame): DataFrame containing differences with column `old/new`
+            indicating whether row is in old or new data. If account not reachable, only `old` row will be given.
+            If `output` is set, saves diff to csv at output path.
+        '''
 
         df = self.df
 
         user_ids = list(
-            df['SM_Twitter_id'].dropna().drop_duplicates().astype(int).values
+            df['SM_Twitter_id'].dropna().drop_duplicates().values
         )
 
         api = connect_to_twitter()
@@ -117,7 +127,7 @@ class TwitterEntityGroup(EntityGroup):
 
             for user in response:
                 response_df = response_df.append(
-                    {'SM_Twitter_id': user.id,
+                    {'SM_Twitter_id': user.id_str,
                      'SM_Twitter_user': user.screen_name},
                     ignore_index=True)
 
@@ -139,12 +149,9 @@ class TwitterEntityGroup(EntityGroup):
             {'left_only': 'old', 'right_only': 'new'})
         del diff['_merge']
 
-        # sort dataframe by name
-        diff = diff.sort_values(by='SM_Twitter_id', ignore_index=True)
-
         diff = diff.dropna()
-
         diff['SM_Twitter_id'] = diff['SM_Twitter_id'].astype(int)
+        diff = diff.sort_values(by='SM_Twitter_id', ignore_index=True)
 
         if output is not None and len(diff) > 0:
             diff.to_csv(output, float_format='{:f}'.format)
