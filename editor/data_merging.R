@@ -149,3 +149,21 @@ dboes_db <- apply(dboes_db, 2, as.character)
 View(dboes_db)
 
 write.csv(dboes_db, file = "../db/reviewed/Parlamentarier.csv", fileEncoding = "UTF-8", row.names = F)
+
+
+# Look up usernames
+# -----------------
+users_to_lookup <- read.csv("../db/changed_twitter_accounts.csv", colClasses = "character")
+
+df <- data.frame()
+for (username in users_to_lookup$SM_Twitter_user) {
+  print(username)
+  cmd <- paste0('curl "https://tweeterid.com/ajax.php" -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0" -H "Accept: */*" -H "Accept-Language: de,en-US;q=0.7,en;q=0.3" -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" -H "X-Requested-With: XMLHttpRequest" -H "Origin: https://tweeterid.com" -H "Connection: keep-alive" -H "Referer: https://tweeterid.com/?twitter=DGuenther_CDUSH" -H "Cookie: __utma=116903043.982186121.1617029240.1617043795.1617045750.3; __utmc=116903043; __utmz=116903043.1617043795.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not"%"20provided); __gads=ID=3f15205ef6c88336-225b30b93aa70069:T=1617029240:RT=1617029240:S=ALNI_Mani82iy--9DgkPTmX_qN5cm8oPXw; __utmb=116903043.1.10.1617045750; __utmt=1" --data-raw "input=',username,'"')
+  res <- system(cmd, intern = T)
+  df <- rbind(df, data.frame(
+    "SM_Twitter_user" = username,
+    "SM_Twitter_id" = res
+  ))
+  Sys.sleep(1)
+}
+View(df[df$SM_Twitter_id != "error", ])
