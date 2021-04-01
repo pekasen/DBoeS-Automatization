@@ -26,7 +26,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     dboes_db_category <- values$dboes_entries[[session$userData$selected_category]]
     
     search_result <- reactiveVal(data.frame())
-    
+
     showModal(
       modalDialog(
         fluidRow(
@@ -42,6 +42,12 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
               ns("Name"),
               'Name',
               value = ifelse(is.null(hold), "", hold$Name)
+            ),
+            selectInput(
+              ns('Geschlecht'),
+              'Geschlecht',
+              choices = unique(c(levels(dboes_db_category$Geschlecht), "divers")),
+              selected = ifelse(is.null(hold), "", as.character(hold$Geschlecht))
             )
           ),
           column(
@@ -52,11 +58,26 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
               choices = levels(dboes_db_category$Partei),
               selected = ifelse(is.null(hold), "", as.character(hold$Partei))
             ),
-            selectInput(
-              ns('Geschlecht'),
-              'Geschlecht',
-              choices = unique(c(levels(dboes_db_category$Geschlecht), "divers")),
-              selected = ifelse(is.null(hold), "", as.character(hold$Geschlecht))
+            textInput(
+              ns('Wahlkreis'),
+              'Wahlkreis',
+              value = ifelse(is.null(hold), "", hold$Wahlkreis)
+            ),
+            textInput(
+              ns('tags'),
+              'Tags',
+              value = ifelse(is.null(hold), "", hold$tags)
+            )
+          )
+        ),
+        fluidRow(
+          column(
+            width = 12,
+            textInput(
+              width = "100%",
+              ns('Kommentar'),
+              'Kommentar',
+              value = ifelse(is.null(hold), "", hold$Kommentar)
             )
           )
         ),
@@ -70,34 +91,99 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
                 "Twitter", 
                 fluidRow(
                   column(
-                    width = 6,
+                    width = 4,
                     textInput(
                       ns("SM_Twitter_user"),
-                      'SM_Twitter_user',
+                      'Twitter user',
                       value = ifelse(is.null(hold), "", hold$SM_Twitter_user)
                     )
                   ),
                   column(
-                    width = 6,
+                    width = 4,
                     textInput(
                       ns("SM_Twitter_id"),
-                      'SM_Twitter_id',
+                      'Twitter id',
                       value = ifelse(is.null(hold), "", hold$SM_Twitter_id)
+                    )
+                  ),
+                  column(
+                    width = 4,
+                    checkboxInput(
+                      ns("SM_Twitter_verifiziert"),
+                      label = "Verifiziert",
+                      value = ifelse(
+                        is.null(hold), 
+                        F, 
+                        ifelse(
+                          is.logical(hold$SM_Twitter_verifiziert) & !is.na(hold$SM_Twitter_verifiziert), 
+                          hold$SM_Twitter_verifiziert, 
+                          F
+                        )
+                      )
                     )
                   )
                 ),
                 actionButton(ns("buttonTwitter"), label = "Search"),
-                DT::dataTableOutput(ns("searchOutput")) %>% withSpinner()
+                DT::dataTableOutput(ns("twitterSearchOutput")) %>% withSpinner()
               ),
               tabPanel(
-                "Wikipedia_URL", 
+                "Facebook", 
+                fluidRow(
+                  column(
+                    width = 4,
+                    textInput(
+                      ns("SM_Facebook_user"),
+                      'Facebook user',
+                      value = ifelse(is.null(hold), "", hold$SM_Facebook_user)
+                    )
+                  ),
+                  column(
+                    width = 4,
+                    textInput(
+                      ns("SM_Facebook_id"),
+                      'Facebook id',
+                      value = ifelse(is.null(hold), "", hold$SM_Facebook_id)
+                    )
+                  ),
+                  column(
+                    width = 4,
+                    checkboxInput(
+                      ns("SM_Facebook_verifiziert"),
+                      label = "Verifiziert",
+                      value = ifelse(
+                        is.null(hold), 
+                        F, 
+                        ifelse(
+                          is.logical(hold$SM_Facebook_verifiziert) & !is.na(hold$SM_Facebook_verifiziert), 
+                          hold$SM_Facebook_verifiziert, 
+                          F
+                        )
+                      )
+                    )
+                  )
+                ),
+                actionButton(ns("buttonFacebook"), label = "Search"),
+                DT::dataTableOutput(ns("facebookSearchOutput")) %>% withSpinner()
+              ),
+              tabPanel(
+                "URLs", 
                 fluidRow(
                   column(
                     width = 12,
                     textInput(
+                      ns("Homepage_URL"),
+                      'Homepage_URL',
+                      value = ifelse(is.null(hold), "", hold$Homepage_URL)
+                    ),
+                    textInput(
                       ns("Wikipedia_URL"),
                       'Wikipedia_URL',
                       value = ifelse(is.null(hold), "", hold$Wikipedia_URL)
+                    ),
+                    textInput(
+                      ns("Bild"),
+                      'Bild',
+                      value = ifelse(is.null(hold), "", hold$Bild)
                     )
                   )
                 )
@@ -139,7 +225,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       search_result(get_twitter_suggestions(input$Name))
     })
     
-    output$searchOutput <- DT::renderDT(
+    output$twitterSearchOutput <- DT::renderDT(
       {
         search_result()
       },
@@ -161,10 +247,19 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         "Kategorie" = input$Kategorie,
         "Name" = input$Name,
         "Partei" = input$Partei,
+        "Wahlkreis" = input$Wahlkreis,
+        "Kommentar" = input$Kommentar,
         "Geschlecht" = input$Geschlecht,
         "SM_Twitter_user" = input$SM_Twitter_user,
         "SM_Twitter_id" = input$SM_Twitter_id,
-        "Wikipedia_URL" = input$Wikipedia_URL
+        "SM_Twitter_verifiziert" = input$SM_Twitter_verifiziert,
+        "SM_Facebook_user" = input$SM_Twitter_user,
+        "SM_Facebook_id" = input$SM_Twitter_id,
+        "SM_Facebook_verifiziert" = input$SM_Twitter_verifiziert,
+        "Wikipedia_URL" = input$Wikipedia_URL,
+        "Homepage_URL" = input$Homepage_URL,
+        "Bild" = input$Bild,
+        "tags" = input$tags
       )
     )
     
@@ -199,16 +294,8 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     dat <- validate_edit()
     
     tryCatch({
-      
-      colnames_to_update <- c(
-        "Name",
-        "Kategorie",
-        "Partei",
-        "Geschlecht",
-        "SM_Twitter_user",
-        "SM_Twitter_id",
-        "Wikipedia_URL"
-      )
+
+      colnames_to_update <- names(dat$data)
       
       if (is.na(dat$id)) {
         
@@ -274,6 +361,6 @@ get_twitter_suggestions <- function(name) {
         Desc = "description"
       )
   }
-  return(twitter_df)
+  return(head(twitter_df))
 }
 

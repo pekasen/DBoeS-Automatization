@@ -36,7 +36,8 @@ for (i in 1:length(dboes_db_filepaths)) {
   )
   # format dboes df
   dboes_df <- dboes_df %>%
-    mutate_at(vars(c("Kategorie", "Geschlecht", "Partei")), as.factor)
+    mutate_at(vars(c("Kategorie", "Geschlecht", "Partei")), as.factor) %>%
+    mutate_at(vars(ends_with("_verifiziert")), as.logical)
   rownames(dboes_df) <- dboes_df$id
   dboes_db[[category]] <- dboes_df
 }
