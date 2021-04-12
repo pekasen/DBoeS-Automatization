@@ -12,8 +12,19 @@
 #'
 dboes_table_module_ui <- function(id) {
   ns <- NS(id)
-
+  
   tagList(
+    fluidRow(
+      column(
+        width = 12,
+        tabsetPanel(
+          id = "dboes_category",
+          type = "tabs",
+          tabPanel("Parlamentarier", br()),
+          tabPanel("BT-Wahl 2021", br())
+        )
+      )
+    ),
     fluidRow(
       column(
         width = 2,
@@ -71,16 +82,16 @@ dboes_table_module_ui <- function(id) {
 #'
 #' @return None
 
-dboes_table_module <- function(input, output, session) {
-
+dboes_table_module <- function(input, output, session, selected_tab) {
+  
   dboes_table_prep <- reactiveVal(NULL)
-
-  observeEvent(values$dboes_entries, {
+  
+  observe({
+    # browser()
+    out <- values$dboes_entries[[selected_tab()]]
     
-    out <- values$dboes_entries[[session$userData$selected_category]]
-
     ids <- rownames(out)
-
+    
     actions <- purrr::map_chr(ids, function(id_) {
       paste0(
         '<div class="btn-group" style="width: 75px;" role="group" aria-label="Basic example">
@@ -93,28 +104,30 @@ dboes_table_module <- function(input, output, session) {
     # Remove the `uuid` column. We don't want to show this column to the user
     out <- out %>%
       select(-id)
-
+    
     # Set the Action Buttons row to the first column of the dboes table
     out <- cbind(
       tibble("Aktion" = actions),
       out
     )
-
+    
     if (is.null(dboes_table_prep())) {
       # loading data into the table for the first time, so we render the entire table
       # rather than using a DT proxy
       dboes_table_prep(out)
-
+      
     } else {
-
+      
       # table has already rendered, so use DT proxy to update the data in the
       # table without rerendering the entire table
       replaceData(dboes_table_proxy, out, resetPaging = FALSE, rownames = FALSE)
-
+      
     }
+    
   })
-
+  
   output$dboes_table <- DT::renderDT({
+    
     req(dboes_table_prep())
     out <- dboes_table_prep() 
     # %>%
@@ -126,7 +139,7 @@ dboes_table_module <- function(input, output, session) {
     # $folder = $digest[0] . '/' . $digest[0] . $digest[1] . '/' .  urlencode($filename);
     # $url = 'http://upload.wikimedia.org/wikipedia/commons/' . $folder;
     # out$Bild <- paste('<img src="', out$Bild, '" width=70/>', sep='')
-
+    
     DT::datatable(
       out,
       rownames = FALSE,
@@ -165,19 +178,19 @@ dboes_table_module <- function(input, output, session) {
         columns = c("modified_at"),
         method = 'toLocaleString'
       )
-
+    
   })
-
+  
   dboes_table_proxy <- DT::dataTableProxy('dboes_table')
   
   callModule(
     dboes_save_module,
     "save_dboes",
     modal_title = "Save DBoeS",
-    dboes_to_save = session$userData$selected_category,
+    dboes_to_save = session$userData$selected_category(),
     modal_trigger = reactive({input$save_dboes})
   )
-
+  
   callModule(
     dboes_edit_module,
     "add_dboes",
@@ -185,11 +198,11 @@ dboes_table_module <- function(input, output, session) {
     dboes_to_edit = function() NULL,
     modal_trigger = reactive({input$add_dboes})
   )
-
+  
   dboes_to_edit <- eventReactive(input$dboes_id_to_edit, {
-    values$dboes_entries[[session$userData$selected_category]][input$dboes_id_to_edit, ]
+    values$dboes_entries[[session$userData$selected_category()]][input$dboes_id_to_edit, ]
   })
-
+  
   callModule(
     dboes_edit_module,
     "edit_dboes",
@@ -197,11 +210,11 @@ dboes_table_module <- function(input, output, session) {
     dboes_to_edit = dboes_to_edit,
     modal_trigger = reactive({input$dboes_id_to_edit})
   )
-
+  
   dboes_to_delete <- eventReactive(input$dboes_id_to_delete, {
-    values$dboes_entries[[session$userData$selected_category]][input$dboes_id_to_delete, ]
+    values$dboes_entries[[session$userData$selected_category()]][input$dboes_id_to_delete, ]
   })
-
+  
   callModule(
     dboes_delete_module,
     "delete_dboes",
@@ -209,5 +222,5 @@ dboes_table_module <- function(input, output, session) {
     dboes_to_delete = dboes_to_delete,
     modal_trigger = reactive({input$dboes_id_to_delete})
   )
-
+  
 }

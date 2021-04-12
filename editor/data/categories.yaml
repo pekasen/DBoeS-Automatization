@@ -1,0 +1,47 @@
+Person:
+- Name
+- Bemerkung
+Organisation:
+- Name:
+- Land:
+  - Sambia
+  - Deutschland
+Medienangebot:
+- TV
+- Print
+- Radio
+Bundesland:
+- Baden Württemberg
+- Bayern
+- Berlin
+- Brandenburg
+- Bremen
+- Hamburg
+- Hessen
+- Mecklenburg-Vorpommern
+- Niedersachsen
+- Nordrhein Westfalen
+- Rheinland-Pfalz
+- Saarland
+- Sachsen
+- Sachsen-Anhalt
+- Schleswig-Holstein
+- Thüringen
+Geschlecht:
+- männlich
+- weiblich
+- divers
+Partei:
+- AfD
+- CDU
+- CSU
+- FDP
+- GRÜNE
+- LINKE
+- SPD
+
+# example for tags: tv, radio, public, private, party, media-outlet, pluragraph, covid
+# markus söder: bayrischer landtag, ministerpresident, executive
+#               bayern, member of parliament, member of government
+# tagging of tags / hierarchical tags (e.g. topical tags)
+# batch update for tags

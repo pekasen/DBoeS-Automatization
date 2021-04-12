@@ -58,9 +58,9 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
     tryCatch({
 
       id <- rownames(dboes_to_delete())
-      idx <- which(values$dboes_entries[[session$userData$selected_category]]$id == id)
+      idx <- which(values$dboes_entries[[session$userData$selected_category()]]$id == id)
       
-      values$dboes_entries[[session$userData$selected_category]] <- values$dboes_entries[[session$userData$selected_category]][-idx, ]
+      values$dboes_entries[[session$userData$selected_category()]] <- values$dboes_entries[[session$userData$selected_category()]][-idx, ]
 
       showToast("success", "Entry successfully deleted")
       

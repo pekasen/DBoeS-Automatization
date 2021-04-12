@@ -23,7 +23,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
   observeEvent(modal_trigger(), {
     
     hold <- dboes_to_edit()
-    dboes_db_category <- values$dboes_entries[[session$userData$selected_category]]
+    dboes_db_category <- values$dboes_entries[[session$userData$selected_category()]]
     
     search_result <- reactiveVal(data.frame())
 
@@ -46,7 +46,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
             selectInput(
               ns('Geschlecht'),
               'Geschlecht',
-              choices = unique(c(levels(dboes_db_category$Geschlecht), "divers")),
+              choices = levels(dboes_db_category$Geschlecht),
               selected = ifelse(is.null(hold), "", as.character(hold$Geschlecht))
             )
           ),
@@ -253,9 +253,9 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         "SM_Twitter_user" = input$SM_Twitter_user,
         "SM_Twitter_id" = input$SM_Twitter_id,
         "SM_Twitter_verifiziert" = input$SM_Twitter_verifiziert,
-        "SM_Facebook_user" = input$SM_Twitter_user,
-        "SM_Facebook_id" = input$SM_Twitter_id,
-        "SM_Facebook_verifiziert" = input$SM_Twitter_verifiziert,
+        "SM_Facebook_user" = input$SM_Facebook_user,
+        "SM_Facebook_id" = input$SM_Facebook_id,
+        "SM_Facebook_verifiziert" = input$SM_Facebook_verifiziert,
         "Wikipedia_URL" = input$Wikipedia_URL,
         "Homepage_URL" = input$Homepage_URL,
         "Bild" = input$Bild,
@@ -303,12 +303,12 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         id <- uuid::UUIDgenerate()
         colnames_to_update <- c("id", colnames_to_update)
         dat$data$id <- id
-        values$dboes_entries[[session$userData$selected_category]][id, colnames_to_update] <- dat$data[colnames_to_update]
+        values$dboes_entries[[session$userData$selected_category()]][id, colnames_to_update] <- dat$data[colnames_to_update]
         
       } else {
         
         # editing an existing entry
-        values$dboes_entries[[session$userData$selected_category]][dat$id, colnames_to_update] <- dat$data[colnames_to_update]
+        values$dboes_entries[[session$userData$selected_category()]][dat$id, colnames_to_update] <- dat$data[colnames_to_update]
         
       }
       

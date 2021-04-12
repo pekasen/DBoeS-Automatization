@@ -7,6 +7,7 @@ library(shinydashboard)
 library(shinyFeedback)
 library(tidyverse)
 library(magrittr)
+library(yaml)
 
 # Turn off scientific notation and stringsAsFactors
 options(scipen = 999, stringsAsFactors = F)
@@ -16,6 +17,9 @@ options(spinner.type = 8)
 
 # debug
 options(shiny.error = browser)
+
+# categories
+tag_categories <- yaml::read_yaml("data/categories.yaml")
 
 # paths to all dboes categories files
 dboes_db_filepaths <- list(
@@ -41,6 +45,12 @@ for (i in 1:length(dboes_db_filepaths)) {
   rownames(dboes_df) <- dboes_df$id
   dboes_db[[category]] <- dboes_df
 }
+
+# pre-set levels for specific tables
+levels(dboes_db[["Parlamentarier"]]$Geschlecht) <- c(levels(dboes_db[["Parlamentarier"]]$Geschlecht), tag_categories$Geschlecht)
+levels(dboes_db[["BT-Wahl 2021"]]$Kategorie) <- c(levels(dboes_db[["BT-Wahl 2021"]]$Kategorie), tag_categories$Bundesland)
+levels(dboes_db[["BT-Wahl 2021"]]$Partei) <- c(levels(dboes_db[["BT-Wahl 2021"]]$Partei), tag_categories$Partei)
+levels(dboes_db[["BT-Wahl 2021"]]$Geschlecht) <- c(levels(dboes_db[["BT-Wahl 2021"]]$Geschlecht), tag_categories$Geschlecht)
 
 # set db as reactive value in a list of reactive values for multi-user editing
 values <- reactiveValues(
