@@ -26,6 +26,7 @@ function(input, output, session) {
       session$userData$username <- "Anonymer user"
     }
   })
+  session$allowReconnect(TRUE)
   session$userData$selected_category <- reactiveVal("Parlamentarier")
   session$userData$previous_category <- "Parlamentarier"
 

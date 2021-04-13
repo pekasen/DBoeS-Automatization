@@ -87,7 +87,7 @@ dboes_table_module <- function(input, output, session, selected_tab) {
   dboes_table_prep <- reactiveVal(NULL)
   
   observe({
-    # browser()
+    
     out <- values$dboes_entries[[selected_tab()]]
     
     ids <- rownames(out)
@@ -109,7 +109,16 @@ dboes_table_module <- function(input, output, session, selected_tab) {
     out <- cbind(
       tibble("Aktion" = actions),
       out
-    )
+    ) %>%
+    relocate(Bild, .after = "Aktion")
+    
+    # Add photo
+    image_names <- gsub("https://de.wikipedia.org/wiki/Datei:", "", out$Bild)
+    digest <- str_split(openssl::md5(image_names), "")
+    folder <- paste0(sapply(digest, FUN = function(x) paste0(x[1], '/', x[1], x[2], '/')), image_names, "/70px-", image_names)
+    image_urls <- paste0("http://upload.wikimedia.org/wikipedia/commons/thumb/", folder)
+    out$Bild <- paste0('<img src="', image_urls, '" width=70/>')
+    
     
     if (is.null(dboes_table_prep())) {
       # loading data into the table for the first time, so we render the entire table
@@ -129,16 +138,7 @@ dboes_table_module <- function(input, output, session, selected_tab) {
   output$dboes_table <- DT::renderDT({
     
     req(dboes_table_prep())
-    out <- dboes_table_prep() 
-    # %>%
-    #  relocate(Bild)
-    
-    
-    # $filename = replace($name, ' ', '_');
-    # $digest = md5($filename);
-    # $folder = $digest[0] . '/' . $digest[0] . $digest[1] . '/' .  urlencode($filename);
-    # $url = 'http://upload.wikimedia.org/wikipedia/commons/' . $folder;
-    # out$Bild <- paste('<img src="', out$Bild, '" width=70/>', sep='')
+    out <- dboes_table_prep()
     
     DT::datatable(
       out,
@@ -175,9 +175,9 @@ dboes_table_module <- function(input, output, session, selected_tab) {
       )
     ) %>%
       formatDate(
-        columns = c("modified_at"),
+        columns = c("created_at", "modified_at"),
         method = 'toLocaleString'
-      )
+      ) 
     
   })
   
