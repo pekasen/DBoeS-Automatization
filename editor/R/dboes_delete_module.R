@@ -19,7 +19,7 @@ dboes_delete_module <- function(input, output, session, modal_title, dboes_to_de
   # Observes trigger for this module (here, the Delete Button)
   observeEvent(modal_trigger(), {
     # Authorize who is able to access particular buttons (here, modules)
-    req(session$userData$email == 'anonymous@leibniz-hbi.de')
+    # req(session$userData$role == 'admin')
     
     showModal(
       modalDialog(

@@ -43,3 +43,6 @@ docs/
 
 # translation temp files
 po/*~
+
+# own files
+auth_credentials.R

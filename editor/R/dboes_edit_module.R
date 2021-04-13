@@ -268,7 +268,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     if (is.null(hold)) {
       # adding a new entry
       out$data$created_at <- time_now
-      out$data$created_by <- session$userData$email
+      out$data$created_by <- session$userData$username
     } else {
       # Editing existing entry
       out$data$created_at <- as.character(hold$created_at)
@@ -276,7 +276,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     }
     
     out$data$modified_at <- time_now
-    out$data$modified_by <- session$userData$email
+    out$data$modified_by <- session$userData$username
     
     out
   })
