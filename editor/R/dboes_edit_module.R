@@ -20,12 +20,13 @@
 dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit, modal_trigger) {
   ns <- session$ns
   
+  twitter_search_result <- reactiveVal(data.frame())
+  facebook_search_result <- reactiveVal(data.frame())
+  
   observeEvent(modal_trigger(), {
     
     hold <- dboes_to_edit()
     dboes_db_category <- values$dboes_entries[[session$userData$selected_category()]]
-    
-    search_result <- reactiveVal(data.frame())
 
     showModal(
       modalDialog(
@@ -123,7 +124,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
                     )
                   )
                 ),
-                actionButton(ns("buttonTwitter"), label = "Search"),
+                h4("Suchergebnisse"),
                 DT::dataTableOutput(ns("twitterSearchOutput")) %>% withSpinner()
               ),
               tabPanel(
@@ -162,7 +163,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
                     )
                   )
                 ),
-                actionButton(ns("buttonFacebook"), label = "Search"),
+                h4("Suchergebnisse"),
                 DT::dataTableOutput(ns("facebookSearchOutput")) %>% withSpinner()
               ),
               tabPanel(
@@ -206,6 +207,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       )
     )
     
+    
     # Observe event for "Model" text input in Add/Edit entry modal
     # `shinyFeedback`
     observeEvent(input$Name, {
@@ -221,13 +223,13 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       }
     })
     
-    observeEvent(input$buttonTwitter, {
-      search_result(get_twitter_suggestions(input$Name))
+    observeEvent(input$Name, {
+      twitter_search_result(get_twitter_suggestions(input$Name))
     })
     
     output$twitterSearchOutput <- DT::renderDT(
       {
-        search_result()
+        twitter_search_result()
       },
       rownames = FALSE,
       escape = FALSE,
@@ -286,11 +288,16 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     
     # Logic to validate inputs...
     
+    dat$is_valid = T
+    
     dat
   })
   
   observeEvent(validate_edit(), {
+    
+    # reset modal dialog
     removeModal()
+    
     dat <- validate_edit()
     
     tryCatch({
