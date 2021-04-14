@@ -1,22 +1,28 @@
 tagList(
   
-  auth_ui(id = "auth"),
+  auth_ui(
+    id = "auth",
+    tags_top = tags$img(src='hbi_logo_small.png', height='35', width='35'),
+    background = "#F9A129; ignore:"
+  ),
   
   dashboardPage(
-    # Application Title
+    title = "DBöS - Datenbank öffentlicher Sprecher",
+    # Application Header
     dashboardHeader(
-      title = "DBöS",
+      title = tags$img(src='hbi_logo_small.png', height='35', width='35'),
       dropdownMenuOutput("messageMenu"),
       tags$li(class = "dropdown", 
-        actionLink(
-          inputId = "logout",
-          label = NULL,
-          tooltip = "Logout",
-          icon = icon("sign-out"),
-          style="color: #fff; background-color: #337ab7; border-color: #2e6da4"
-        )
+              actionLink(
+                inputId = "logout",
+                label = NULL,
+                tooltip = "Logout",
+                icon = icon("sign-out"),
+                style="color: #fff; background-color: #337ab7; border-color: #2e6da4"
+              )
       )
     ),
+    # Application Sidebar
     dashboardSidebar(
       sidebarMenu(
         menuItem("Datenbank", tabName = "database", icon = icon("search")),

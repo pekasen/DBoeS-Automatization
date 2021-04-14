@@ -21,7 +21,8 @@ dboes_table_module_ui <- function(id) {
           id = "dboes_category",
           type = "tabs",
           tabPanel("Parlamentarier", br()),
-          tabPanel("BT-Wahl 2021", br())
+          tabPanel("BT-Wahl 2021", br()),
+          tabPanel("Medienorganisation", br())
         )
       )
     ),
@@ -114,9 +115,11 @@ dboes_table_module <- function(input, output, session, selected_tab) {
     
     # Add photo
     image_names <- gsub("https://de.wikipedia.org/wiki/Datei:", "", out$Bild)
-    digest <- str_split(openssl::md5(image_names), "")
-    folder <- paste0(sapply(digest, FUN = function(x) paste0(x[1], '/', x[1], x[2], '/')), image_names, "/70px-", image_names)
-    image_urls <- paste0("http://upload.wikimedia.org/wikipedia/commons/thumb/", folder)
+    image_names_enc <- iconv(sapply(image_names, URLdecode, USE.NAMES = FALSE), from = "UTF-8", to="UTF-8")
+    digest <- str_split(openssl::md5(image_names_enc), "")
+    image_paths <- paste0(sapply(digest, FUN = function(x) paste0(x[1], '/', x[1], x[2], '/')), image_names_enc, "/70px-", image_names_enc)
+    image_urls <- paste0("https://upload.wikimedia.org/wikipedia/commons/thumb/", image_paths)
+    image_urls <- ifelse(endsWith(image_urls, ".svg"), paste0(image_urls, ".png"), image_urls)
     out$Bild <- paste0('<img src="', image_urls, '" width=70/>')
     
     

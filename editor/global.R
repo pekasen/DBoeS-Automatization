@@ -25,7 +25,8 @@ tag_categories <- yaml::read_yaml("data/categories.yaml")
 # paths to all dboes categories files
 dboes_db_filepaths <- list(
   "Parlamentarier" = "../db/reviewed/Parlamentarier.csv",
-  "BT-Wahl 2021" = "../db/reviewed/BT-Wahl 2021.csv"
+  "BT-Wahl 2021" = "../db/reviewed/BT-Wahl 2021.csv",
+  "Medienorganisation" = "../db/reviewed/BT-Wahl 2021.csv"
 )
 
 dboes_db <- list()
