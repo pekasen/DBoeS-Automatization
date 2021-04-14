@@ -1,15 +1,3 @@
-Person:
-- Name
-- Bemerkung
-Organisation:
-- Name:
-- Land:
-  - Sambia
-  - Deutschland
-Medienangebot:
-- TV
-- Print
-- Radio
 Bundesland:
 - Baden Württemberg
 - Bayern
@@ -43,7 +31,12 @@ Partei:
 - RENTNER
 - DIE VIOLETTEN
 Tags:
-- Wiederwahl
+- Radio privat
+- Radio öffentlich
+- TV privat
+- TV öffentlich
+- Parlamentarier Wiederwahl
+- Regierungsmitglied
 
 # example for tags: tv, radio, public, private, party, media-outlet, pluragraph, covid
 # markus söder: bayrischer landtag, ministerpresident, executive

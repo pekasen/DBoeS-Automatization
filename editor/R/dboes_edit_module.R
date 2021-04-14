@@ -27,7 +27,10 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     
     hold <- dboes_to_edit()
     dboes_db_category <- values$dboes_entries[[session$userData$selected_category()]]
-
+    selected_tags <- NULL
+    if (!is.null(hold)) {
+      selected_tags <- strsplit(hold$tags, ";")[[1]]
+    }
     showModal(
       modalDialog(
         fluidRow(
@@ -64,10 +67,21 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
               'Wahlkreis',
               value = ifelse(is.null(hold), "", hold$Wahlkreis)
             ),
-            textInput(
+            # textInput(
+            #   ns('tags'),
+            #   'Tags',
+            #   value = ifelse(is.null(hold), "", hold$tags)
+            # )
+            selectizeInput(
               ns('tags'),
               'Tags',
-              value = ifelse(is.null(hold), "", hold$tags)
+              choices = tag_categories$Tags,
+              selected = selected_tags,
+              multiple = TRUE,
+              options = list(
+                maxOptions = 10, 
+                placeholder = "Tags hinzufügen"
+              )
             )
           )
         ),
@@ -261,7 +275,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
         "Wikipedia_URL" = input$Wikipedia_URL,
         "Homepage_URL" = input$Homepage_URL,
         "Bild" = input$Bild,
-        "tags" = input$tags
+        "tags" = paste0(input$tags, collapse = ";")
       )
     )
     
