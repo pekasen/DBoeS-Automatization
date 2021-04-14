@@ -1,0 +1,39 @@
+.skin-blue .main-header .navbar {
+  background-color: rgb(0,144,215);
+}
+
+.skin-blue .main-header .logo {
+	background-color: rgb(0,105,180);
+}
+
+.skin-blue .main-header .logo:hover {
+  background-color: #367fa9;
+}
+
+.skin-blue .sidebar-menu > li.active > a, .skin-blue .sidebar-menu > li:hover > a {
+  background: rgb(247,166,9);
+  border-left-color: rgb(0,105,180);
+}
+
+.skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
+  background-color: rgb(239,125,0);
+}
+
+.btn-success {
+	background-color: rgb(63,165,53);
+}
+
+.btn-success.hover, .btn-success:active, .btn-success:hover {
+  background-color: rgb(63,165,53);
+}
+
+.btn-primary {
+  background-color: rgb(0,105,180);
+  border-color: rgb(0,144,215);
+}
+
+.btn-danger {
+	background-color: rgb(227,6,19);
+	border-color: rgb(215,3,101);
+}
+

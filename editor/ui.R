@@ -31,6 +31,9 @@ tagList(
       )
     ),
     dashboardBody(
+      tags$head(
+        tags$link(rel = "stylesheet", type = "text/css", href = "hbi.css")
+      ),
       tabItems(
         tabItem(
           tabName = "database",
