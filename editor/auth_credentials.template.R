@@ -1,8 +1,14 @@
-# user login credentials
-credentials <- data.frame(
-  user = c("user1", "admin"), # mandatory
-  password = c("pass1", "pass2"), # mandatory
-  admin = c(FALSE, TRUE),
-  comment = "Datenbank öffentlicher Sprecher",
-  stringsAsFactors = FALSE
+# create a user base then hash passwords with sodium
+# then save to an rds file in app directory
+library(sodium)
+
+user_base <- data.frame(
+  user = c("user1", "user2"),
+  password = sapply(c("pass1", "pass2"), sodium::password_store), 
+  permissions = c("admin", "standard"),
+  name = c("User One", "User Two"),
+  stringsAsFactors = FALSE,
+  row.names = NULL
 )
+
+saveRDS(user_base, "auth_credentials.rds")

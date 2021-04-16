@@ -1,40 +1,56 @@
 tagList(
-  
-  auth_ui(
-    id = "auth",
-    tags_top = tags$img(src='hbi_logo_small.png', height='35', width='35'),
-    background = "#F9A129; ignore:"
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "hbi.css")
   ),
-  
   dashboardPage(
     title = "DBöS - Datenbank öffentlicher Sprecher",
     # Application Header
     dashboardHeader(
       title = tags$img(src='hbi_logo_small.png', height='35', width='35'),
       dropdownMenuOutput("messageMenu"),
-      tags$li(class = "dropdown", 
-              actionLink(
-                inputId = "logout",
-                label = NULL,
-                tooltip = "Logout",
-                icon = icon("sign-out"),
-                style="color: #fff; background-color: #337ab7; border-color: #2e6da4"
+      tags$li(class = "dropdown", style = "padding: 8px;", 
+              logoutUI("logout")),
+      tags$li(class = "dropdown login-button", 
+              a(href = "#", 
+                class = "dropdown-toggle",
+                'data-toggle' = "dropdown", icon("user"), textOutput("logged_in_user", inline = T)), 
+              tags$ul(class = "dropdown-menu login-menu",
+                      tags$li(tags$ul(class = "menu",
+                                      style = "padding-left:0 !important",
+                                      shinyauthr::loginUI(
+                                        "login", 
+                                        title = "Zum Bearbeiten anmelden",
+                                        user_title = "User",
+                                        pass_title = "Passwort",
+                                        error_message = "User oder Passwort unbekannt!",
+                                        cookie_expiry = cookie_expiry)
+                                      ),
+                              uiOutput("login_rights_info", inline = T)
+                              ),
+                      )
               )
-      )
     ),
     # Application Sidebar
     dashboardSidebar(
       sidebarMenu(
         menuItem("Datenbank", tabName = "database", icon = icon("search")),
-        menuItem("Änderungen", tabName = "changes", icon = icon("list-alt")),
-        menuItem("Statistiken", tabName = "statistics", icon = icon("signal"))
+        menuItem("Statistiken", tabName = "statistics", icon = icon("signal")),
+        menuItem("Dokumentation", tabName = "about", icon = icon("info")),
+        menuItem("Änderungen", tabName = "changes", icon = icon("list-alt"))
       )
     ),
     dashboardBody(
-      tags$head(
-        tags$link(rel = "stylesheet", type = "text/css", href = "hbi.css")
-      ),
       tabItems(
+        tabItem(
+          tabName = "about",
+          fluidRow(
+            box(
+              width=12,
+              h1("Datenbank Öffentlicher Sprecher:innen", align = 'center'),
+              p("Hier werden Projektinformationen und eine Dokumentation zur DBöS angezeigt")
+            )
+          )
+        ),
         tabItem(
           tabName = "database",
           fluidRow(

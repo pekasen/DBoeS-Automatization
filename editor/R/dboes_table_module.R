@@ -28,30 +28,29 @@ dboes_table_module_ui <- function(id) {
     ),
     fluidRow(
       column(
-        width = 2,
-        actionButton(
-          ns("save_dboes"),
-          "Save",
-          class = "btn-success",
-          style = "color: #fff;",
-          icon = icon('save'),
-          width = '100%'
+        width = 4,
+        div(style = "display:inline-block; float:left; margin-right: 12px;", 
+            actionButton(
+              ns("add_dboes"),
+              "Add",
+              class = "btn-success",
+              style = "color: #fff;",
+              icon = icon('plus'),
+              width = '100%',
+              style="margin-right:15px; margin-bottom: 15px;"
+            )
         ),
-        tags$br(),
-        tags$br()
-      ),
-      column(
-        width = 1,
-        actionButton(
-          ns("add_dboes"),
-          "Add",
-          class = "btn-success",
-          style = "color: #fff;",
-          icon = icon('plus'),
-          width = '100%'
-        ),
-        tags$br(),
-        tags$br()
+        div(style = "display:inline-block; float:left;", 
+            actionButton(
+              ns("save_dboes"),
+              "Save",
+              class = "btn-success",
+              style = "color: #fff;",
+              icon = icon('save'),
+              width = '100%',
+              style="margin-right:15px; margin-bottom: 15px;"
+            )
+        )
       )
     ),
     fluidRow(
@@ -83,7 +82,7 @@ dboes_table_module_ui <- function(id) {
 #'
 #' @return None
 
-dboes_table_module <- function(input, output, session, selected_tab) {
+dboes_table_module <- function(input, output, session, selected_tab, user_login) {
   
   dboes_table_prep <- reactiveVal(NULL)
   
@@ -93,6 +92,12 @@ dboes_table_module <- function(input, output, session, selected_tab) {
     
     ids <- rownames(out)
     
+    # Remove the `uuid` column. We don't want to show this column to the user
+    out <- out %>%
+      select(-id) %>%
+      relocate(Bild)
+    
+    # Create edit / add action buttons
     actions <- purrr::map_chr(ids, function(id_) {
       paste0(
         '<div class="btn-group" style="width: 75px;" role="group" aria-label="Basic example">
@@ -102,16 +107,11 @@ dboes_table_module <- function(input, output, session, selected_tab) {
       )
     })
     
-    # Remove the `uuid` column. We don't want to show this column to the user
-    out <- out %>%
-      select(-id)
-    
     # Set the Action Buttons row to the first column of the dboes table
     out <- cbind(
       tibble("Aktion" = actions),
       out
-    ) %>%
-    relocate(Bild, .after = "Aktion")
+    )
     
     # Add photo
     image_names <- gsub("https://de.wikipedia.org/wiki/Datei:", "", out$Bild)
@@ -121,7 +121,6 @@ dboes_table_module <- function(input, output, session, selected_tab) {
     image_urls <- paste0("https://upload.wikimedia.org/wikipedia/commons/thumb/", image_paths)
     image_urls <- ifelse(endsWith(image_urls, ".svg"), paste0(image_urls, ".png"), image_urls)
     out$Bild <- paste0('<img src="', image_urls, '" width=70/>')
-    
     
     if (is.null(dboes_table_prep())) {
       # loading data into the table for the first time, so we render the entire table
@@ -183,6 +182,21 @@ dboes_table_module <- function(input, output, session, selected_tab) {
       ) 
     
   })
+  
+  
+  observe({
+    toggle(hide("save_dboes"))
+    if (is.null(user_login())) {
+      shinyjs::hide("save_dboes")
+      shinyjs::hide("add_dboes")
+      DT::hideCols(dboes_table_proxy, 0)
+    } else {
+      DT::showCols(dboes_table_proxy, 0)
+      shinyjs::show("save_dboes")
+      shinyjs::show("add_dboes")
+    }
+  })
+  
   
   dboes_table_proxy <- DT::dataTableProxy('dboes_table')
   

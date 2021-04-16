@@ -25,6 +25,9 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
   
   observeEvent(modal_trigger(), {
     
+    # Authorize who is able to access particular buttons (here, modules)
+    req(session$userData$user_auth())
+    
     hold <- dboes_to_edit()
     dboes_db_category <- values$dboes_entries[[session$userData$selected_category()]]
     selected_tags <- NULL
@@ -284,7 +287,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     if (is.null(hold)) {
       # adding a new entry
       out$data$created_at <- time_now
-      out$data$created_by <- session$userData$username
+      out$data$created_by <- session$userData$user_info()$user
     } else {
       # Editing existing entry
       out$data$created_at <- as.character(hold$created_at)
@@ -292,7 +295,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     }
     
     out$data$modified_at <- time_now
-    out$data$modified_by <- session$userData$username
+    out$data$modified_by <- session$userData$user_info()$user
     
     out
   })

@@ -18,7 +18,7 @@ dboes_save_module <- function(input, output, session, modal_title, dboes_to_save
   # Observes trigger for this module (here, the Save Button)
   observeEvent(modal_trigger(), {
     # Authorize who is able to access particular buttons (here, modules)
-    # req(session$userData$role == 'admin')
+    req(session$userData$user_auth())
     
     showModal(
       modalDialog(
