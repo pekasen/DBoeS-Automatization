@@ -42,4 +42,7 @@ function(input, output, session) {
     session$userData$selected_category(input$dboes_category)
   })
   
+  # CSV comparison
+  callModule(dboes_csv_module, "dboes_csv")
+  
 }

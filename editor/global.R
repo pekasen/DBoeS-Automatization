@@ -1,17 +1,19 @@
 # Library in packages used in this application
-library(shiny)
-library(DT)
-library(shinyjs)
-library(shinycssloaders)
-library(shinydashboard)
-library(shinyFeedback)
-library(tidyverse)
-library(magrittr)
-library(yaml)
-library(shinyauthr)
-library(RSQLite)
-library(DBI)
-library(lubridate)
+if (!require("pacman")) install.packages("pacman")
+
+pacman::p_load(shiny)
+pacman::p_load(DT)
+pacman::p_load(shinyjs)
+pacman::p_load(shinycssloaders)
+pacman::p_load(shinydashboard)
+pacman::p_load(shinyFeedback)
+pacman::p_load(tidyverse)
+pacman::p_load(magrittr)
+pacman::p_load(RSQLite)
+pacman::p_load(DBI)
+pacman::p_load(lubridate)
+
+pacman::p_load_gh("PaulC91/shinyauthr")
 
 # Turn off scientific notation and stringsAsFactors
 options(scipen = 999, stringsAsFactors = F)
@@ -55,6 +57,12 @@ user_base <- readRDS("auth_credentials.rds")
 
 # DB Data configurations
 # ----------------------
+
+# CSV files from automatic retrieval
+auto_csv_path <- "../output/parliaments"
+auto_csv_files <- list.files(auto_csv_path, pattern = "*.csv$", full.names = F, recursive = T)
+auto_csv_dates <- list.files(auto_csv_path)
+auto_csv_categories <- sort(unique(sapply(strsplit(auto_csv_files, "/"), FUN = function(x) x[2])))
 
 # categories
 tag_categories <- yaml::read_yaml("data/categories.yaml")

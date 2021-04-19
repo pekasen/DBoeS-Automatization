@@ -71,13 +71,7 @@ tagList(
         ),
         tabItem(
           tabName = "changes",
-          fluidRow(
-            box(
-              width=12,
-              h1("Änderungen", align = 'center'),
-              p("Hier werden Änderungen in den automatisch erfassten Daten angezeigt")
-            )
-          )
+          dboes_csv_module_ui("dboes_csv")
         ),
         tabItem(
           tabName = "statistics",
