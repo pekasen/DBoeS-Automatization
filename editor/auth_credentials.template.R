@@ -1,6 +1,6 @@
 # create a user base then hash passwords with sodium
 # then save to an rds file in app directory
-library(sodium)
+pacman::p_load(sodium)
 
 user_base <- data.frame(
   user = c("user1", "user2"),
