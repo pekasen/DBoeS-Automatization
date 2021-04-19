@@ -6,7 +6,13 @@ tagList(
     title = "DBöS - Datenbank öffentlicher Sprecher",
     # Application Header
     dashboardHeader(
-      title = tags$img(src='hbi_logo_small.png', height='35', width='35'),
+      title = tags$span(
+        tags$img(src='hbi_logo_small.png', 
+                 height='35', width='35', 
+                 class = "hbi-logo", 
+                 alt = "Datenbank öffentlicher Sprecher:innen",
+                 title = "Datenbank öffentlicher Sprecher:innen"),
+        " DBöS"),
       dropdownMenuOutput("messageMenu"),
       tags$li(class = "dropdown", style = "padding: 8px;", 
               logoutUI("logout")),
@@ -24,11 +30,11 @@ tagList(
                                         pass_title = "Passwort",
                                         error_message = "User oder Passwort unbekannt!",
                                         cookie_expiry = cookie_expiry)
-                                      ),
-                              uiOutput("login_rights_info", inline = T)
-                              ),
-                      )
+                      ),
+                      uiOutput("login_rights_info", inline = T)
+                      ),
               )
+      )
     ),
     # Application Sidebar
     dashboardSidebar(
