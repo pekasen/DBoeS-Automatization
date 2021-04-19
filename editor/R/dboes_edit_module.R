@@ -242,11 +242,21 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     
     observeEvent(input$Name, {
       twitter_search_result(get_twitter_suggestions(input$Name))
+      facebook_search_result(get_facebook_suggestions(input$Name))
     })
     
     output$twitterSearchOutput <- DT::renderDT(
       {
         twitter_search_result()
+      },
+      rownames = FALSE,
+      escape = FALSE,
+      options = list(paging = FALSE, searching = FALSE, lengthMenu = NULL)
+    )
+    
+    output$facebookSearchOutput <- DT::renderDT(
+      {
+        facebook_search_result()
       },
       rownames = FALSE,
       escape = FALSE,
@@ -386,5 +396,27 @@ get_twitter_suggestions <- function(name) {
       )
   }
   return(head(twitter_df))
+}
+
+get_facebook_suggestions <- function(name) {
+  facebook_df <- tryCatch(
+    {
+      print(name)
+      fetcher <- reticulate::import_from_path("scraper.facebook_fetcher", path = "..")
+      df <- fetcher$search(name)
+      df
+    },
+    error = function(e) {
+      message("Could not get data from Facebook (error somewhere in the python code)")
+      data.frame()
+    }
+  )
+  
+  if (length(facebook_df) > 0) {
+    facebook_df <- facebook_df %>%
+      mutate(username = paste0('<a href="', facebook_df$url, '" target="_blank">', facebook_df$username, '</a>')) %>%
+      select(-url)
+  }
+  return(head(facebook_df))
 }
 
