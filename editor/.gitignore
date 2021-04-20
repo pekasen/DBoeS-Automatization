@@ -46,3 +46,4 @@ po/*~
 
 # own files
 auth_credentials.R
+auth_credentials.rds

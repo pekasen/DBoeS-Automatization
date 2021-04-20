@@ -4,7 +4,7 @@ pacman::p_load(sodium)
 
 user_base <- data.frame(
   user = c("user1", "user2"),
-  password = sapply(c("pass1", "pass2"), sodium::password_store), 
+  password_hash = sapply(c("pass1", "pass2"), sodium::password_store), 
   permissions = c("admin", "standard"),
   name = c("User One", "User Two"),
   stringsAsFactors = FALSE,
