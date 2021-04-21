@@ -122,6 +122,20 @@ dboes_table_module <- function(input, output, session, selected_tab, user_login)
     image_urls <- ifelse(endsWith(image_urls, ".svg"), paste0(image_urls, ".png"), image_urls)
     out$Bild <- paste0('<img src="', image_urls, '" width=70/>')
     
+    # replace social media information with symbols
+    empty_fields_tw <- rowSums(cbind(out$SM_Twitter_user == "", out$SM_Twitter_id == "", is.na(out$SM_Twitter_verifiziert)))
+    empty_fields_fb <- rowSums(cbind(out$SM_Facebook_user == "", out$SM_Facebook_id == "", is.na(out$SM_Facebook_verifiziert)))
+
+    out <- out %>%
+      mutate(Wahlkreis = ifelse(Wahlkreis == "", as.character(icon("minus-circle", class = "text-danger")), as.character(icon("check-circle", class = "text-success")))) %>%
+      mutate(Wikipedia = ifelse(Wikipedia_URL == "", as.character(icon("minus-circle", class = "text-danger")), as.character(icon("check-circle", class = "text-success")))) %>%
+      mutate(Homepage = ifelse(Homepage_URL == "", as.character(icon("minus-circle", class = "text-danger")), as.character(icon("check-circle", class = "text-success")))) %>%
+      mutate(Twitter = ifelse(empty_fields_tw >= 2, as.character(icon("minus-circle", class = "text-danger")), ifelse(empty_fields_tw == 1, as.character(icon("exclamation-circle", class = "text-warning")), as.character(icon("check-circle", class = "text-success"))))) %>% 
+      mutate(Facebook = ifelse(empty_fields_fb >= 2, as.character(icon("minus-circle", class = "text-danger")), ifelse(empty_fields_fb == 1, as.character(icon("exclamation-circle", class = "text-warning")), as.character(icon("check-circle", class = "text-success"))))) %>% 
+      select(-c(Wikipedia_URL, Homepage_URL, Kommentar)) %>%
+      select(-starts_with('SM_')) %>%
+      relocate(Wikipedia, Homepage, Twitter, Facebook, .after = "tags")
+    
     if (is.null(dboes_table_prep())) {
       # loading data into the table for the first time, so we render the entire table
       # rather than using a DT proxy
@@ -148,8 +162,8 @@ dboes_table_module <- function(input, output, session, selected_tab, user_login)
       # colnames = c("Parlament", "Name", "Partei", "Geschlecht", "Twitter name", "Twitter id", "Wikipedia", "Geändert am"),
       selection = "none",
       class = "compact stripe row-border nowrap",
-      # Escape the HTML in all except first columns
-      escape = -c(1, 2),
+      # Do not escape the HTML in columns
+      escape = F,
       extensions = c("Buttons"),
       filter = list(position = "top"),
       options = list(

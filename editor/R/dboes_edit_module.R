@@ -401,7 +401,6 @@ get_twitter_suggestions <- function(name) {
 get_facebook_suggestions <- function(name) {
   facebook_df <- tryCatch(
     {
-      print(name)
       fetcher <- reticulate::import_from_path("scraper.facebook_fetcher", path = "..")
       df <- fetcher$search(name)
       df
