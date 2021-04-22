@@ -177,3 +177,15 @@ class TestEntityGroup(unittest.TestCase):
         self.assertIsInstance(diff, pd.DataFrame)
         self.assertEqual(len(diff), 10)
         self.assertEqual(len(diff['old/new'][diff['old/new'] == 'new']), 5)
+
+    def test_group_comparison_with_several_changes_and_exclusions(self):
+        entity_group = EntityGroup(
+            'test/data/04-12-2020_saarland_with_ids.csv')
+        changed_group = EntityGroup(
+            'test/data/04-12-2020_saarland_with_several_changes.csv')
+
+        diff = entity_group.compare(changed_group, exclude_from_comparison=["Fraktion"])
+
+        self.assertIsInstance(diff, pd.DataFrame)
+        self.assertLess(len(diff), 10)
+        self.assertLess(len(diff['old/new'][diff['old/new'] == 'new']), 5)

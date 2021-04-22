@@ -142,12 +142,13 @@ class EntityGroup:
 
         self.df.to_csv(path, index=False)
 
-    def compare(self, entitygroup, output=None):
+    def compare(self, entitygroup, output=None, exclude_from_comparison=None):
         '''Compare self with other EntityGroup
 
         Args:
             entitygroup: Other EntityGroup object
             output (str): path for CSV output. Defaults to `None`.
+            exclude_from_comparison (list[str]): list of columns to exclude from comparisons, cannot contain "Name"
 
         Returns:
             diff (pandas.DataFrame): DataFrame containing differing rows only with columns
@@ -159,9 +160,18 @@ class EntityGroup:
         old = self.df
         new = entitygroup.df
 
+        if isinstance(exclude_from_comparison, list):
+            assert "Name" not in exclude_from_comparison
+            columns = [
+                column for column in schema if column not in exclude_from_comparison]
+            old = old[columns]
+            new = new[columns]
+        else:
+            columns = schema
+
         # outer merge on all fields in schema
         # if differences, indicate, if row is in old (left) or new (right) DataFrame
-        diff = old.merge(new, on=schema, how='outer', indicator=True)
+        diff = old.merge(new, on=columns, how='outer', indicator=True)
 
         # delete rows that are in both DFs
         diff = diff[diff['_merge'] != "both"]
