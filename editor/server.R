@@ -43,6 +43,6 @@ function(input, output, session) {
   })
   
   # CSV comparison
-  callModule(dboes_csv_module, "dboes_csv", input$csv_file_old, input$csv_file_new)
+  callModule(dboes_csv_module, "dboes_csv")
   
 }

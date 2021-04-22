@@ -87,13 +87,16 @@ class WikiFetcher:
             raise KeyError(f"{schema_list} for {url} not in {table.columns.values}. Edit schema.py.") from e
         return table
 
-    def fetch_all_parliaments(self):
+    def fetch_all_parliaments(self, output_basedir = None):
         # Strip Time from Date to add to every csv file created
         datetoday = datetime.today()
-        strpdatetoday = datetoday.strftime('%d-%m-%Y')
+        strpdatetoday = datetoday.strftime('%Y-%m-%d')
 
         # Create a dir for the outputs of all the Landtags csv's
-        output_path = os.getcwd() + f'/output/parliaments/{strpdatetoday}/'
+        if not output_basedir:
+            output_path = os.getcwd() + f'/output/parliaments/{strpdatetoday}/'
+        else:
+            output_path = output_basedir + f'/output/parliaments/{strpdatetoday}/'
         if not os.path.exists(output_path):
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
