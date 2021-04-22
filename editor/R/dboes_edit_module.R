@@ -241,7 +241,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
     })
     
     observeEvent(input$Name, {
-      shinyjs::delay(4000, twitter_search_result(get_twitter_suggestions(input$Name)))
+      shinyjs::delay(2000, twitter_search_result(get_twitter_suggestions(input$Name)))
       shinyjs::delay(4000, facebook_search_result(get_facebook_suggestions(input$Name)))
     })
     
