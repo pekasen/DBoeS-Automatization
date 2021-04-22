@@ -8,7 +8,6 @@ autopep8 = "*"
 flake8 = "*"
 isort = "*"
 python-language-server = "*"
-jupyterlab = "*"
 
 [packages]
 beautifulsoup4 = "*"
@@ -17,6 +16,8 @@ lxml = "*"
 pandas = "*"
 requests = "*"
 tweepy = "*"
+jupyterlab = "*"
+voila = "*"
 
 [requires]
 python_version = "3.8"
