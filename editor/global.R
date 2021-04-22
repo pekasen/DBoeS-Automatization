@@ -12,6 +12,7 @@ pacman::p_load(magrittr)
 pacman::p_load(RSQLite)
 pacman::p_load(DBI)
 pacman::p_load(lubridate)
+pacman::p_load(kableExtra)
 
 pacman::p_load_gh("PaulC91/shinyauthr")
 
