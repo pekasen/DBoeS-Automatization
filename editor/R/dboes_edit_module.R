@@ -201,7 +201,7 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
                     textInput(
                       ns("Bild"),
                       'Bild',
-                      value = ifelse(is.null(hold), "", hold$Bild)
+                      value = ifelse(is.null(hold), "https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg", hold$Bild)
                     )
                   )
                 )
@@ -231,11 +231,63 @@ dboes_edit_module <- function(input, output, session, modal_title, dboes_to_edit
       if (input$Name == "") {
         shinyFeedback::showFeedbackDanger(
           "Name",
-          text = "You must enter a name for an entry!"
+          text = "Bitte Namen eintragen!"
         )
         shinyjs::disable('submit')
       } else {
         shinyFeedback::hideFeedback("Name")
+        shinyjs::enable('submit')
+      }
+    })
+    
+    observeEvent(input$Homepage_URL, {
+      if (input$Homepage_URL != "" & !grepl("^https?://.+", input$Homepage_URL, perl = T)) {
+        shinyFeedback::showFeedbackDanger(
+          "Homepage_URL",
+          text = "Die Homepage-URl muss mit 'http(s)://' beginnen."
+        )
+        shinyjs::disable('submit')
+      } else {
+        shinyFeedback::hideFeedback("Homepage_URL")
+        shinyjs::enable('submit')
+      }
+    })
+    
+    observeEvent(input$Bild, {
+      if (input$Bild != "" & !startsWith(input$Bild, "https://de.wikipedia.org/wiki/Datei:")) {
+        shinyFeedback::showFeedbackDanger(
+          "Bild",
+          text = "Die Bild-URl muss mit 'https://de.wikipedia.org/wiki/Datei:' beginnen."
+        )
+        shinyjs::disable('submit')
+      } else {
+        shinyFeedback::hideFeedback("Bild")
+        shinyjs::enable('submit')
+      }
+    })
+    
+    observeEvent(input$Wikipedia_URL, {
+      if (input$Wikipedia_URL != "" & !startsWith(input$Wikipedia_URL, "https://de.wikipedia.org/wiki/")) {
+        shinyFeedback::showFeedbackDanger(
+          "Wikipedia_URL",
+          text = "Die Wikipedia-URl muss mit 'https://de.wikipedia.org/wiki/' beginnen."
+        )
+        shinyjs::disable('submit')
+      } else {
+        shinyFeedback::hideFeedback("Wikipedia_URL")
+        shinyjs::enable('submit')
+      }
+    })
+    
+    observeEvent(input$Wahlkreis, {
+      if (input$Wahlkreis != "" & grepl("wahlkreis", input$Wahlkreis, ignore.case = T)) {
+        shinyFeedback::showFeedbackDanger(
+          "Wahlkreis",
+          text = "Das Wort Wahlkreis sollte nicht enthalten sein."
+        )
+        shinyjs::disable('submit')
+      } else {
+        shinyFeedback::hideFeedback("Wahlkreis")
         shinyjs::enable('submit')
       }
     })
