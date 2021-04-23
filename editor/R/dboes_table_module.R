@@ -21,8 +21,8 @@ dboes_table_module_ui <- function(id) {
           id = "dboes_category",
           type = "tabs",
           tabPanel("Parlamentarier", br()),
-          tabPanel("BT-Wahl 2021", br()),
-          tabPanel("Medienorganisation", br())
+          tabPanel("BT-Wahl 2021", br())
+          # tabPanel("Medienorganisation", br())
         )
       )
     ),
