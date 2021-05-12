@@ -4,7 +4,7 @@
 
 ### Abstract 
 
-The DBöS (Datenbank öffentlicher Sprecher) contains i.a. all the names of parliamentarians in Germany with their party affiliation and their URLs to online social Networks (if available). Our first goal is a minimum viable product ([MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)) to keep this part of the database up to date with names and party affiliations. Other attributes, such as gender or age, introduce further complications and will be added later on a per project need’s basis. 
+The DBöS (Datenbank öffentlicher Sprecher, Database of Public Speakers) is a data collection and curation project at the Leibniz Institute for Media Resesarch | Hans-Bredow-Institut that aims to contain i.a. all the names of parliamentarians in Germany with their party affiliation and their URLs to online social Networks (if available). Our first goal is a minimum viable product ([MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)) to keep this part of the database up to date with names and party affiliations. Other attributes, such as gender or age, introduce further complications and will be added later on a per project need’s basis. 
 
 There are 16 federal states and every one has its own local parliament. Additionally to the local parliamentarian politicians the aim is to add all the politicians that are a member of the Bundestag (The Federal Parliament) and the members of the state governments in order to include all members of the Bundesrat (Federal Council). Each of these parliaments gets elected at different points in time. This adds up to a number of around 2700 names from different parties around Germany that have to be kept up to date several times a year.
 
