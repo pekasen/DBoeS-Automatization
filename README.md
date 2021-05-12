@@ -8,7 +8,7 @@ The DBöS (Datenbank öffentlicher Sprecher, Database of Public Speakers) is a d
 
 There are 16 federal states and every one has its own local parliament. Additionally to the local parliamentarian politicians the aim is to add all the politicians that are a member of the Bundestag (The Federal Parliament) and the members of the state governments in order to include all members of the Bundesrat (Federal Council). Each of these parliaments gets elected at different points in time. This adds up to a number of around 2700 names from different parties around Germany that have to be kept up to date several times a year.
 
-Therefore, the objective of this concept is to automate the process of keeping the list updated as far as possible. We are planning to program 3 modules that should support researchers in the future.
+Therefore, the objective of this concept is to automate the process of keeping the list updated as far as possible. The scraper part supports a researcher/programme with automating data retrieval/search from different platforms. The editor part is a Shiny application that helps researchers and assistants to keep the data up to date. The db is basically a 'database', for simplicity's and sustainable archival's sake consisting of plain CSVs.
 
 ## Basic Installation of the Python parts (TODO: R-parts for editor)
 
