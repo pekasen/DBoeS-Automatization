@@ -8,17 +8,9 @@ The DBöS (Datenbank öffentlicher Sprecher) contains i.a. all the names of parl
 
 There are 16 federal states and every one has its own local parliament. Additionally to the local parliamentarian politicians the aim is to add all the politicians that are a member of the Bundestag (The Federal Parliament) and the members of the state governments in order to include all members of the Bundesrat (Federal Council). Each of these parliaments gets elected at different points in time. This adds up to a number of around 2700 names from different parties around Germany that have to be kept up to date several times a year.
 
-Therefore, the objective of this concept is to automate the process of keeping the list updated as far as possible. We are planning to program 3 modules that should support researchers in the future. We conceptualize the different steps that are needed below.
+Therefore, the objective of this concept is to automate the process of keeping the list updated as far as possible. We are planning to program 3 modules that should support researchers in the future.
 
-
-### About
-
-The bot will gather all the names of the  german parliamentarian politicians and scrape them into CSV files.
-There are 16 Bundesländer (states) in Germany. Additionally to this, the Bundestag (federal parliament) and Bundesrat (federal council) has to be collected.
-This amounts to 18 sites to be scraped, containing a total of around 2700 names.. We will use wikipedia as a source,
-since it provides complete tables with the needed information. 
-
-## Basic Installation
+## Basic Installation of the Python parts (TODO: R-parts for editor)
 
 ### Cloning this Repo
 
@@ -54,7 +46,7 @@ After this you can start a shell in the virtual environment with:
 pipenv shell
 ```
 
-You can execute the application within the shell with:
+You can execute a CLI-application-like test/demo script within the shell with:
 
 ```
 python main.py
