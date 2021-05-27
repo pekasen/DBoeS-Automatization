@@ -1,27 +1,477 @@
-"id","Kategorie","Name","Partei","Wahlkreis","Geschlecht","Kommentar","Bild","tags","Wikipedia_URL","Homepage_URL","SM_Twitter_user","SM_Twitter_id","SM_Twitter_verifiziert","SM_Facebook_id","SM_Facebook_user","SM_Facebook_verifiziert","SM_Youtube_user","SM_Youtube_id","SM_Youtube_verifiziert","SM_Instagram_user","SM_Instagram_id","SM_Instagram_verifiziert","SM_Telegram_user","SM_Telegram_id","SM_Telegram_verifiziert","created_at","created_by","modified_at","modified_by"
-"f14701dc-fb95-4e1c-b717-353a085c2489","Nordrhein Westfalen","Jens Spahn","CDU","Steinfurt I – Borken I","männlich","Bundesminister für Gesundheit","https://de.wikipedia.org/wiki/Datei:2018-02-14_CDU_Th%C3%BCringen_Politischer_Aschermittwoch-5421.jpg","Parlamentarier Wiederwahl","https://de.wikipedia.org/wiki/Jens_Spahn","http://www.jens-spahn.de","jensspahn","299650387","TRUE","92576009043","jensspahn","FALSE","","","","","","","","","","2021-03-30 20:59:52","admin","2021-04-23 14:24:55","gw"
-"e35bdc09-2ac0-4019-8105-c26f376da5e5","Berlin","Michael Müller","SPD","Charlottenburg-Wilmersdorf","männlich","Auch  Listenplatz 1 für die Berliner SPD-Landesliste","https://de.wikipedia.org/wiki/Datei:2017-11-16_Michael_M%C3%BCller_(Wiki_Loves_Parliaments_2017_in_Berlin)_by_Sandro_Halank.jpg","","https://de.wikipedia.org/wiki/Michael_M%C3%BCller_(Politiker,_1964)","https://michael-mueller.de/","","","FALSE","","michael.mueller.berlin","TRUE","","","","","","","","","","2021-04-23 12:00:22","gw","2021-04-23 14:24:06","gw"
-"ac241868-d90d-4e01-be19-ea8e7276fa16","Nordrhein Westfalen","Lisa Ellermann","LINKE","Bottrop – Recklinghausen III","weiblich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","","","FALSE","","","FALSE","","","","","","","","","","2021-04-23 14:15:11","gw","2021-04-23 14:23:45","gw"
-"94ab9ed2-22fd-4a6b-a317-277e05293934","Nordrhein Westfalen","Friedrich Merz","CDU","Hochsauerlandkreis","männlich","","https://de.wikipedia.org/wiki/Datei:2020-01-17_Friederich_Merz_3788_(cropped).jpg","","https://de.wikipedia.org/wiki/Friedrich_Merz","https://www.friedrich-merz.de/","_FriedrichMerz","1059395748289232896","TRUE","","MerzCDU","TRUE","","","","","","","","","","2021-04-23 14:23:35","gw","2021-04-23 14:23:35","gw"
-"7115fe76-67ec-4eef-8541-a0bbc70d6872","Brandenburg","Annalena Baerbock","GRÜNE","Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II","weiblich","","https://de.wikipedia.org/wiki/Datei:20180120_AB_HH.png","Parlamentarier Wiederwahl","https://de.wikipedia.org/wiki/Annalena_Baerbock","https://annalena-baerbock.de/","ABaerbock","2179010672","TRUE","","abaerbock","TRUE","","","","","","","","","","2021-04-23 15:36:39","gw","2021-04-23 15:36:39","gw"
-"b667d887-69e8-4c7a-a2f6-479183283ea9","Brandenburg","Olaf Scholz","SPD","Potsdam – 61 Potsdam-Mittelmark II – Teltow-Fläming II","männlich","","https://de.wikipedia.org/wiki/Datei:2019-09-10_SPD_Regionalkonferenz_Olaf_Scholz_by_OlafKosinsky_MG_2532.jpg","Parlamentarier Wiederwahl","https://de.wikipedia.org/wiki/Olaf_Scholz","https://olaf-scholz.spd.de","OlafScholz","38150247","TRUE","","","FALSE","","","","","","","","","","2021-04-23 17:05:56","LiMo","2021-04-23 17:05:56","LiMo"
-"125d6a02-0029-4ab6-8f4f-e1ff0028a270","Berlin","Petra Pau","LINKE","85","weiblich","","https://de.wikipedia.org/wiki/Datei:2018-06-09_Bundesparteitag_Die_Linke_2018_in_Leipzig_by_Sandro_Halank–070.jpg","Parlamentarier Wiederwahl","https://de.wikipedia.org/wiki/Petra_Pau","https://www.petrapau.de/","PetraPauMaHe","560467206","TRUE","","","FALSE","","","","","","","","","","2021-04-23 20:17:30","LiMo","2021-04-24 13:31:11","LiMo"
-"9792f776-e401-4ba2-a92e-8bd1f3e434ac","Berlin","Dr. Monika Grütters","CDU","77","weiblich","","https://de.wikipedia.org/wiki/Datei:Monika_Gruetters_2009.jpg","Parlamentarier Wiederwahl","https://de.wikipedia.org/wiki/Monika_Gr%C3%BCtters","https://www.monika-gruetters.de/","","","FALSE","","@MonikaGruetters ","TRUE","","","","","","","","","","2021-04-26 10:29:02","LiMo","2021-04-26 10:31:31","LiMo"
-"c6e65744-ccdf-4f8f-b288-e60e629cdb47","Berlin","Lisa Paus","CDU","80","weiblich","","https://de.wikipedia.org/wiki/Datei:2020-02-14_Lisa_Paus_(KPFC)_03.jpg","Parlamentarier Wiederwahl","https://de.wikipedia.org/wiki/Lisa_Paus","https://lisa-paus.de/","lisapaus","569166756","TRUE","","","FALSE","","","","","","","","","","2021-04-26 10:37:34","LiMo","2021-04-26 10:37:34","LiMo"
-"6edfa80d-d603-4ec0-9b15-d32b2328ac91","Berlin","Christoph Meyer","FDP","80","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","Meyer_FDP","861992050358616064","TRUE","","","FALSE","","","","","","","","","","2021-04-26 11:06:37","LiMo","2021-04-26 11:06:37","LiMo"
-"5bc9678c-f4a5-4619-a551-a06050af6814","Niedersachsen","Peggy Schierenbeck","SPD","33","weiblich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","","","FALSE","","","FALSE","","","","","","","","","","2021-04-26 11:47:16","clali","2021-04-26 11:47:16","clali"
-"139299e3-6f21-4686-8e20-143d86839976","Hamburg","Bernd Baumann","AfD","","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","BerndBaumannAfD","3043727333","FALSE","","","FALSE","","","","","","","","","","2021-04-26 11:55:33","clali","2021-04-26 11:55:33","clali"
-"abf77f38-5b6e-4459-9834-7be5b230bf73","Hamburg","Michael Kruse","FDP","18","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","krusehamburg ","2823984824","TRUE","","","FALSE","","","","","","","","","","2021-04-26 11:58:28","clali","2021-04-26 11:59:10","clali"
-"fc7ee862-9b86-4749-9ee1-b133a8f570b0","Bayern","Nicole Gohlke","LINKE","220","weiblich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","Parlamentarier Wiederwahl","","","NicoleGohlke ","866425075","TRUE","","","FALSE","","","","","","","","","","2021-04-26 14:18:09","LiMo","2021-04-26 14:18:09","LiMo"
-"2ef17594-a03a-443c-8576-803ad337b802","Saarland","Dr. Christian Wirth","AfD","","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","Parlamentarier Wiederwahl","","","ChrWirthMdB","920193967937019904","FALSE","","","FALSE","","","","","","","","","","2021-04-28 18:55:53","LiMo","2021-04-28 18:55:53","LiMo"
-"2a4e45ba-279e-4ab4-b3ea-3f9828437f8b","Nordrhein Westfalen","Rolf Mützenich","SPD","95","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","","","FALSE","","","FALSE","","","","","","","","","","2021-05-03 10:26:42","clali","2021-05-03 10:26:42","clali"
-"2fe1f930-a538-4e22-9d03-90de9d76de22","Nordrhein Westfalen","Svenja Schulze","SPD","129","weiblich","","https://de.wikipedia.org/wiki/Datei:2493ri_SPD,_Svenja_Schulze.jpg","","","","SvenjaSchulze68 ","757979230244368385","TRUE","","","FALSE","","","","","","","","","","2021-05-03 10:28:17","clali","2021-05-03 10:40:17","clali"
-"c26cc5d1-2599-4401-a660-e047b4dda9b6","Nordrhein Westfalen","Sebastian Hartmann","SPD","97","männlich","","https://de.wikipedia.org/wiki/Datei:Hartmann,_Sebastian-1900.jpg","","","","sebast_hartmann ","1076269195","TRUE","","","FALSE","","","","","","","","","","2021-05-03 10:40:00","clali","2021-05-03 10:40:00","clali"
-"42256e5d-3f67-422b-989b-d0c0404f1d05","Berlin","Ottilie Klein","CDU","75","weiblich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","Ottilie_Klein","728577706489720832","FALSE","","","FALSE","","","","","","","","","","2021-05-03 10:42:16","LiMo","2021-05-03 10:42:16","LiMo"
-"daa0f708-c0e6-438e-a131-98016b9d8708","Nordrhein Westfalen","Dirk Wies","SPD","147","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","","","FALSE","","","FALSE","","","","","","","","","","2021-05-03 10:44:07","clali","2021-05-03 10:44:07","clali"
-"90633e6d-4f51-4146-abf5-888ba2dc49b8","Berlin","Manuela Anders-Granitzki","CDU","76","weiblich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","","","FALSE","","","FALSE","","","","","","","","","","2021-05-03 10:44:37","LiMo","2021-05-03 10:44:37","LiMo"
-"61843284-7840-478d-a38c-409400774b09","Berlin","Joe Chialo","CDU","78","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","ChialoJoe","3158649058","FALSE","","","FALSE","","","","","","","","","","2021-05-03 10:45:08","LiMo","2021-05-03 10:45:08","LiMo"
-"49a4355e-3520-4dc1-9d96-e2dc4db0ffb4","Berlin","Thomas Heilmann","CDU","79","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","Parlamentarier Wiederwahl","","","ThomasHeilmann ","56806603","TRUE","","","FALSE","","","","","","","","","","2021-05-03 10:51:10","LiMo","2021-05-03 10:51:10","LiMo"
-"e8dfcdfe-fce0-412e-9479-73c4dd9d504d","Berlin","Klaus-Dieter Gröhler","CDU","80","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","Parlamentarier Wiederwahl","","","kdgroehler","1274971348943732736","FALSE","","","FALSE","","","","","","","","","","2021-05-03 10:51:54","LiMo","2021-05-03 10:51:54","LiMo"
-"bd167104-f1c2-416b-a446-eb35706d3299","Berlin","Jan-Marco Luczak","CDU","81","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","Parlamentarier Wiederwahl","","","JM_Luczak","22908417","TRUE","","","FALSE","","","","","","","","","","2021-05-03 10:52:44","LiMo","2021-05-03 10:52:44","LiMo"
-"5c0da9e8-4267-4a49-850c-1b4910b13b95","Berlin","Mario Czaja","CDU","85","männlich","","https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg","","","","MarioCzaja","115666099","TRUE","","","FALSE","","","","","","","","","","2021-05-03 10:55:26","LiMo","2021-05-03 10:55:26","LiMo"
+id,Kategorie,Name,Partei,Wahlkreis,Geschlecht,Kommentar,Bild,tags,Wikipedia_URL,Homepage_URL,SM_Twitter_user,SM_Twitter_id,SM_Twitter_verifiziert,SM_Facebook_id,SM_Facebook_user,SM_Facebook_verifiziert,SM_Youtube_user,SM_Youtube_id,SM_Youtube_verifiziert,SM_Instagram_user,SM_Instagram_id,SM_Instagram_verifiziert,SM_Telegram_user,SM_Telegram_id,SM_Telegram_verifiziert,created_at,created_by,modified_at,modified_by
+f14701dc-fb95-4e1c-b717-353a085c2489,Nordrhein Westfalen,Jens Spahn,CDU,124,männlich,Bundesminister für Gesundheit,https://de.wikipedia.org/wiki/Datei:2018-02-14_CDU_Th%C3%BCringen_Politischer_Aschermittwoch-5421.jpg,Parlamentarier Wiederwahl,https://de.wikipedia.org/wiki/Jens_Spahn,http://www.jens-spahn.de,jensspahn,299650387,TRUE,92576009043,jensspahn,FALSE,,,,,,,,,,2021-03-30 20:59:52,admin,2021-05-27 22:02:25.752635,fvm
+e35bdc09-2ac0-4019-8105-c26f376da5e5,Berlin,Michael Müller,SPD,80,männlich,Auch  Listenplatz 1 für die Berliner SPD-Landesliste,https://de.wikipedia.org/wiki/Datei:2017-11-16_Michael_M%C3%BCller_(Wiki_Loves_Parliaments_2017_in_Berlin)_by_Sandro_Halank.jpg,,"https://de.wikipedia.org/wiki/Michael_M%C3%BCller_(Politiker,_1964)",https://michael-mueller.de/,,,FALSE,,michael.mueller.berlin,TRUE,,,,,,,,,,2021-04-23 12:00:22,gw,2021-05-27 22:02:25.752635,fvm
+ac241868-d90d-4e01-be19-ea8e7276fa16,Nordrhein Westfalen,Lisa Ellermann,LINKE,125,weiblich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,,,FALSE,,,FALSE,,,,,,,,,,2021-04-23 14:15:11,gw,2021-05-27 22:02:25.752635,fvm
+94ab9ed2-22fd-4a6b-a317-277e05293934,Nordrhein Westfalen,Friedrich Merz,CDU,147,männlich,,https://de.wikipedia.org/wiki/Datei:2020-01-17_Friederich_Merz_3788_(cropped).jpg,,https://de.wikipedia.org/wiki/Friedrich_Merz,https://www.friedrich-merz.de/,_FriedrichMerz,1059395748289232896,TRUE,,MerzCDU,TRUE,,,,,,,,,,2021-04-23 14:23:35,gw,2021-05-27 22:02:25.752635,fvm
+7115fe76-67ec-4eef-8541-a0bbc70d6872,Brandenburg,Annalena Baerbock,GRÜNE,61,weiblich,,https://de.wikipedia.org/wiki/Datei:20180120_AB_HH.png,Parlamentarier Wiederwahl,https://de.wikipedia.org/wiki/Annalena_Baerbock,https://annalena-baerbock.de/,ABaerbock,2179010672,TRUE,,abaerbock,TRUE,,,,,,,,,,2021-04-23 15:36:39,gw,2021-05-27 22:02:25.752635,fvm
+b667d887-69e8-4c7a-a2f6-479183283ea9,Brandenburg,Olaf Scholz,SPD,61,männlich,,https://de.wikipedia.org/wiki/Datei:2019-09-10_SPD_Regionalkonferenz_Olaf_Scholz_by_OlafKosinsky_MG_2532.jpg,Parlamentarier Wiederwahl,https://de.wikipedia.org/wiki/Olaf_Scholz,https://olaf-scholz.spd.de,OlafScholz,38150247,TRUE,,,FALSE,,,,,,,,,,2021-04-23 17:05:56,LiMo,2021-05-27 22:02:25.752635,fvm
+125d6a02-0029-4ab6-8f4f-e1ff0028a270,Berlin,Petra Pau,LINKE,85,weiblich,,https://de.wikipedia.org/wiki/Datei:2018-06-09_Bundesparteitag_Die_Linke_2018_in_Leipzig_by_Sandro_Halank–070.jpg,Parlamentarier Wiederwahl,https://de.wikipedia.org/wiki/Petra_Pau,https://www.petrapau.de/,PetraPauMaHe,560467206,TRUE,,,FALSE,,,,,,,,,,2021-04-23 20:17:30,LiMo,2021-05-27 22:02:25.752635,fvm
+9792f776-e401-4ba2-a92e-8bd1f3e434ac,Berlin,Dr. Monika Grütters,CDU,77,weiblich,,https://de.wikipedia.org/wiki/Datei:Monika_Gruetters_2009.jpg,Parlamentarier Wiederwahl,https://de.wikipedia.org/wiki/Monika_Gr%C3%BCtters,https://www.monika-gruetters.de/,,,FALSE,,@MonikaGruetters ,TRUE,,,,,,,,,,2021-04-26 10:29:02,LiMo,2021-05-27 22:02:25.752635,fvm
+c6e65744-ccdf-4f8f-b288-e60e629cdb47,Berlin,Lisa Paus,CDU,80,weiblich,,https://de.wikipedia.org/wiki/Datei:2020-02-14_Lisa_Paus_(KPFC)_03.jpg,Parlamentarier Wiederwahl,https://de.wikipedia.org/wiki/Lisa_Paus,https://lisa-paus.de/,lisapaus,569166756,TRUE,,,FALSE,,,,,,,,,,2021-04-26 10:37:34,LiMo,2021-05-27 22:02:25.752635,fvm
+6edfa80d-d603-4ec0-9b15-d32b2328ac91,Berlin,Christoph Meyer,FDP,80,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,Meyer_FDP,861992050358616064,TRUE,,,FALSE,,,,,,,,,,2021-04-26 11:06:37,LiMo,2021-05-27 22:02:25.752635,fvm
+5bc9678c-f4a5-4619-a551-a06050af6814,Niedersachsen,Peggy Schierenbeck,SPD,33,weiblich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,,,FALSE,,,FALSE,,,,,,,,,,2021-04-26 11:47:16,clali,2021-05-27 22:02:25.752635,fvm
+139299e3-6f21-4686-8e20-143d86839976,Hamburg,Bernd Baumann,AfD,,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,BerndBaumannAfD,3043727333,FALSE,,,FALSE,,,,,,,,,,2021-04-26 11:55:33,clali,2021-05-27 22:02:25.752635,fvm
+abf77f38-5b6e-4459-9834-7be5b230bf73,Hamburg,Michael Kruse,FDP,18,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,krusehamburg ,2823984824,TRUE,,,FALSE,,,,,,,,,,2021-04-26 11:58:28,clali,2021-05-27 22:02:25.752635,fvm
+fc7ee862-9b86-4749-9ee1-b133a8f570b0,Bayern,Nicole Gohlke,LINKE,220,weiblich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,Parlamentarier Wiederwahl,,,NicoleGohlke ,866425075,TRUE,,,FALSE,,,,,,,,,,2021-04-26 14:18:09,LiMo,2021-05-27 22:02:25.752635,fvm
+2ef17594-a03a-443c-8576-803ad337b802,Saarland,Dr. Christian Wirth,AfD,,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,Parlamentarier Wiederwahl,,,ChrWirthMdB,920193967937019904,FALSE,,,FALSE,,,,,,,,,,2021-04-28 18:55:53,LiMo,2021-05-27 22:02:25.752635,fvm
+2a4e45ba-279e-4ab4-b3ea-3f9828437f8b,Nordrhein-Westfalen,Rolf Mützenich,SPD,95,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,Parlamentarier Wiederwahl,,,,,FALSE,,,FALSE,,,,,,,,,,2021-05-03 10:26:42,clali,2021-05-27 22:02:25.752635,fvm
+2fe1f930-a538-4e22-9d03-90de9d76de22,Nordrhein-Westfalen,Svenja Schulze,SPD,129,weiblich,,"https://de.wikipedia.org/wiki/Datei:2493ri_SPD,_Svenja_Schulze.jpg",,,,SvenjaSchulze68 ,757979230244368385,TRUE,,,FALSE,,,,,,,,,,2021-05-03 10:28:17,clali,2021-05-27 22:02:25.752635,fvm
+c26cc5d1-2599-4401-a660-e047b4dda9b6,Nordrhein-Westfalen,Sebastian Hartmann,SPD,97,männlich,,"https://de.wikipedia.org/wiki/Datei:Hartmann,_Sebastian-1900.jpg",Parlamentarier Wiederwahl,,,sebast_hartmann ,1076269195,TRUE,,,FALSE,,,,,,,,,,2021-05-03 10:40:00,clali,2021-05-27 22:02:25.752635,fvm
+42256e5d-3f67-422b-989b-d0c0404f1d05,Berlin,Ottilie Klein,CDU,75,weiblich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,Ottilie_Klein,728577706489720832,FALSE,,,FALSE,,,,,,,,,,2021-05-03 10:42:16,LiMo,2021-05-27 22:02:25.752635,fvm
+daa0f708-c0e6-438e-a131-98016b9d8708,Nordrhein Westfalen,Dirk Wies,SPD,147,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,,,FALSE,,,FALSE,,,,,,,,,,2021-05-03 10:44:07,clali,2021-05-27 22:02:25.752635,fvm
+90633e6d-4f51-4146-abf5-888ba2dc49b8,Berlin,Manuela Anders-Granitzki,CDU,76,weiblich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,,,FALSE,,,FALSE,,,,,,,,,,2021-05-03 10:44:37,LiMo,2021-05-27 22:02:25.752635,fvm
+61843284-7840-478d-a38c-409400774b09,Berlin,Joe Chialo,CDU,78,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,ChialoJoe,3158649058,FALSE,,,FALSE,,,,,,,,,,2021-05-03 10:45:08,LiMo,2021-05-27 22:02:25.752635,fvm
+49a4355e-3520-4dc1-9d96-e2dc4db0ffb4,Berlin,Thomas Heilmann,CDU,79,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,Parlamentarier Wiederwahl,,,ThomasHeilmann ,56806603,TRUE,,,FALSE,,,,,,,,,,2021-05-03 10:51:10,LiMo,2021-05-27 22:02:25.752635,fvm
+e8dfcdfe-fce0-412e-9479-73c4dd9d504d,Berlin,Klaus-Dieter Gröhler,CDU,80,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,Parlamentarier Wiederwahl,,,kdgroehler,1274971348943732736,FALSE,,,FALSE,,,,,,,,,,2021-05-03 10:51:54,LiMo,2021-05-27 22:02:25.752635,fvm
+bd167104-f1c2-416b-a446-eb35706d3299,Berlin,Jan-Marco Luczak,CDU,81,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,Parlamentarier Wiederwahl,,,JM_Luczak,22908417,TRUE,,,FALSE,,,,,,,,,,2021-05-03 10:52:44,LiMo,2021-05-27 22:02:25.752635,fvm
+5c0da9e8-4267-4a49-850c-1b4910b13b95,Berlin,Mario Czaja,CDU,85,männlich,,https://de.wikipedia.org/wiki/Datei:Placeholder_staff_photo.svg,,,,MarioCzaja,115666099,TRUE,,,FALSE,,,,,,,,,,2021-05-03 10:55:26,LiMo,2021-05-27 22:02:25.752635,fvm
+a42ddb15-6aa7-4ab3-a1ff-d0d696636e71,Hamburg,Steffan Nethe,LKR,21,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+80d39242-f93a-4bab-8034-7bfd1260e451,Hamburg,Simon Rohlfing,LKR,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e8ad9589-b467-441b-9e39-c77dae7e4670,Hamburg,Johannes Purwin,LKR,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+db6df1df-6110-4f35-bf98-c9844d44ad21,Hamburg,Dr.Wolfgang Schlage,LKR,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1bea9843-e6ab-4b1e-b8a2-cf670dc301ec,Hamburg,Bernd Anders,LKR,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+60780c70-8991-4566-b7d7-d2c80f90c03f,Niedersachsen,Thomas Ganskow,Piraten,42,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e13edf60-5670-4257-9f32-33a8b983e3ef,Niedersachsen,Phil Höfer,Piraten,48,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c73ed538-2a02-4dc4-9465-87e1c726d432,Niedersachsen,Martina Broschei,Piraten,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0b876f57-49d7-426e-8e46-a4197b5de725,Niedersachsen,Angela Ries,Piraten,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+69c40a12-1841-454f-bb34-4969c8e9dbf6,Niedersachsen,Christian Vey,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6ae02dad-cdcf-4954-b7a9-0698e1dc4374,Niedersachsen,Wolf Vincent Lübcke,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+89008652-9848-4605-9d33-ac8eeb458770,Niedersachsen,Holger Lubitz,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+87b7e422-4bc7-4677-a902-360c11497348,Niedersachsen,Uwe Gerhard Kopec,Piraten,47,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+eae9348b-1952-41bf-8586-e1d9bd841c6a,Niedersachsen,Jens Golland,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8f0c18df-451b-4dd4-ba09-fa0ec6194d1c,Niedersachsen,Olaf Engel,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ae095b18-f3ea-437a-b7d1-dede2118a1ff,Niedersachsen,Richard Klaus,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+02fdfdee-ae8f-4eca-8e0f-041553b793dd,Niedersachsen,Roland Schulz,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5fb40816-2dbb-400a-bd93-c8a34a5d2f53,Niedersachsen,Joachim Roden,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7feb22b1-3c91-447d-ac8b-88d5f8096d3a,Niedersachsen,Lars Scheumer,Piraten,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+687a0668-f407-4d6c-85a0-8671bb3e95c6,Bremen,Sarah Ryglewski,SPD,54,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6009bc6e-8959-414f-ad54-6cffd7fabc0e,Bremen,Uwe Schmidt,SPD,55,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7ea0572a-cc47-4e1b-a972-b34f58acc0a4,Bremen,Selin Ece Arpaz,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+00509278-3550-4f5a-a9ab-29b1c5d1c8a4,Bremen,Derik Eicke,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+648c3d09-6947-4cf4-81e5-ea319e8298e0,Bremen,Lizza Besecke,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+883a1842-dbb9-4e77-83be-23cf8a3f72d9,Bremen,Doris Achelwilm,Die Linke,55,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1dfe55f5-7d8e-4491-bd96-03cbacac3c41,Bremen,Cindi Tuncel,Die Linke,54,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+62533ea5-193b-4458-a0e7-320a363a6dcb,Bremen,Medine Yildiz,Die Linke,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f18c28d7-a2d0-4150-ac5b-a4e938b05b59,Bremen,Charlotte Schmitz,Die Linke,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2c7e0333-92be-4a5c-ace1-56173a401e75,Bremen,Sofia Leonidakis,Die Linke,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+773a598c-1823-4d8d-a733-33205f3524f0,Bremen,Christian Gerlin,Die Linke,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+03a1ba8b-00ba-46c9-8f19-7be5123fa1df,Bremen,Dr.Volker Redder,FDP,54,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e215668a-132e-4397-8462-8378107835c4,Bremen,Lencke Wischhusen,FDP,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+bdf2ce7c-f291-4fc5-8578-c4e3d1dc8dc6,Bremen,Gökhan Akkamis,FDP,55,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+10077bae-86bd-4939-9b31-ba7bee2e2c9f,Bremen,Marcel Schröder,FDP,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0cd98cb8-22ac-4fcf-bdcd-f2a809f01bfa,Bremen,Bettina Schiller,FDP,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+aac61ab0-2775-4101-a5fb-d458a2774ed8,Bremen,Fynn  Voigt,FDP,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c1eddb54-95e6-45a4-8cae-f8a910b57a3f,Bremen,Gwen Sohns,FDP,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0fc47fd4-0101-4a25-b385-78b0d134d4b0,Bremen,Tom Daniel,FDP,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+58e7612e-b7fc-4b97-b5a7-3c7b9b731b6b,Bremen,Celine Eberhardt,FDP,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d307c87a-4c4f-4def-9966-bf43ada43b53,Bremen,Frank Seidel,FDP,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+542dfd03-4784-4179-b14d-bc678fd57c42,Bremen,Dennis Stojic,FDP,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f900640d-465f-446d-b797-82f6503d5677,Bremen,Sören Gorniak,FDP,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+56e2f530-255d-4272-a012-060e50c789c0,Nordrhein-Westfalen,Kerstin Griese,SPD,105,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0c941fd9-3501-47c7-97c4-4d9a3cdbd968,Nordrhein-Westfalen,Dirk Wiese,SPD,147,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4c063c4e-ec51-4bab-b6db-e0fc65febd1d,Nordrhein-Westfalen,Sabine Poschmann,SPD,143,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+93a37cc5-bb66-4389-97e0-055e809e5d33,Nordrhein-Westfalen,Udo Schiefner,SPD,111,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+83455fb4-bc11-4adf-ad7c-65fb0e2c84a8,Nordrhein-Westfalen,Claudia Moll,SPD,88,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+debe100e-aac3-43e1-b043-86d1117ce803,Nordrhein-Westfalen,Bernhard Daldrup,SPD,130,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f84d802e-7a9b-4f6b-a962-58bdce518db7,Nordrhein-Westfalen,Nadine Heselhaus,SPD,126,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c5e88103-5d07-4bd4-82c3-43976d608285,Nordrhein-Westfalen,Stefan Schwartze,SPD,133,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9d00e9dc-5795-47c4-abac-98d0a651ce1f,Nordrhein-Westfalen,Bärbel Bas,SPD,115,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+70f31b57-9f49-44fc-91ec-158a65d696cc,Nordrhein-Westfalen,Achim Post,SPD,134,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ef199e7e-022a-41cf-a9b6-666ab19dde02,Nordrhein-Westfalen,Bettina Lugk,SPD,150,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+eee99bb7-6d63-43a2-ab17-05c42b6dd421,Nordrhein-Westfalen,Oliver Kaczmarek,SPD,144,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+515fdd44-0aa6-4217-9f62-3f8b56675b79,Nordrhein-Westfalen,Wiebke Esdar,SPD,132,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+402fc4f0-aafe-4358-8b80-788670374446,Nordrhein-Westfalen,Dietmar Nietan,SPD,90,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d3d9a90e-8665-4eaf-8a6b-7ee70d7b856f,Nordrhein-Westfalen,Dagmar Andres,SPD,92,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+bb2b891b-28e2-483f-9082-124349d335eb,Nordrhein-Westfalen,Andreas Rimkus,SPD,107,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+54504794-da10-49f8-8f80-7d910eebeec6,Nordrhein-Westfalen,Jessica Rosenthal,SPD,96,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8f962e1b-25f4-4d9d-8344-97043ba26d5d,Nordrhein-Westfalen,Wolfgang Hellmich,SPD,146,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7c974b2a-839e-4a50-9c1a-b3f4533957ba,Nordrhein-Westfalen,Gülistan Yüksel,SPD,109,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+24b3cfe0-18d1-4ec5-b440-5202abe1d010,Nordrhein-Westfalen,Karl Lauterbach,SPD,101,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b20a4408-f660-456d-981a-8e1942a776a8,Nordrhein-Westfalen,Sarah Lahrkamp,SPD,124,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c1b83f7e-a516-43c5-a23a-e3f275123517,Nordrhein-Westfalen,Frank Schwabe,SPD,121,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a69ad47d-1077-40ef-a03f-4ca9786cbdc2,Nordrhein-Westfalen,Nezahat Baradari,SPD,149,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8cf8d229-58e1-45f4-b849-59ada1d0fad3,Nordrhein-Westfalen,Helge Lindh,SPD,102,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d439175d-a8e6-441f-bba5-43631395433a,Nordrhein-Westfalen,Zanda Martens,SPD,106,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+568873b7-60a5-433a-b2ef-a95bc2f82dd6,Nordrhein-Westfalen,Jürgen Coße,SPD,128,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+64b1395c-6852-47bd-b326-aa28c0aa33fd,Nordrhein-Westfalen,Ye-One Rhie,SPD,87,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b774ef7f-6638-497c-a5ee-e5a117ff48dc,Nordrhein-Westfalen,Axel Echeverria,SPD,138,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b04489ed-2267-47b4-9b74-72cf02f712e5,Nordrhein-Westfalen,Luiza Licina-Bode,SPD,148,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7a187418-8754-4de7-a4f9-dd353551cb31,Nordrhein-Westfalen,Daniel Rinkert,SPD,108,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+57f72d0d-d94c-4dd8-93e6-987874e5e40f,Nordrhein-Westfalen,Elvan Korkmaz-Emre,SPD,131,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ee1cd9b8-797e-47c9-a0b9-0622c8c11a7b,Nordrhein-Westfalen,Norbert Spinrath,SPD,89,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9d375d0d-94b4-4363-a63e-9b857f6dc502,Nordrhein-Westfalen,Michelle Müntefering,SPD,141,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d51c4be6-fc1e-4b22-bf49-3aa30f2190ee,Nordrhein-Westfalen,Bodo Wißen,SPD,112,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8449f08d-9fe9-49b8-b82b-ffe6440e152e,Nordrhein-Westfalen,Michaela Engelmeier,SPD,99,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5ea409da-5546-4a02-8c1c-2b98751e2f83,Nordrhein-Westfalen,Johannes Waldmann,SPD,127,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a1a86f02-4f44-4aad-a5aa-f51bf1e56943,Nordrhein-Westfalen,Sanae Abdi,SPD,93,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7ee7d708-00c1-427e-aa41-c51ed41845e4,Nordrhein-Westfalen,Michael Gerdes,SPD,125,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f3a13194-88b6-4c46-b2de-3a6cad260b4c,Nordrhein-Westfalen,Katja Stoppenbrink,SPD,98,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+95fe4304-0e20-413e-a506-1847be80fdd3,Nordrhein-Westfalen,Ingo Schäfer,SPD,103,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+44191d3b-b825-43e4-bc7a-9851590ec114,Nordrhein-Westfalen,Marion Sollbach,SPD,94,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5252b4fe-40ba-49fa-9212-034f61d5ca12,Nordrhein-Westfalen,Kastriot Krasniqi,SPD,100,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b548895a-b62f-4f1c-8e8a-f09404baecc8,Nordrhein-Westfalen,Jürgen Berghahn,SPD,135,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+be59ceaa-ed80-4df4-bd5d-197fe8e61758,Nordrhein-Westfalen,Aaron Spielmanns,SPD,91,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e1dfb85d-6db5-4703-ac86-dfac45fdf0ff,Nordrhein-Westfalen,Michael Thews,SPD,145,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+151c9809-3577-4ffc-8b02-903c326308c1,Nordrhein-Westfalen,Jan Dieren,SPD,114,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+72297762-aa93-46ed-bfd9-f59f78bada87,Nordrhein-Westfalen,Brian Nickholz,SPD,122,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6681d92d-dbea-497a-ada0-3ee837f6000e,Nordrhein-Westfalen,Timo Schisanowski,SPD,138,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1eb62baf-dc06-4c83-a56b-74dc06cf7825,Nordrhein-Westfalen,Burkhard Blienert,SPD,137,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4b23dab5-98bb-47d0-8a11-566cf54bee3b,Nordrhein-Westfalen,Gereon Wolters,SPD,120,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+067751e6-5f57-4a69-a7c0-adf0323eefde,Nordrhein-Westfalen,Axel Schäfer,SPD,140,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3bc1ba4a-4cff-470a-9221-66bcbe91acf6,Nordrhein-Westfalen,Christian Steinacker,SPD,104,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a1a298d2-82a2-47ac-9531-0daebd00cd46,Nordrhein-Westfalen,Markus Töns,SPD,123,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ba06d178-37f3-42d8-86f1-61b6079bd342,Nordrhein-Westfalen,Jens Peick,SPD,142,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+bf45cfaf-0928-4563-a07e-6cd320caa81c,Nordrhein-Westfalen,Philipp Einfalt,SPD,110,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b8b16c23-bba3-468c-91b3-1a35e7c8809f,Nordrhein-Westfalen,Ulrich Kros,SPD,136,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d4ec3e14-d336-42de-9608-0f2edcdc68da,Nordrhein-Westfalen,Dirk Presch,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b282b8a9-6600-4264-ad98-eb5cf3f3326e,Nordrhein-Westfalen,Rainer Keller,SPD,113,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+851d0a28-a936-4db8-bcf3-c9e77075709b,Nordrhein-Westfalen,Sebastian Fiedler,SPD,118,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+cb96a0fd-c6d6-4422-9e26-11be460b1333,Nordrhein-Westfalen,Dirk Vöpel,SPD,,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+216de679-8daa-4350-9eb4-649dd7318379,Nordrhein-Westfalen,Mahmut Özdemir,SPD,116,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9bd6b5f8-dc4c-40a6-b293-82c741e8c498,Nordrhein-Westfalen,Dirk Heidenblut,SPD,119,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d0efb304-b23a-4f4b-bdba-691c0321d410,Nordrhein-Westfalen,Jörg Lorenz,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f17053b6-ba91-42ef-a647-f5abc2512fbd,Nordrhein-Westfalen,Jochen Schmidt,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+34081206-edca-4fc6-85ea-bd008c612602,Nordrhein-Westfalen,Frank Mederlet,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+663c3fc5-90ca-4dee-b366-9dfe6559db9c,Nordrhein-Westfalen,Claus Homm,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7e477738-81d7-4f0b-af3e-9e9ba348561b,Nordrhein-Westfalen,Jörg Biesterfeld,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0bed5e07-b98c-4392-8051-e5d51dc1e9a9,Nordrhein-Westfalen,Ingo Stucke,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9911b349-739d-42fe-94df-3a6615e217e4,Nordrhein-Westfalen,Karsten Gerlach,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+adabd53a-0157-4e83-af49-a2f3683fa6a1,Nordrhein-Westfalen,Carsten Ganser,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c562234a-ca57-4a0e-8541-03927a75407d,Nordrhein-Westfalen,Felix Höppner,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c2573de6-ecb9-4229-bb09-cb72c6140719,Nordrhein-Westfalen,Florian Westerwalbesloh,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c204cfed-b2bc-4176-b793-cc55e0fecd52,Nordrhein-Westfalen,Michael Richter,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+de618c78-9cc6-4290-bf17-96d3ce2da545,Nordrhein-Westfalen,Florian Götting,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7c6f3440-afe7-4883-a082-5ac8418c0382,Nordrhein-Westfalen,Tobias Hetz,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+40488bac-fc7d-4ae6-9ebc-a716cc93932b,Nordrhein-Westfalen,Ulrich Pock,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0c80197d-3e6c-4967-8124-d61e097ed9dd,Nordrhein-Westfalen,Stefan Mix,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f5fb73fa-cb37-45e6-806b-814b83fc79c7,Nordrhein-Westfalen,Helge Sulfrian,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8c51beb5-27d2-46fb-bd5e-b5821346c7d4,Nordrhein-Westfalen,Johannes Stracke,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9a1e77b1-5549-4e2c-95d9-4a53b265be04,Baden-Württemberg,Saskia Esken,SPD,280,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2f9f8a13-482f-4afd-adc9-637063cafdc6,Baden-Württemberg,Dr.Nils Schmid,SPD,262,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7928fc31-1798-4662-8cf0-1290a4b5e578,Baden-Württemberg,Rita Schwarzelühr-Sutter,SPD,288,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+009e1473-003c-4e44-a95d-fd25f289348f,Baden-Württemberg,Dr.Martin Rosemann,SPD,290,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+71fa1a0f-5fc7-4a15-b313-cd9fba50d5c7,Baden-Württemberg,Katja Mast,SPD,279,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ee8fdb51-9e6c-47d7-9f30-217a4eb56110,Baden-Württemberg,Johannes Fechner,SPD,283,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3783dd5a-77c6-492f-8b35-cfa7642019c1,Baden-Württemberg,Leni Breymaier,SPD,270,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+db89e59b-7b89-4bc5-8309-5db457e69f25,Baden-Württemberg,Martin Gerster,SPD,292,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+48f6ac95-3365-41c8-82c9-fa1c5c9ef743,Baden-Württemberg,Jasmina Hostert,SPD,260,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6d3fbae8-eb01-41c3-b4a0-e464eb923ac7,Baden-Württemberg,Dr.Lars Castellucci,SPD,277,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0fdc7759-61bd-422e-9fa7-5f593057db44,Baden-Württemberg,Gabriele Katzmarek,SPD,273,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+96fd6476-a3b3-4a9e-a1fb-74204e276f12,Baden-Württemberg,Parsa Marvi,SPD,271,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+073c3e6c-be48-4c25-bd4b-4f316b6fd33d,Baden-Württemberg,Heike Baehrens,SPD,263,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3d772b4d-d11c-40a6-951d-6abaf3fb2b43,Baden-Württemberg,Macit Karaahmetoglu,SPD,265,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c6c886fa-324b-4c90-8814-119c2edc54ba,Baden-Württemberg,Dr.Lina Seitzl,SPD,287,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1bb68e21-4d6f-4ee5-a225-72f98bc72a3d,Baden-Württemberg,Robin Mesarosch,SPD,295,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0a4a7196-6cc5-42c6-828b-b3e36d161875,Baden-Württemberg,Isabel Cademartori,SPD,275,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d1031051-25bc-42c4-b290-325544b00fe7,Baden-Württemberg,Josip Juratovic,SPD,267,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ea1107bd-40c9-4401-a392-7279ba005607,Baden-Württemberg,Derya Türk-Nachbaur,SPD,286,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f354f79b-4f33-48a0-8dd6-76afabe2745c,Baden-Württemberg,Kevin Leiser,SPD,268,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a18cb260-52b5-45e5-88c1-0fd62fbbbffb,Baden-Württemberg,Heike Engelhardt,SPD,294,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9eb0831d-8703-45c5-bc4d-174dcc734740,Baden-Württemberg,Takis Ali,SPD,282,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+594daec9-25d5-41e3-adf8-a2732dbeac7b,Baden-Württemberg,Lucia Schanbacher,SPD,258,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+64b8ede4-5550-405b-b6bb-c9e33baacc70,Baden-Württemberg,Leon Hahn,SPD,293,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+179d5dec-dba3-4d93-aa3a-8afc12c5d5d4,Baden-Württemberg,Nezaket Yildirim,SPD,278,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+dc37fa4b-a116-4ccd-8161-f92b5af650d3,Baden-Württemberg,Thomas Utz,SPD,266,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3791c205-89d5-4331-81c7-ccdb464710f3,Baden-Württemberg,Elisabeth Krämer,SPD,274,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+23d1aac9-1857-4682-8198-c249e59f3577,Baden-Württemberg,Mirko Witkowski,SPD,285,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+891498a5-7da5-4edf-a2fb-9161b0f6ff05,Baden-Württemberg,Anja Lotz,SPD,276,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+54704eb8-e660-499b-a381-47b869cfff38,Baden-Württemberg,Dejan Perc,SPD,259,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+afeee11b-f89a-47c3-aead-534dd95a6cbe,Baden-Württemberg,Argyri Paraschaki,SPD,261,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e08068c2-fa64-4a7f-a7d8-bdebff629019,Baden-Württemberg,Matthias Katsch,SPD,284,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2d466f5d-43ed-47f9-a07f-66a6bdd48e3e,Baden-Württemberg,Julia Söhne,SPD,281,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+04dbf67e-900b-458b-9516-d61cf4cc6667,Baden-Württemberg,Patrick Diebold,SPD,272,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+de8f8997-fe9d-4f8e-a1f0-ee706e4083e2,Baden-Württemberg,Dr.Ulrich Bausch,SPD,289,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2b4bf573-26c7-4a1b-82e2-c63fe2cb4a21,Baden-Württemberg,Tim-Luka Schwab,SPD,269,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+943da55d-89cf-4f63-8b5f-6f0cf8c91b43,Baden-Württemberg,Urs Abelein,SPD,264,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e287ba7b-809a-43c8-9e27-87288ab728df,Baden-Württemberg,Jan Rothenbacher,SPD,291,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d8268f2e-33e9-4368-8c7e-25389dbf2246,Bayern,Uli Grötsch,SPD,235,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e1b7eb75-8672-48d2-a981-6c30c69187c0,Bayern,Bärbel Kofler,SPD,225,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9b99181c-bb5e-4632-a409-f310e9aed3dd,Bayern,Carsten Träger,SPD,243,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0d1e7f99-d057-4e5b-9cd2-f519a8b4e9c4,Bayern,Anette Kramme,SPD,237,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+db95d88f-e52d-46a8-8bc1-9dc545e58762,Bayern,Sebastian Roloff,SPD,219,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3c111b8e-1b48-4285-8ad9-c93862fc9628,Bayern,Rita Hagl-Kehl,SPD,227,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+86a85109-8260-43e2-a411-7a05cdc21750,Bayern,Bernd Rützel,SPD,249,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f50e20a0-a6e0-43e6-8a15-fa4d05cde4a6,Bayern,Gabriela Heinrich,SPD,244,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a8b2d0bd-c5f9-49ed-9d46-935e7d1fa1dc,Bayern,Christoph Schmid,SPD,254,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c71f063d-cc98-412e-8c17-62f7e79952cc,Bayern,Claudia Tausend,SPD,218,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8f9cb2b9-0c61-40e6-820f-9ea6e4e8216c,Bayern,Andreas Schwarz,SPD,236,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+40b68038-d886-480c-a4b7-62fba90989cc,Bayern,Marianne Schieder,SPD,234,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7b56ad57-7b69-4b35-b85c-004d7b31d2f2,Bayern,Michael Schrodi,SPD,215,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+92e92b05-e083-4d06-ac69-d6227eda21fa,Bayern,Sabine Dittmar,SPD,248,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8824abbf-ad1f-4d31-91b8-bbf3e886c4b2,Bayern,Andreas Mehltretter,SPD,214,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2017d94c-4f5b-46e2-a7e9-0fba933774c8,Bayern,Ulrike Bahr,SPD,252,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+16045064-e353-41eb-9f97-95715948840b,Bayern,Johannes Schätzl,SPD,229,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a040a686-8be1-463b-8a7e-3429be201a31,Bayern,Martina Stamm-Fibich,SPD,242,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+fb0f66d9-dd57-42b7-b0df-0452cdc23fe0,Bayern,Jörg Nürnberger,SPD,239,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+fa670cd2-e930-4871-b4eb-8f0f3081cf7f,Bayern,Carmen Wegge,SPD,224,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c357e322-6505-47ff-a1a3-086fd62089e0,Bayern,Markus Hümpfer,SPD,250,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e98e9f47-c39a-4863-b426-a2cde2fec99a,Bayern,Carolin Wagner,SPD,233,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8bd34d72-6b9c-429f-8fb9-950883139ae2,Bayern,Jan Plobner,SPD,246,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+77e6cc19-ae84-49c5-9b05-79b40f751ec5,Bayern,Heike Heubach,SPD,253,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d17ebeed-648d-4e5b-b693-4ac157f13857,Bayern,Hannes Gräbner,SPD,223,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6038f95a-4514-47fd-aa44-7686b8a1a3d5,Bayern,Ramona Brehm,SPD,238,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8281095a-ea9c-4c21-95e5-ccf945ae1151,Bayern,Severin Eder,SPD,230,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+70c5d8a2-9c5e-4073-8917-5f6c92233ff3,Bayern,Magdalena Wagner,SPD,213,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+197f148d-8520-4fa8-b7c7-821a9e832e9c,Bayern,Johannes Foitzik,SPD,232,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+cb8f84fe-f8a1-4234-9b75-421f81e34579,Bayern,Freya Altenhöner,SPD,251,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d029b35d-ec17-4546-9197-58ca621be2c4,Bayern,Thomas Grämmer,SPD,245,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1c26c3f9-8a2e-4852-977a-f43eabef570d,Bayern,Seija Knorr-Köning,SPD,220,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+48a15ec1-b68b-4468-b1f4-7e0f088f82a7,Bayern,Harry Scheuenstuhl,SPD,241,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e5713b59-0cd6-4bb1-b460-4c113e7c0ea6,Bayern,Regina Leenders,SPD,257,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c4104957-dade-4fa7-923f-603a250683b3,Bayern,Simon Moritz,SPD,240,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+90aa6edc-a7ae-4725-93af-28637d890d99,Bayern,Annette Heidrich,SPD,212,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+693f1e29-1683-4bca-8b0c-ac5971c5bf64,Bayern,Tobias Wüst,SPD,247,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+54c73f58-1d8e-487d-b538-57b914a4fbd2,Bayern,Sigrid Meierhofer,SPD,226,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8240aabf-d57b-4655-920b-29b1de92ff61,Bayern,Vincent Hogenkamp,SPD,228,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7942a093-dd07-4be4-b9e8-be8b466fca97,Bayern,Jessica Meierhofer,SPD,216,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+40a53dbb-9354-472a-9bf1-d8bfa0a575d4,Bayern,Martina Holderied,SPD,256,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+bb1a884d-3c3b-4166-ae77-c277742e0332,Bayern,Pankraz Schaberl,SPD,222,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0cacd03f-012f-42fd-84c4-08ecadad867e,Bayern,Dennis Schötz,SPD,231,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+13781c15-9f27-4fa8-a91c-303187765409,Bayern,Christian Wenzel,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8c318a3d-ef83-4d03-84e9-ac3ca7d31ae2,Bayern,Stefan Werner,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c9b4dadb-afc2-4924-bdbc-afbd38edff1a,Bayern,Alexander Klehr,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+bcc4a610-c588-40fa-bcf6-8b3feacc1286,Bayern,Florian Post,SPD,217,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+487c0b4a-9ecf-4c18-8ba1-66d807b7d978,Bayern,Korbinian Rüger,SPD,221,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4305ad48-a49c-4c32-9982-019c628e437a,Bayern,Karl-Heinz Brunner,SPD,255,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+23cb3366-87b4-44b2-a12d-7ec60f0128d7,Bayern,Christoph Arz,GRÜNE,212,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5d5298ba-a191-4b19-bf75-2cfa51674129,Bayern,Beate Walter-Rosenheimer,GRÜNE,215,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+45f90c9f-8598-46db-9804-68fa129f209f,Bayern,Christoph Lochmüller,GRÜNE,213,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8b6299ef-d2e4-4d35-8ff9-ade33d7cebd5,Bayern,Dieter Janecek,GRÜNE,220,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5f8165dc-c3b0-4883-975b-16a171074499,Bayern,Vaniessa Rashid,GRÜNE,218,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4307ce56-36cf-47f7-81b7-720c1101332a,Bayern,Jamila Schäfer,GRÜNE,219,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ea38ea16-b068-4c9d-9642-211d385eb4b9,Bayern,Doris Wagner,GRÜNE,217,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ee0fa31a-f3d4-4b61-87bc-b9bf0e380435,Bayern,Stefan Schmidt,GRÜNE,233,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6e51d79f-2fbd-4dc8-af70-ba2190650b8d,Bayern,Niklas Wagener,GRÜNE,247,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+32400b4e-f2cc-4a1f-bc59-02b9eb0b25b2,Bayern,Elisabeth Löwenbourg-Brzezinski,GRÜNE,226,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7e89445d-ec23-4375-b9cf-f5a49db9a10f,Bayern,Toni Hofreiter,GRÜNE,221,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0d3ef17c-20f8-4eaa-be6c-d11eeadde5a6,Bayern,Karl Bär,GRÜNE,223,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9509df48-34d3-4d70-8d00-1853f4df2a61,Bayern,Stefan Lindauer,GRÜNE,253,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ef50dc5d-4141-4c05-830d-147d3e443922,Bayern,Felix Erbe,GRÜNE,246,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+cd7df897-9a1b-4bb0-b3ec-49f8bf2cd5ce,Bayern,Dr.Manuela Rottmann,GRÜNE,248,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+29d0e096-8a44-4dac-a544-4bff7df048d2,Bayern,Armin Beck,GRÜNE,249,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+45830fe6-07c6-4950-8910-0ab3d06a77a7,Bayern,Corinna Ullrich,GRÜNE,250,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+75d1ad2a-9c8f-40e7-8607-52a8f6a0e250,Bayern,Sebastian Hansen,GRÜNE,251,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+043beeca-51ed-4948-9c1b-193c811ffa22,Bayern,Leon Eckert,GRÜNE,214,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d28b063c-f1cb-4ea1-aefd-f00595c7b25c,Bayern,Daniel Pflügl,GRÜNE,257,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1ad58202-b35b-414c-ba35-7332717f4936,Bayern,Dr.Herbert Sirois,GRÜNE,241,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9e9b5dd2-ad89-4826-8fea-7cf3940b3389,Bayern,Anneliese Droste,GRÜNE,235,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a86dc6dd-af5b-47ad-8a19-4f0f3ad2c1dd,Bayern,Uwe Kekeritz,GRÜNE,243,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7f63e2a7-8494-49e1-b2f4-9f7b61101fdf,Bayern,Maria Krieger,GRÜNE,228,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+eb86989e-0930-422d-9517-95b495e51992,Bayern,Sascha Müller,GRÜNE,245,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7acb675a-7b1e-4cbc-83fa-98e6adc06320,Bayern,Joachim Siebler,GRÜNE,216,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+57c5d286-8f74-4884-95e4-dcda3ce16fcb,Bayern,Victoria Broßart,GRÜNE,222,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4809d0a5-8f6e-49ea-a8db-08866ecc53a0,Bayern,Marlene Schönberger,GRÜNE,230,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e239256a-50b6-4f3b-99bb-9ac6c655e950,Bayern,Erhard Grundl,GRÜNE,231,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6dcc731e-6cc6-40fb-8e64-0e42d9e83378,Bayern,Karl-Heinz Herbst,GRÜNE,232,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2331f64c-ae8d-439b-a0fb-ed9024fa34ad,Bayern,Tina Winklmann,GRÜNE,234,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1a276813-262c-42b5-9df8-6a17511ff079,Bayern,Lisa Badum,GRÜNE,236,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d9f8bfb5-99ee-4439-b989-94ce8bf423b2,Bayern,Susanne Bauer,GRÜNE,237,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+31f74715-1fcf-47ca-95aa-9de2d6774719,Bayern,Johannes Wagner,GRÜNE,238,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9fd5775c-9f15-4a08-a8c4-e3e13e57288e,Bayern,Ralf Reusch,GRÜNE,239,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f01b2e66-4723-4364-a12d-616060dd5b5a,Bayern,Martin Pfeiffer,GRÜNE,240,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6337fe30-1e2c-4212-a7d0-a71917c9b249,Bayern,Tina Prietz,GRÜNE,242,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1c1ef1b7-a2a0-4140-8f05-ba4eba58f80b,Bayern,Tessa Ganserer,GRÜNE,244,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+44a6e882-bfb3-4cec-a198-a5ffd78a898c,Bayern,Claudia Roth,GRÜNE,252,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0c311a53-4567-4c18-acbb-d47e4a2acea4,Bayern,Stefan Norder,GRÜNE,254,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+926ce494-7148-4a49-894c-8f282a2f4671,Bayern,Ekin Deligöz,GRÜNE,255,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d11bec89-78f6-4be0-bef3-e244540fd030,Bayern,Pius Bandte,GRÜNE,256,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+68017256-0f71-4c8c-ac7d-02c02a514658,Bayern,Stefanie Auer,GRÜNE,229,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5e0db430-1b4c-4e18-97dc-026f8712cce4,Bayern,Wolfgang Ehrenlechner,GRÜNE,225,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2f5a1397-aa86-4676-8ee1-52ad9b6fd838,Bayern,Matthias Schwinger,GRÜNE,227,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3dde9856-13f8-4810-b24a-36455b4639a1,Bayern,Martina Neubauer,GRÜNE,224,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7c9a2a03-90d6-4ee4-9e30-d5962abd85e8,Bayern,Saskia Weißhaupt,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+70931e4f-f928-4e74-99a7-1bb98c86626a,Bayern,Margarete Bause,GRÜNE,,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+10b221df-c82a-4995-9fa4-6665d2f849e5,Bayern,Wiebke Richter,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+60b74ff3-5c4c-45a0-913b-ac7a74165bd7,Bayern,Ami Lanzinger,GRÜNE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a420814b-04d0-4475-9bb3-f53824bbb74d,Bayern,Maria Wißmiller,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5e9a9541-8d3a-49f2-a9ea-173b193937a1,Bayern,Isabell Löschner,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+63aa8ce1-3d75-49d8-9feb-7d668bf5f98d,Bayern,Peter Heilrath,GRÜNE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+87ec6d4c-13c7-4003-afe5-08f255738519,Bayern,Andrea Rauch,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3c950d62-c326-4a0d-a07d-e7788404e2de,Bayern,Agnes Krumwiede,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+73a7f8cf-87d3-416b-9b2d-2a39b9ea105a,Bayern,Sabeeka Gangjee-Well,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d0c44752-90e3-47c6-bbcb-357462af08c2,Bayern,Erna-Kathrein Groll,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f8940a86-7c4d-4606-b065-02cd00d84ec4,Bayern,Lakhena Leng,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+dbdf4523-4324-4cad-b708-d4fdd97fb84a,Bayern,Eveline Kuhnert,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+52a6d129-1315-4627-9a27-01716409faa4,Bayern,Ursula Frank-Mayer,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+026f3b61-db67-4900-a635-4432937a93d3,Bayern,Ina Hofmann,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4ffda006-a652-42fd-8660-1391f7adee39,Bayern,Ruprecht Steinhübl,GRÜNE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e6d12b63-4372-417f-bf4c-2592121af427,Berlin,Dr.Ottilie Klein,CDU,75,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+34dfccde-bb26-4405-ac62-0cfafafd2b8a,Berlin,Prof. Dr.Monika Grütters,CDU,77,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+381a858d-04a7-4079-956f-40f30175b4a0,Berlin,Dr.Jan-Marco Luczak,CDU,81,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ab8de324-173d-4b79-bd64-edc6100501e2,Berlin,Christiana Schwarzer,CDU,82,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+180de0c9-2490-49bc-bde9-c32a69d068f2,Berlin,Kevin Kratzsch,CDU,83,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+54e1c430-7ce4-4e25-ad80-4b3dea69a4cb,Berlin,Wilfried Nünthel,CDU,86,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b3bbc3b4-b8b8-4c95-8c07-2d12cfc157a8,Berlin,Claudia Pechstein,CDU,84,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5d50d09b-b574-472f-9171-80a88578128b,Berlin,Jörg Schumacher,CDU,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4cc71bbc-57f3-467c-b5c0-6681a1f40b2e,Berlin,Vanessa Tietz,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4756a08f-75e2-4b2d-bd01-7974fed34323,Berlin,Torsten Einstmann,SPD,77,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+dc18891f-c97d-4423-a708-c817d10715f3,Berlin,Kevin Kühnert,SPD,81,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ba6b2e20-4a42-46b2-b75c-90fc3e155d5b,Berlin,Annika Klose,SPD,75,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0905be07-df07-4724-b4e1-b37d5456ab43,Berlin,Cansel Kiziltepe,SPD,83,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+cc62ecca-4cc8-4c02-94f6-31f152895496,Berlin,Klaus Mindrup,SPD,76,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d8ae969a-1050-4e74-8bc9-13728782600b,Berlin,Helmut Kleebank,SPD,78,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3732c456-78c1-4e89-9ac7-b36bf599e1f4,Berlin,Ruppert Stüwe,SPD,79,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2348c654-f1fc-49f3-a891-8b564d88bbb0,Berlin,Hakan Demir,SPD,82,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b3ada49b-a1d7-4e46-bb2a-a2ed8fbb3e3b,Berlin,Ana-Maria Tr?snea,SPD,84,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+fa0c94c7-1ade-4eb0-808c-df9c0d5d1040,Berlin,Enrico Bloch,SPD,85,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9e159083-8943-4f66-961d-ceffd0cfff3c,Berlin,Anja Ingenbleek,SPD,86,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+85c6ef05-9ff0-4d83-8c09-9bbbfbfbbff9,Berlin,Alexander Julius Frölich,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+35cda1d3-36ee-41e8-a140-05d3c55792aa,Berlin,Ulrike Rosensky,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3e98e01b-af3b-4a71-a01e-b594d544accc,Berlin,Barbara Loth,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+05ec272b-b0c2-42c6-ac5d-6551d5d8d451,Berlin,Lisa Paus,GRÜNE,80,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+178f0c50-9ae6-43a3-af23-781b390d1692,Berlin,Stefan Gelbhaar,GRÜNE,76,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b5ed6a6b-7208-46dc-8052-9fc7339bcaaf,Berlin,Renate Künast,GRÜNE,81,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3586c74d-1561-45ad-862d-f8ea8ae1f1ba,Berlin,Andreas Audretsch,GRÜNE,82,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0541a96c-945f-495c-8a68-0a577cdbbe7f,Berlin,Nina Stahr,GRÜNE,79,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+21810e9f-ec53-417a-9087-cf113c9eb2a7,Berlin,Laura Sophie Dornheim,GRÜNE,86,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d2c0bcb4-f77e-43de-bb02-438a50583a1b,Berlin,Annkatrin Esser,GRÜNE,84,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9c76857b-7efa-47f0-8b59-430ebfa6eee8,Berlin,Juliana Wimmer,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3d82efff-717c-443c-94c9-430afb64c88e,Berlin,Hanna Steinmüller,GRÜNE,75,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+39e203df-1073-43ad-8f94-7fee3be92996,Berlin,Bernd Schwarz,GRÜNE,77,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+419c1ae5-0eec-4ec2-9c34-4d63c06fd517,Berlin,Maya Richter,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+978afe16-a2b1-41d7-942c-01ab7bb1e57b,Berlin,Philip Alexander Hiersemenzel,GRÜNE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+fdcca25d-5f7f-4d0a-9015-68bed0264e4a,Berlin,Susanne Jahn,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ec245c16-9440-4dda-b9b8-c5f68aef1cb3,Berlin,Simon Gabriel Müller,GRÜNE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d7cb9dd7-90fb-4503-b3a5-c3be102d77a8,Berlin,Nicole Holtz,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+594b8180-99d7-4be6-bdc8-a90a50cfdde2,Berlin,Torsten Kirschke,GRÜNE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d2f9bc8c-6504-4a5e-b73c-2548fb9e7bb6,Berlin,Bianca Denfeld,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+896f94c8-b1ef-4982-9c46-8bcf2095df9e,Berlin,Steffen Laube,GRÜNE,78,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+08c406cc-80c2-420b-9b13-6ca542a01a14,Berlin,Johanna Haffner,GRÜNE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1626b9d6-faa0-4188-a0aa-96af425a979d,Berlin,Tarek Annan,GRÜNE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f0806d6c-d9ae-4c3c-bada-cff2e9c374f6,Berlin,Canan Bayram,GRÜNE,83,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+27144511-f3d2-4c26-add4-8264e2430599,Berlin,Anne Thiel-Klein,GRÜNE,85,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+54256277-9f96-4753-89d9-e6226629b793,Brandenburg,Wiebke Papenbrock,SPD,56,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+534ea477-7e92-434e-8fed-ffd272d6796d,Brandenburg,Stefan Zierke,SPD,57,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+24c4c82a-10d1-4f7a-941d-ff768a9b43a0,Brandenburg,Ariane Fäscher,SPD,58,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0ddf7416-510c-4cfe-a139-f7d5d1cfef2e,Brandenburg,Simona Koß,SPD,59,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+59f6f7da-34ec-464a-a0ee-57349e932a81,Brandenburg,Sonja Eichwede,SPD,60,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c69067c5-ecbd-4aa4-bbf9-431d943caa71,Brandenburg,Sylvia Lehmann,SPD,62,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+da464616-2db2-480c-8961-bb1769376f51,Brandenburg,Mathias Papendieck,SPD,63,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4f7c760c-22ec-4742-b78d-51c09993b47d,Brandenburg,Maja Wallstein,SPD,64,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5ca59dce-b467-4435-bdbf-a4ab429b22ed,Brandenburg,Hannes Walter,SPD,65,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8073226b-5ded-419f-ad7d-e8536b15783f,Brandenburg,Martin Ehlers,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d2949412-ffee-480f-b0bb-3b902c07f411,Brandenburg,Remo Ortmann,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+eb93f6f8-fa75-476a-a395-f6433d5c31a5,Brandenburg,Finn Kuhne,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+70f054f0-9d8c-4f9e-bb96-5a355c204985,Brandenburg,Friederike Linke,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e1ecfa72-9719-4934-b44f-8c7361767570,Brandenburg,Sven Szramek,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f2882746-55b7-411e-a717-68f7243515d9,Brandenburg,Jana Gruber,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+565683e6-a11a-48b2-ae76-21213b2e39ac,Brandenburg,Stefan Labahn,SPD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+10f6c0cb-aa4d-4797-b1ab-e4d8602e5c72,Brandenburg,Ria Cybill Geyer,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+359f967c-77a0-4225-94a4-ab7a8cee5882,Brandenburg,Catharina Bockelmann,SPD,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d162271e-2a2d-4440-b935-44aac2845267,Brandenburg,Christian Görke,DIE LINKE,64,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f7cbfd50-5b5c-4b2e-83b9-600925b7daaf,Brandenburg,Norbert Müller,DIE LINKE,61,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b0dd6364-38e2-4cf3-9a2b-794faf25c0ed,Brandenburg,Anja Mayer,DIE LINKE,56,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+21e8e0ea-22de-412d-b81a-ed06ed8b55b3,Brandenburg,Isabelle Czok-Alm,DIE LINKE,57,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4c9d982a-769c-4379-9413-9e9243f496b2,Brandenburg,Anke Domscheit-Berg,DIE LINKE,58,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c1cacf2c-bd8c-4fea-be1b-4ed2849bee6a,Brandenburg,Niels-Olaf Lüders,DIE LINKE,59,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4a8a9103-d164-4492-9154-91ab5e79751c,Brandenburg,Tobias Bank,DIE LINKE,60,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ef2eff84-2d1b-4e02-8cac-3e186db203dd,Brandenburg,Carsten Preuß,DIE LINKE,62,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4ad5259d-ba80-423c-a68f-20bea3bf3ce7,Brandenburg,Stefan Kunath,DIE LINKE,63,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+df38ca15-a663-45d5-a1f2-f42e25475ecb,Brandenburg,Yvonne Mahlo,DIE LINKE,65,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+81423327-1c01-4473-870c-6cb9ed7a3709,Brandenburg,Martina Trauth,DIE LINKE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+77e96c3f-ba40-4aba-85e9-2e82fbad279c,Brandenburg,Björn Krüger,DIE LINKE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+974b748a-cca5-4fcc-b41c-3e7119167206,Mecklenburg-Vorpommern,Philipp Amthor,CDU,16,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+91ce777e-10ee-4e70-b692-cde13983e0d2,Mecklenburg-Vorpommern,Dietrich Monstadt,CDU,12,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+31ccd749-74cd-4feb-a838-5a6c4a21532c,Mecklenburg-Vorpommern,Simone Borchardt,CDU,13,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+940d3ccd-f4dd-408e-8502-7c126c3a19a4,Mecklenburg-Vorpommern,Georg Günther,CDU,15,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+46494692-a246-4d47-800a-c82a7f82846a,Mecklenburg-Vorpommern,Dr.Stephan Bunge,CDU,17,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+57ca6074-fa9f-4d03-a999-95f05f01a6c0,Mecklenburg-Vorpommern,Peter Stein,CDU,14,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b7a10bf9-702f-4730-99c1-d3e92578e1ce,Mecklenburg-Vorpommern,Theresa Schöler,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b555d26a-2bf8-4f2f-9bda-d842e108e37d,Mecklenburg-Vorpommern,Hannelore Glagla,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+52abf02b-feac-42c8-9aeb-32fbce51e3b7,Mecklenburg-Vorpommern,Dr.Dietmar Bartsch,DIE LINKE,14,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2e493b22-6655-4b74-b5df-fa3a3a3ae39e,Mecklenburg-Vorpommern,Ina Latendorf,DIE LINKE,12,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+601dd07a-c110-474d-9fd0-72b6fd07b711,Mecklenburg-Vorpommern,Amina Kanew,DIE LINKE,17,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4e23f932-e75c-44aa-8dc7-5a95abbd136d,Mecklenburg-Vorpommern,Toni Jaschinski,DIE LINKE,16,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+442a76ad-4912-4674-8d04-361186c32da6,Mecklenburg-Vorpommern,Judith Keller,DIE LINKE,13,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4169e4fa-bd33-4e25-98be-57d15d179d9a,Mecklenburg-Vorpommern,Susanne Krone,DIE LINKE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+8caabcf8-edd6-429f-8f27-a68c15dce81c,Mecklenburg-Vorpommern,Lajos Orban,DIE LINKE,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f847235e-1395-4d12-8356-c46a598f7f5c,Mecklenburg-Vorpommern,Kerstin Kassner,DIE LINKE,15,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+fb0bb0f6-32f3-422d-9eab-d2eaa18795ce,Sachsen,Dr.Christiane Schenderlein,CDU,151,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6239ff37-76a9-4313-a7f2-c91b73d1a5c0,Sachsen,Jens Lehmann,CDU,152,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7b7cd638-b3c2-4f16-af40-1caf1eda9cb8,Sachsen,Jessica Heller,CDU,153,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+dd6d7410-20ef-4c81-b181-819d3b725e48,Sachsen,Georg-Ludwig von Breitenbuch,CDU,154,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c769220d-b6d7-40b8-bee7-6728aedc5749,Sachsen,Sebastian Fischer,CDU,155,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d3dd06a0-b9c9-4e8c-8706-aea847eac313,Sachsen,Roland Ermer,CDU,156,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6ade7f75-44c4-40a1-992c-a4ccdd9845d9,Sachsen,Florian Oest,CDU,157,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+c3ce64b6-becd-429c-aa70-a64cb42287ed,Sachsen,Dr.Corinna Franke-Wöller,CDU,158,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b23c9a33-b086-47c5-977e-986137e2584b,Sachsen,Dr.Markus Reichel,CDU,159,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1cc88133-a1c4-4156-8edc-61c98b47aba7,Sachsen,Lars Rohwer,CDU,160,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e6e801a6-352d-4733-aa48-bc8d8c6d7ad1,Sachsen,Veronika Bellmann,CDU,161,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b22bf79f-e221-4fd3-a204-e2078c7d8db7,Sachsen,Frank Heinrich,CDU,162,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d9b191bd-7e1c-445a-97eb-888b763231cd,Sachsen,Marco Wanderwitz,CDU,163,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+08f763a9-c0c2-4a1c-838e-b194118971d2,Sachsen,Alexander Krauß,CDU,164,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+db730a15-08e5-4699-bebe-14cf430173f8,Sachsen,Carsten Körber,CDU,165,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e65f5a30-6d24-4269-a67e-55d78ed656dc,Sachsen,Yvonne Magwas,CDU,166,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+413f47dd-cfe3-49c4-9656-cc7c43b50b7c,Sachsen,Bianca Erdmann-Reusch,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1f99f87d-7f74-411e-9425-848eaf2b5c1f,Sachsen,Sylke Jennewein,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b2163e9a-8c60-4bb7-bd7a-6f6c0751e289,Sachsen,Christina Ruge,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+456ec77e-80bb-4b53-9129-9b95cf2656c8,Sachsen,Heike Helbig,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b785fd56-7588-4f38-8422-b054c665a7f2,Sachsen,Florian Stehl,CDU,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1f0e5d52-8db0-43d6-bba8-eac278b48873,Sachsen,Anne Heimann,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+69f2f596-d635-4418-a7c8-f3ee6c37e9bf,Sachsen,Birgit Elsner,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+bebdd527-8665-4d68-a313-fe2a43d83dcb,Sachsen,Julia Schramm,DIE LINKE,154,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ea2bec17-3473-4cfa-8b9b-d531c9a59760,Sachsen,André Hahn,DIE LINKE,158,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+eda8efee-3474-4b3a-b280-0b629dcd1077,Sachsen,Sebastian Bernhardt,DIE LINKE,163,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f9c26a9b-0115-492d-8c30-2f32168abedc,Sachsen,Clara Anne Bünger,DIE LINKE,164,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+4f90a667-c519-493a-9867-bd5ae883e38f,Sachsen,Sabine Zimmermann,DIE LINKE,165,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+854a0790-d22f-40a8-81b5-4559ed717b5b,Sachsen,Philipp Rubach,DIE LINKE,151,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7c193f16-dafd-454c-bf97-a48224b12458,Sachsen,Nina Treu,DIE LINKE,152,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b8bcd834-6633-4fc0-9172-70fa9afcbf3a,Sachsen,Sören Pellmann,DIE LINKE,153,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5208b089-bdf4-4e84-acef-14a55342e91b,Sachsen,Stefan Hartmann,DIE LINKE,161,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+53fe1009-022f-4a31-af42-104882285b12,Sachsen,Markus Pohle,DIE LINKE,155,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+467c0147-3c6b-4e8a-a830-a4cb64fd2f34,Sachsen,Caren Lay,DIE LINKE,156,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ba7c46d9-c622-4c99-8084-4c4c8c8418a2,Sachsen,Marko Schmidt,DIE LINKE,157,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+80bfdc28-f801-43dc-bd69-4189ec9b4e0e,Sachsen,Silvio Lang,DIE LINKE,160,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+fd4a3840-8919-4b3f-9665-80b5d487d39e,Sachsen,Katja Kipping,DIE LINKE,159,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+af927d96-bd23-46a1-bcf8-c020761230fc,Sachsen,Tim Detzner,DIE LINKE,162,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3b424dce-2099-47f6-a1a3-e3ee2ca821bf,Sachsen,Nancy Hochstein,DIE LINKE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+aa97df9e-1ae8-4eb4-95ea-a0f31bb669da,Sachsen,Johannes Höfer,DIE LINKE,166,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a51e9d5b-c843-43b1-9cdd-ec305b62dfde,Sachsen,Claudia Scholz,DIE LINKE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ac5d5984-d7d6-48c0-8bbd-2c5e958eb9a5,Sachsen,Nora-Helene Scholz,DIE LINKE,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d81d6ad5-1563-4495-b99b-e33ce1cffbb8,Sachsen,Tino Chrupalla,AfD,157,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+bb872e68-f13c-4442-8979-c43faa8a58dd,Sachsen,Jens Maier,AfD,159,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+701c4078-6fbf-47f3-8fd3-9fa28c8149c8,Sachsen,Siegbert Droese,AfD,153,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+333e81a1-7faa-48da-8f06-fe90161ee125,Sachsen,Karsten Hilse,AfD,156,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+88f0c784-0b61-4800-a3c5-34c0616350e8,Sachsen,Andreas Harlaß,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+be4b00a6-dd2a-46f8-a0d0-5f61cb5bddc4,Sachsen,Steffen Janich,AfD,158,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+0b5a97d4-cd38-4cb6-a2e5-7094ef9d70d2,Sachsen,Barbara Lenk,AfD,155,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d5c33785-9712-425c-99d6-f6fbf3c0b89b,Sachsen,Ulrich Oehme,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2bd8cc92-d690-4f22-a494-9dd0201db080,Sachsen,Christoph Neumann,AfD,152,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+cee463e5-4dca-413a-9168-5dc4a2d43a8f,Sachsen,Christian Wesemann,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+3b1fbbb7-65f6-4b08-9756-df7a3d6dba06,Sachsen,Frank Trenkler,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7646b83a-d9c1-44ea-9480-34262dba7d27,Sachsen,Martin Braukmann,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2d66592c-d6ee-420b-a100-deba91d0caaa,Sachsen,Thomas Dietz,AfD,164,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+7acc2b83-1d47-4062-a8a6-4b42a41026ec,Sachsen,Mike Moncsek,AfD,163,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9d3cdffb-0ec0-4949-bd50-3091dee53734,Sachsen,René Bochmann,AfD,151,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+77d0d684-8ac2-48a4-b5ce-51706f61d30b,Sachsen,Edgar Naujok,AfD,154,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f857385b-2c5d-4de2-b935-c792e54307b0,Sachsen,Holger Zielinski,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ccd6a238-09c8-4e53-b543-111cafb779d1,Sachsen,Nico Köhler,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+abc709cc-bbb1-45f3-b693-87e3c0bc497a,Sachsen,Holger Prade,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ced9679c-beab-4000-b019-2e509e12c15f,Sachsen,Dirk Eckhardt,AfD,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+91c65ddc-52a4-46ba-960a-c9e5c4566fba,Sachsen,Michael Klonovsky,AfD,162,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+5672ae80-6266-4481-a486-229dd42af655,Sachsen,Mathias Weiser,AfD,166,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+79f08340-2bbc-49f5-9e7c-cddac3306a88,Sachsen,Carolin Bachmann,AfD,161,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6a4537f9-4296-4494-9e2e-7700279e10f0,Sachsen,Andreas Albrecht Harlaß,AfD,160,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+69fbd89b-8c17-4318-a7e8-4ba26a80c8e3,Sachsen,Matthias Moosdorf,AfD,165,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f5f9e437-e527-4809-b434-0d48a998d11e,Sachsen-Anhalt,Heike Brehmer,CDU,68,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a32f0cac-1f3f-4221-97b9-22657b3dafa1,Sachsen-Anhalt,Dieter Stier,CDU,73,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e631921b-d39e-4d4a-944d-844f760bee5a,Sachsen-Anhalt,Tino Sorge,CDU,69,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+30f585aa-7fa9-420d-9703-f922b739116c,Sachsen-Anhalt,Christoph Bernstiel,CDU,72,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+642019f7-85e8-4f60-b414-a1b81114141f,Sachsen-Anhalt,Sepp Müller,CDU,70,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+9563a208-a744-4852-b344-1f7a03b0da45,Sachsen-Anhalt,Torsten Schweiger,CDU,74,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+90c600f4-e9f0-4581-8ea8-5641e13b010c,Sachsen-Anhalt,Uwe Harms,CDU,66,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+f7de9307-e9da-497f-92bf-6d4ef670458b,Sachsen-Anhalt,Gerry Weber,CDU,67,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1ff62959-ffdc-484d-b528-3e619d2d6951,Sachsen-Anhalt,Frank Wyszkowski,CDU,71,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+a46e92ba-00f5-4e3f-b1fc-aebde637baa9,Sachsen-Anhalt,Anna Kreye,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+930fd754-0d46-4245-a608-988e913d0b8b,Sachsen-Anhalt,Claus-Christian Kühne,CDU,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6142287f-a9b3-4375-9b45-16a43d5b311d,Sachsen-Anhalt,Katrin Rösel,CDU,,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+10ab1b21-d5ea-4f52-bf81-eea4c4d7a9c8,Sachsen-Anhalt,Henry Klipp,CDU,,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+2f3951f3-fd22-4e61-bc1b-5032de6a7a65,Sachsen-Anhalt,Karamba Diaby,SPD,72,männlich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+e01f1c4b-a917-4a18-9f8a-cfdb574410e3,Sachsen-Anhalt,Katrin Budde,SPD,74,weiblich,,,Parlamentarier Wiederwahl,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+b1b2bb59-f9c4-4012-bd5d-73f677e9c07e,Sachsen-Anhalt,Martin Kröber,SPD,69,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+1f9c9439-9bcd-41d1-b66d-cc7c5047ae93,Sachsen-Anhalt,Franziska Kersten,SPD,67,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+ede84da5-c888-4e0a-91de-874281baf7fe,Sachsen-Anhalt,Maik Berger,SPD,68,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+45f68ef9-cf08-46c4-a0c0-c12326ee64ef,Sachsen-Anhalt,Anne Stamm,SPD,71,weiblich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+d3ef98a4-8dd2-4032-9a3f-279cca1aec61,Sachsen-Anhalt,Leonard Schneider,SPD,70,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+56175aa0-880b-4fde-adda-880c9f237600,Sachsen-Anhalt,Herbert Wollmann,SPD,66,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
+6f196774-c527-4d81-a454-7624b1339986,Sachsen-Anhalt,Jens Wojtyschak,SPD,73,männlich,,,,,,,,,,,,,,,,,,,,,2021-05-27 22:02:25.858311,fvm,2021-05-27 22:02:25.752635,fvm
